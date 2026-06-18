@@ -2,6 +2,7 @@ import Image from "next/image";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import Occasions from "@/components/Occasions";
 import Experience from "@/components/Experience";
+import PlanCelebration from "@/components/PlanCelebration";
 
 export default function Home() {
   return (
@@ -66,8 +67,8 @@ export default function Home() {
                 >
                   View Sample Menus
                   <svg className="w-4.5 h-4.5 text-[#74290F] stroke-current" viewBox="0 0 24 24" fill="none" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
-                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
+                     <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+                     <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
                   </svg>
                 </a>
               </div>
@@ -85,6 +86,9 @@ export default function Home() {
 
       {/* Experience Section */}
       <Experience />
+
+      {/* Plan Celebration Section */}
+      <PlanCelebration />
     </div>
   );
 }
