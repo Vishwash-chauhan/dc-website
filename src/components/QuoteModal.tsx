@@ -53,7 +53,7 @@ export default function QuoteModal({ isOpen, onClose }: QuoteModalProps) {
 
     try {
       const response = await fetch(
-        "https://n8n.littlejalebis.com/webhook/2efcbd66-5c82-42e4-9eec-53cdab58daf4",
+        "/api/quote",
         {
           method: "POST",
           headers: {
