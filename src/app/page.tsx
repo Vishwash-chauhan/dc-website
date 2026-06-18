@@ -23,7 +23,7 @@ export default function Home() {
           <div className="absolute inset-0 lg:block hidden bg-gradient-to-r from-[#FAF6F0] via-[#FAF6F0]/10 to-transparent pointer-events-none" />
         </div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pt-16 pb-16 md:pt-20 md:pb-24 lg:pt-24">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pt-28 pb-16 sm:pt-32 md:pt-20 md:pb-24 lg:pt-24">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
 
             {/* Left Side: Copy and Action Buttons */}
