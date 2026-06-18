@@ -1,6 +1,7 @@
 import Image from "next/image";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import Occasions from "@/components/Occasions";
+import Experience from "@/components/Experience";
 
 export default function Home() {
   return (
@@ -81,6 +82,9 @@ export default function Home() {
 
       {/* Occasions Section */}
       <Occasions />
+
+      {/* Experience Section */}
+      <Experience />
     </div>
   );
 }
