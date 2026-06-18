@@ -2,9 +2,11 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import { useQuoteModal } from "@/context/QuoteModalContext";
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { openModal } = useQuoteModal();
 
   const navLinks = [
     { name: "Home", href: "#home", active: true },
@@ -64,12 +66,12 @@ export default function Navbar() {
 
           {/* Right: CTA Button & WhatsApp (Desktop) */}
           <div className="hidden md:flex items-center space-x-4">
-            <a
-              href="#quote"
-              className="px-6 py-3 bg-[#74290F] hover:bg-[#61220C] text-white font-sans text-sm font-semibold tracking-wide rounded-md shadow-sm transition-all duration-300 transform active:scale-98"
+            <button
+              onClick={openModal}
+              className="px-6 py-3 bg-[#74290F] hover:bg-[#61220C] text-white font-sans text-sm font-semibold tracking-wide rounded-md shadow-sm transition-all duration-300 transform active:scale-98 cursor-pointer"
             >
               Get a Custom Quote
-            </a>
+            </button>
             
             {/* WhatsApp Button */}
             <a
@@ -128,13 +130,15 @@ export default function Navbar() {
           </nav>
           
           <div className="mt-12 flex flex-col items-center space-y-6">
-            <a
-              href="#quote"
-              onClick={() => setIsMobileMenuOpen(false)}
-              className="w-full max-w-xs text-center px-6 py-4 bg-[#74290F] text-white font-sans text-base font-semibold tracking-wide rounded-md shadow-md"
+            <button
+              onClick={() => {
+                setIsMobileMenuOpen(false);
+                openModal();
+              }}
+              className="w-full max-w-xs text-center px-6 py-4 bg-[#74290F] text-white font-sans text-base font-semibold tracking-wide rounded-md shadow-md cursor-pointer"
             >
               Get a Custom Quote
-            </a>
+            </button>
             
             {/* Mobile WhatsApp Button */}
             <a

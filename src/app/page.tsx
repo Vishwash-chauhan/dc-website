@@ -1,10 +1,15 @@
+"use client";
+
 import Image from "next/image";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import Occasions from "@/components/Occasions";
 import Experience from "@/components/Experience";
 import PlanCelebration from "@/components/PlanCelebration";
+import { useQuoteModal } from "@/context/QuoteModalContext";
 
 export default function Home() {
+  const { openModal } = useQuoteModal();
+
   return (
     <div className="flex flex-col min-h-screen bg-[#FAF6F0]">
       {/* Hero Section */}
@@ -55,12 +60,12 @@ export default function Home() {
 
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto items-center">
-                <a
-                  href="#quote"
-                  className="px-8 py-4 bg-[#74290F] hover:bg-[#61220C] text-white font-sans text-sm font-semibold tracking-wider text-center rounded-md shadow-md transition-all duration-300 w-full sm:w-auto"
+                <button
+                  onClick={openModal}
+                  className="px-8 py-4 bg-[#74290F] hover:bg-[#61220C] text-white font-sans text-sm font-semibold tracking-wider text-center rounded-md shadow-md transition-all duration-300 w-full sm:w-auto cursor-pointer"
                 >
                   Get a Custom Quote
-                </a>
+                </button>
                 <a
                   href="#menus"
                   className="px-8 py-4 bg-transparent hover:bg-[#74290F]/5 text-[#74290F] border border-[#74290F] font-sans text-sm font-semibold tracking-wider text-center rounded-md transition-all duration-300 flex items-center justify-center gap-2 w-full sm:w-auto"
