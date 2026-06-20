@@ -12,12 +12,12 @@ export default function Navbar() {
 
   const navLinks = [
     { name: "Home", href: isHome ? "#home" : "/#home", active: isHome },
-    { name: "About Us", href: isHome ? "#about" : "/#about", active: false },
+    { name: "About Us", href: "/about", active: pathname === "/about" },
     { name: "Occasions", href: isHome ? "#occasions" : "/#occasions", active: false },
     { name: "Menus", href: isHome ? "#menus" : "/#menus", active: false },
     { name: "Gallery", href: isHome ? "#gallery" : "/#gallery", active: false },
     { name: "FAQs", href: isHome ? "#faqs" : "/#faqs", active: false },
-    // { name: "Contact", href: isHome ? "#contact" : "/#contact", active: false },
+    { name: "Contact", href: isHome ? "#contact" : "/#contact", active: false },
   ];
 
   return (
