@@ -2,11 +2,9 @@
 
 import React from "react";
 import Image from "next/image";
-import { useQuoteModal } from "@/context/QuoteModalContext";
+import Link from "next/link";
 
 export default function PlanCelebration() {
-  const { openModal } = useQuoteModal();
-
   return (
     <section className="w-full py-20 px-4 sm:px-6 lg:px-8 bg-[#FAF6F0] relative z-10 overflow-hidden">
       <div className="max-w-7xl mx-auto">
@@ -35,12 +33,12 @@ export default function PlanCelebration() {
 
             {/* Action buttons */}
             <div className="flex flex-col sm:flex-row gap-4 items-center">
-              <button
-                onClick={openModal}
+              <Link
+                href="/qet_a_quote"
                 className="px-8 py-3.5 bg-[#74290F] hover:bg-[#61220C] text-white font-sans text-xs sm:text-sm font-semibold tracking-wider text-center rounded-md shadow-md transition-all duration-300 w-full sm:w-auto cursor-pointer font-semibold"
               >
                 Get A Quote
-              </button>
+              </Link>
               <a
                 href="#menus"
                 className="px-8 py-3.5 bg-transparent hover:bg-[#74290F]/5 text-[#74290F] border border-[#74290F] font-sans text-xs sm:text-sm font-semibold tracking-wider text-center rounded-md transition-all duration-300 w-full sm:w-auto"

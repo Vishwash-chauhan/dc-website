@@ -2,30 +2,32 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { useQuoteModal } from "@/context/QuoteModalContext";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const { openModal } = useQuoteModal();
+  const pathname = usePathname();
+  const isHome = pathname === "/";
 
   const navLinks = [
-    { name: "Home", href: "#home", active: true },
-    { name: "About Us", href: "#about", active: false },
-    { name: "Occasions", href: "#occasions", active: false },
-    { name: "Menus", href: "#menus", active: false },
-    { name: "Gallery", href: "#gallery", active: false },
-    { name: "FAQs", href: "#faqs", active: false },
-    { name: "Contact", href: "#contact", active: false },
+    { name: "Home", href: isHome ? "#home" : "/#home", active: isHome },
+    { name: "About Us", href: isHome ? "#about" : "/#about", active: false },
+    { name: "Occasions", href: isHome ? "#occasions" : "/#occasions", active: false },
+    { name: "Menus", href: isHome ? "#menus" : "/#menus", active: false },
+    { name: "Gallery", href: isHome ? "#gallery" : "/#gallery", active: false },
+    { name: "FAQs", href: isHome ? "#faqs" : "/#faqs", active: false },
+    // { name: "Contact", href: isHome ? "#contact" : "/#contact", active: false },
   ];
 
   return (
     <header className="absolute top-0 left-0 right-0 z-50 bg-transparent transition-all duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-24">
-          
+
           {/* Left: Logo */}
           <div className="flex-shrink-0 flex items-center">
-            <a href="#home" className="flex items-center gap-3.5 group">
+            <Link href={isHome ? "#home" : "/#home"} className="flex items-center gap-3.5 group">
               <div className="relative w-16 h-16 flex items-center justify-center">
                 <Image
                   src="/dc-logo.svg"
@@ -44,35 +46,34 @@ export default function Navbar() {
                   — HOME-STYLE CATERING —
                 </span>
               </div>
-            </a>
+            </Link>
           </div>
 
           {/* Center: Navigation Links (Desktop) */}
           <nav className="hidden md:flex space-x-8 lg:space-x-10">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.name}
                 href={link.href}
-                className={`relative text-[15px] font-sans font-medium tracking-wide transition-colors duration-200 py-1 ${
-                  link.active
+                className={`relative text-[15px] font-sans font-medium tracking-wide transition-colors duration-200 py-1 ${link.active
                     ? "text-[#74290F] border-b-2 border-[#74290F]"
                     : "text-[#74290F]/75 hover:text-[#74290F]"
-                }`}
+                  }`}
               >
                 {link.name}
-              </a>
+              </Link>
             ))}
           </nav>
 
           {/* Right: CTA Button & WhatsApp (Desktop) */}
           <div className="hidden md:flex items-center space-x-4">
-            <button
-              onClick={openModal}
-              className="px-6 py-3 bg-[#74290F] hover:bg-[#61220C] text-white font-sans text-sm font-semibold tracking-wide rounded-md shadow-sm transition-all duration-300 transform active:scale-98 cursor-pointer"
+            <Link
+              href="/qet_a_quote"
+              className="px-6 py-3 bg-[#74290F] hover:bg-[#61220C] text-white font-sans text-sm font-semibold tracking-wide rounded-md shadow-sm transition-all duration-300 transform active:scale-98 cursor-pointer text-center"
             >
               Get a Custom Quote
-            </button>
-            
+            </Link>
+
             {/* WhatsApp Button */}
             <a
               href="https://wa.me/918130964374"
@@ -116,30 +117,27 @@ export default function Navbar() {
         <div className="md:hidden fixed inset-0 z-40 bg-[#FAF6F0] flex flex-col pt-24 px-6">
           <nav className="flex flex-col space-y-6 text-center">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.name}
                 href={link.href}
                 onClick={() => setIsMobileMenuOpen(false)}
-                className={`text-xl font-sans font-medium tracking-wide ${
-                  link.active ? "text-[#74290F] underline underline-offset-8 decoration-[#74290F] decoration-2" : "text-[#74290F]/80"
-                }`}
+                className={`text-xl font-sans font-medium tracking-wide ${link.active ? "text-[#74290F] underline underline-offset-8 decoration-[#74290F] decoration-2" : "text-[#74290F]/80"
+                  }`}
               >
                 {link.name}
-              </a>
+              </Link>
             ))}
           </nav>
-          
+
           <div className="mt-12 flex flex-col items-center space-y-6">
-            <button
-              onClick={() => {
-                setIsMobileMenuOpen(false);
-                openModal();
-              }}
+            <Link
+              href="/qet_a_quote"
+              onClick={() => setIsMobileMenuOpen(false)}
               className="w-full max-w-xs text-center px-6 py-4 bg-[#74290F] text-white font-sans text-base font-semibold tracking-wide rounded-md shadow-md cursor-pointer"
             >
               Get a Custom Quote
-            </button>
-            
+            </Link>
+
             {/* Mobile WhatsApp Button */}
             <a
               href="https://wa.me/918130964374"

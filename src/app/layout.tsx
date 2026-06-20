@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, Outfit } from "next/font/google";
 import Navbar from "@/components/Navbar";
-import { QuoteModalProvider } from "@/context/QuoteModalContext";
 import "./globals.css";
 
 const cormorant = Cormorant_Garamond({
@@ -33,10 +32,8 @@ export default function RootLayout({
       className={`${cormorant.variable} ${outfit.variable} h-full antialiased scroll-smooth`}
     >
       <body className="min-h-full flex flex-col bg-[#FAF6F0] text-[#74290F] font-sans">
-        <QuoteModalProvider>
-          <Navbar />
-          {children}
-        </QuoteModalProvider>
+        <Navbar />
+        {children}
       </body>
     </html>
   );
