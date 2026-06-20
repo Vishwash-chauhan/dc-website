@@ -3,27 +3,24 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import FAQs from "@/components/FAQs";
 
-const FAQ_ITEMS = [
+const QUOTE_PAGE_FAQS = [
   {
-    question: "What is the minimum guest count for catering bookings?",
-    answer: "We cater to gatherings starting from 15 guests up to 300+ guests. Whether you're hosting an intimate family get-together, a pooja, or a festive wedding ceremony, we tailor our quantities and service to fit.",
+    question: "What is the minimum guest count required for catering bookings?",
+    answer: "We cater to events starting from 15 guests up to 300+ guests. Whether you're hosting an intimate family get-together, a pooja, or a festive wedding ceremony, we tailor our quantities and service to fit.",
   },
   {
-    question: "Do you offer Satvik (no onion, no garlic) options?",
-    answer: "Yes! Purity is our core philosophy. We specialize in satvik preparation for spiritual occasions, home poojas, and rituals. We follow strict hygiene guidelines and handle satvik orders with special care.",
-  },
-  {
-    question: "How far in advance should I request a quote or book my event?",
+    question: "How far in advance should I request a quote or book my date?",
     answer: "We recommend booking at least 5-7 days in advance for smaller family gatherings. For larger occasions, weddings, or peak festive seasons, booking 2-3 weeks in advance secures availability and lets us coordinate fresh sourcing perfectly.",
   },
   {
-    question: "Which locations in Delhi NCR do you serve?",
-    answer: "We offer deliveries and complete catering setup services across Delhi, Noida, Gurugram, Ghaziabad, and Faridabad. Delivery logistics are coordinated directly with your event point of contact.",
+    question: "Can we customize the dishes in the catering packages?",
+    answer: "Absolutely. All our sample menus are starting points. We work closely with you to customize individual dishes, adjust spice levels, accommodate dietary requirements, and curate a menu that matches your celebration perfectly.",
   },
   {
-    question: "Can we customize the dishes and menu layouts?",
-    answer: "Absolutely. All our sample menus are starting points. We work closely with you to customize individual dishes, adjust spice levels, accommodate dietary requirements, and curate a menu that matches your celebration perfectly.",
+    question: "What is the booking policy and payment terms for catering?",
+    answer: "To secure your booking date and start ingredient sourcing, we require a booking advance deposit. The balance payment schedule is structured based on your specific catering package and settled post-event.",
   },
 ];
 
@@ -39,11 +36,6 @@ export default function GetAQuotePage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [errorMsg, setErrorMsg] = useState("");
-  const [openFaq, setOpenFaq] = useState<number | null>(null);
-
-  const toggleFaq = (index: number) => {
-    setOpenFaq(openFaq === index ? null : index);
-  };
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
@@ -354,61 +346,7 @@ export default function GetAQuotePage() {
       </div>
 
       {/* FAQ Section */}
-      <section id="faqs" className="w-full bg-[#74290F]/5 py-16 md:py-20 border-t border-b border-[#c5a880]/20 z-10 relative">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          
-          <div className="text-center mb-12">
-            <span className="font-sans text-[10px] sm:text-xs font-bold tracking-[0.2em] text-[#c5a880] uppercase mb-2 block">
-              QUESTIONS & ANSWERS
-            </span>
-            <h2 className="font-serif text-3xl sm:text-4xl text-[#74290F] font-semibold tracking-wide">
-              Frequently Asked Questions
-            </h2>
-            <div className="flex items-center gap-3 mt-3 w-full justify-center">
-              <div className="h-[1px] w-10 bg-[#c5a880]/30" />
-              <span className="text-[#c5a880] text-xs">✿</span>
-              <div className="h-[1px] w-10 bg-[#c5a880]/30" />
-            </div>
-          </div>
-
-          <div className="space-y-4">
-            {FAQ_ITEMS.map((item, index) => {
-              const isOpen = openFaq === index;
-              return (
-                <div 
-                  key={index}
-                  className="bg-[#FAF6F0] border border-[#c5a880]/30 rounded-xl overflow-hidden shadow-sm transition-all duration-300"
-                >
-                  <button
-                    onClick={() => toggleFaq(index)}
-                    className="w-full text-left px-5 py-4 sm:px-6 sm:py-5 flex justify-between items-center gap-4 hover:bg-[#FAF6F0]/50 transition-colors duration-200"
-                  >
-                    <span className="font-serif text-base sm:text-lg text-[#74290F] font-medium leading-snug">
-                      {item.question}
-                    </span>
-                    <span className={`text-[#c5a880] transform transition-transform duration-300 ${isOpen ? "rotate-180" : ""}`}>
-                      <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
-                      </svg>
-                    </span>
-                  </button>
-                  
-                  <div 
-                    className={`transition-all duration-300 ease-in-out overflow-hidden ${
-                      isOpen ? "max-h-[300px] border-t border-[#c5a880]/20" : "max-h-0"
-                    }`}
-                  >
-                    <div className="px-5 py-4 sm:px-6 sm:py-5 font-sans text-sm text-[#292927]/80 font-light leading-relaxed">
-                      {item.answer}
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-
-        </div>
-      </section>
+      <FAQs items={QUOTE_PAGE_FAQS} />
 
       {/* Footer Branding Bar */}
       <footer className="w-full bg-[#74290F] text-[#FAF6F0] py-6 border-t border-[#c5a880]/20 mt-auto">

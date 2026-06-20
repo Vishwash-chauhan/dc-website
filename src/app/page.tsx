@@ -6,6 +6,26 @@ import WhyChooseUs from "@/components/WhyChooseUs";
 import Occasions from "@/components/Occasions";
 import Experience from "@/components/Experience";
 import PlanCelebration from "@/components/PlanCelebration";
+import FAQs from "@/components/FAQs";
+
+const HOMEPAGE_FAQS = [
+  {
+    question: "Which locations in Delhi NCR do you serve?",
+    answer: "We offer deliveries and complete catering setup services across Delhi, Noida, Gurugram, Ghaziabad, and Faridabad. Delivery logistics are coordinated directly with your event point of contact.",
+  },
+  {
+    question: "What makes Dahi Cheeni's catering service unique?",
+    answer: "We focus on clean, home-style food prepared fresh with heritage recipes, premium ingredients, and strict hygiene standards. We avoid commercial shortcuts, artificial colorings, and heavy preservatives to bring you genuine home-style flavors.",
+  },
+  {
+    question: "Do you provide Satvik options for religious gatherings?",
+    answer: "Yes, purity is our core value. We specialize in strict satvik (no onion, no garlic) catering with separate cooking guidelines, utensils, and dedicated preparation environments for poojas, havans, and spiritual gatherings.",
+  },
+  {
+    question: "What types of celebrations and occasions do you cater to?",
+    answer: "We cater to spiritual gatherings (poojas, havans, bhajan sandhyas), baby celebrations, griha pravesh ceremonies, mundan-janeu celebrations, prayer meetings, and intimate family wedding functions (up to 300+ guests).",
+  },
+];
 
 export default function Home() {
   return (
@@ -92,6 +112,9 @@ export default function Home() {
 
       {/* Plan Celebration Section */}
       <PlanCelebration />
+
+      {/* FAQs Section */}
+      <FAQs items={HOMEPAGE_FAQS} />
     </div>
   );
 }
