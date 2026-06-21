@@ -14,10 +14,10 @@ export default function Navbar() {
     { name: "Home", href: isHome ? "#home" : "/#home", active: isHome },
     { name: "About Us", href: "/about", active: pathname === "/about" },
     { name: "Services", href: "/services", active: pathname === "/services" },
-    { name: "Menus", href: isHome ? "#menus" : "/#menus", active: false },
+    { name: "Menus", href: "/menu", active: pathname === "/menu" },
     { name: "Gallery", href: isHome ? "#gallery" : "/#gallery", active: false },
     { name: "FAQs", href: isHome ? "#faqs" : "/#faqs", active: false },
-    { name: "Contact", href: isHome ? "#contact" : "/#contact", active: false },
+    // { name: "Contact", href: isHome ? "#contact" : "/#contact", active: false },
   ];
 
   return (
@@ -56,8 +56,8 @@ export default function Navbar() {
                 key={link.name}
                 href={link.href}
                 className={`relative text-[15px] font-sans font-medium tracking-wide transition-colors duration-200 py-1 ${link.active
-                    ? "text-[#74290F] border-b-2 border-[#74290F]"
-                    : "text-[#74290F]/75 hover:text-[#74290F]"
+                  ? "text-[#74290F] border-b-2 border-[#74290F]"
+                  : "text-[#74290F]/75 hover:text-[#74290F]"
                   }`}
               >
                 {link.name}
