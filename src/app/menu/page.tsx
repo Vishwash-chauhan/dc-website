@@ -3,6 +3,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { Search, Sparkles, Info, X } from "lucide-react";
+import FAQs from "@/components/FAQs";
 
 // The full menu dataset provided by the user
 const menuItems = [
@@ -185,6 +186,29 @@ const categories = [
   { id: "Beverages", name: "Beverages" },
   { id: "Desserts", name: "Desserts" },
   { id: "Add-Ons", name: "Add-Ons & Stations" }
+];
+
+const MENU_PAGE_FAQS = [
+  {
+    question: "Can I customize the menu items or adjust the spice levels?",
+    answer: "Yes, absolutely. All our menu offerings can be tailored to your preference. Whether you want to tone down the spice for children or adjust the oil/spiciness, our chefs customize each dish according to your specific gathering requirements.",
+  },
+  {
+    question: "Do you offer onion- and garlic-free (Satvik) options?",
+    answer: "Yes, purity is our core value. We offer completely Satvik versions of almost all our main courses, starters, and dals. These are prepared under strict guidelines using dedicated cookware and separate kitchen areas to preserve absolute sanctity.",
+  },
+  {
+    question: "What is the minimum guest count required for catering orders?",
+    answer: "We provide complete catering setups with service staff for gatherings starting from 15 guests up to 300+ guests. For smaller gatherings under 15 guests, we also offer premium bulk deliveries.",
+  },
+  {
+    question: "Are there additional charges for service staff and buffet setup?",
+    answer: "Service staff, elegant buffet counter setups, and logistics are calculated based on your total guest count, venue location, and package details. All details are shared transparently in our custom quotation.",
+  },
+  {
+    question: "How far in advance should we finalize the menu?",
+    answer: "We recommend finalizing your menu selection at least 5 to 7 days before your event. This allows us to source premium, fresh ingredients and allocate dedicated kitchen resources for your special day.",
+  },
 ];
 
 export default function MenuPage() {
@@ -521,6 +545,9 @@ export default function MenuPage() {
           </div>
         </div>
       </section>
+
+      {/* FAQs Section */}
+      <FAQs items={MENU_PAGE_FAQS} />
 
       {/* Footer Branding Bar */}
       <footer className="w-full bg-[#74290F] text-[#FAF6F0] py-6 border-t border-[#c5a880]/20 mt-auto">
