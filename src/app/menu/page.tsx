@@ -194,12 +194,12 @@ const MENU_PAGE_FAQS = [
     answer: "Yes, absolutely. All our menu offerings can be tailored to your preference. Whether you want to tone down the spice for children or adjust the oil/spiciness, our chefs customize each dish according to your specific gathering requirements.",
   },
   {
-    question: "Do you offer onion- and garlic-free (Satvik) options?",
+    question: "Do you offer onion- and garlic-free options?",
     answer: "Yes, purity is our core value. We offer completely Satvik versions of almost all our main courses, starters, and dals. These are prepared under strict guidelines using dedicated cookware and separate kitchen areas to preserve absolute sanctity.",
   },
   {
     question: "What is the minimum guest count required for catering orders?",
-    answer: "We provide complete catering setups with service staff for gatherings starting from 15 guests up to 300+ guests. For smaller gatherings under 15 guests, we also offer premium bulk deliveries.",
+    answer: "We provide complete catering setups with service staff for gatherings starting from 15 guests up to 1000+ guests. For smaller gatherings under 15 guests, we also offer premium bulk deliveries.",
   },
   {
     question: "Are there additional charges for service staff and buffet setup?",
@@ -214,7 +214,7 @@ const MENU_PAGE_FAQS = [
 export default function MenuPage() {
   const [searchQuery, setSearchQuery] = useState("");
   const [activeCategory, setActiveCategory] = useState("Soups");
-  
+
   // Track scroll position to update active category in sidebar
   const categoryRefs = useRef<{ [key: string]: HTMLDivElement | null }>({});
 
@@ -343,7 +343,7 @@ export default function MenuPage() {
       {/* 2. Menu Navigation and Grid */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pb-20 flex-grow">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-          
+
           {/* Left Column: Sticky Sidebar Navigation (Hidden when searching) */}
           {searchQuery.trim() === "" && (
             <div className="lg:col-span-3 sticky top-28 hidden lg:block bg-white/90 backdrop-blur-md border border-[#c5a880]/30 rounded-2xl p-5 shadow-md transition-all duration-300 hover:shadow-lg">
@@ -355,18 +355,16 @@ export default function MenuPage() {
                   <button
                     key={category.id}
                     onClick={() => scrollToCategory(category.id)}
-                    className={`w-full text-left px-3.5 py-2.5 rounded-lg text-sm font-sans font-medium transition-all duration-300 flex items-center justify-between group ${
-                      activeCategory === category.id
+                    className={`w-full text-left px-3.5 py-2.5 rounded-lg text-sm font-sans font-medium transition-all duration-300 flex items-center justify-between group ${activeCategory === category.id
                         ? "bg-[#74290F] text-[#FAF6F0] shadow-sm"
                         : "text-[#74290F]/80 hover:bg-[#74290F]/5 hover:text-[#74290F]"
-                    }`}
+                      }`}
                   >
                     <span>{category.name}</span>
-                    <span className={`text-[10px] px-2 py-0.5 rounded-full font-semibold ${
-                      activeCategory === category.id
+                    <span className={`text-[10px] px-2 py-0.5 rounded-full font-semibold ${activeCategory === category.id
                         ? "bg-white/20 text-white"
                         : "bg-[#74290F]/5 text-[#74290F]/70 group-hover:bg-[#74290F]/10"
-                    }`}>
+                      }`}>
                       {getCategoryCount(category.id)}
                     </span>
                   </button>
@@ -377,7 +375,7 @@ export default function MenuPage() {
 
           {/* Right Column: Dynamic Lists */}
           <div className={`${searchQuery.trim() === "" ? "lg:col-span-9" : "lg:col-span-12"} w-full space-y-12`}>
-            
+
             {/* Mobile Category Navigation (Horizontal Swipe, Sticky top, Hidden when searching) (Commented out for now) */}
             {/* {searchQuery.trim() === "" && (
               <div className="lg:hidden sticky top-20 z-30 bg-[#FAF6F0]/95 backdrop-blur-sm -mx-4 px-4 py-3 border-b border-[#c5a880]/20 overflow-x-auto no-scrollbar flex gap-2">

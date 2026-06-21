@@ -36,7 +36,7 @@ export default function Home() {
         {/* Right Side: High-Fidelity Faded Buffet Backdrop */}
         <div className="absolute right-0 top-0 bottom-0 w-full lg:w-7/12 h-full z-0 pointer-events-none">
           <Image
-            src="/hero-buffet.png"
+            src="/hero-buffet-new.png"
             alt="Luxury Indian Catering Buffet Backdrop"
             fill
             priority
@@ -90,8 +90,8 @@ export default function Home() {
                 >
                   View Sample Menus
                   <svg className="w-4.5 h-4.5 text-[#74290F] stroke-current" viewBox="0 0 24 24" fill="none" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                     <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
-                     <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
+                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
                   </svg>
                 </a>
               </div>
