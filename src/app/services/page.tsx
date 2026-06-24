@@ -155,19 +155,6 @@ export default function ServicesPage() {
 
       {/* 6. FAQs Section */}
       <FAQs items={SERVICES_PAGE_FAQS} />
-
-      {/* Footer Branding Bar */}
-      <footer className="w-full bg-[#74290F] text-[#FAF6F0] py-6 border-t border-[#c5a880]/20 mt-auto">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-center sm:text-left">
-          <div className="flex flex-col">
-            <span className="font-serif text-lg font-medium tracking-wide">Dahi Cheeni</span>
-            <span className="font-sans text-[9px] tracking-[0.12em] text-[#c5a880] uppercase font-semibold">Exquisite Indian Catering</span>
-          </div>
-          <p className="font-sans text-xs text-[#FAF6F0]/60">
-            &copy; {new Date().getFullYear()} Dahi Cheeni. All rights reserved.
-          </p>
-        </div>
-      </footer>
     </main>
   );
 }
