@@ -142,8 +142,13 @@ export default function Footer() {
 
         {/* Bottom Bar: Copyright & Motifs */}
         <div className="border-t border-[#c5a880]/10 mt-12 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-center sm:text-left text-xs text-[#FAF6F0]/60">
-          <div>
-            &copy; {currentYear} Dahi Cheeni. All rights reserved.
+          <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4">
+            <span>&copy; {currentYear} Dahi Cheeni. All rights reserved.</span>
+            <span className="hidden sm:inline text-[#c5a880]/30">|</span>
+            <div className="flex gap-4">
+              <Link href="/privacy" className="hover:text-[#c5a880] transition-colors">Privacy Policy</Link>
+              <Link href="/terms" className="hover:text-[#c5a880] transition-colors">Terms & Conditions</Link>
+            </div>
           </div>
           <div className="flex items-center gap-1.5 font-sans font-light">
             <span>Crafted with Satvik purity & heritage recipes</span>
