@@ -82,60 +82,87 @@ export default function FaridabadLandingPage() {
       <div className="absolute top-24 right-0 w-96 h-96 rounded-full bg-[#c5a880]/10 blur-3xl -z-10 pointer-events-none" />
       <div className="absolute top-[80vh] left-0 w-96 h-96 rounded-full bg-[#74290F]/5 blur-3xl -z-10 pointer-events-none" />
 
-      {/* 1. Redesigned Glassmorphic Overlay Hero Section */}
-      <section className="relative w-full py-20 lg:py-28 px-4 sm:px-6 lg:px-8 bg-[#FAF6F0] z-10 border-b border-[#c5a880]/15 flex items-center min-h-[80vh]">
-        {/* Backdrop Image */}
-        <div className="absolute inset-0 z-0 overflow-hidden">
-          <Image
-            src="/mundan-janeu.png"
-            alt="Traditional Auspicious Indian Ceremony Buffet Setup in Faridabad"
-            fill
-            priority
-            className="object-cover object-center"
-            sizes="100vw"
-          />
-          {/* Faded overlay to keep text legible */}
-          <div className="absolute inset-0 bg-[#74290F]/15 backdrop-brightness-[0.85] pointer-events-none" />
-          <div className="absolute inset-0 bg-gradient-to-b from-[#FAF6F0]/95 via-[#FAF6F0]/65 to-[#FAF6F0] pointer-events-none" />
-        </div>
+      {/* 1. Redesigned Split Hero Section with Overlapping Visual Cards */}
+      <section className="relative w-full py-12 md:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 bg-[#FAF6F0] z-10 border-b border-[#c5a880]/15">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+            
+            {/* Left side: Text content */}
+            <div className="lg:col-span-6 flex flex-col justify-center text-left space-y-6">
+              <span className="font-sans text-[10px] sm:text-xs font-bold tracking-[0.2em] text-[#c5a880] uppercase block">
+                PREMIUM VEGETARIAN CATERING IN FARIDABAD
+              </span>
+              <h1 className="font-serif text-4xl md:text-5xl lg:text-[54px] text-[#74290F] font-semibold leading-[1.15] tracking-wide">
+                Home-Style Catering for <br />
+                Faridabad&apos;s Auspicious <br />
+                Occasions
+              </h1>
 
-        <div className="relative z-10 max-w-4xl mx-auto w-full">
-          {/* Glassmorphic Text Card */}
-          <div className="bg-white/95 backdrop-blur-md border border-[#c5a880]/30 rounded-3xl p-8 sm:p-12 shadow-2xl flex flex-col items-center text-center space-y-6">
-            <span className="font-sans text-[10px] sm:text-xs font-bold tracking-[0.2em] text-[#c5a880] uppercase block">
-              PREMIUM VEGETARIAN CATERING IN FARIDABAD
-            </span>
-            <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-[54px] text-[#74290F] font-semibold leading-[1.15] tracking-wide">
-              Home-Style Purity for <br />
-              Your Family&apos;s Milestones
-            </h1>
+              {/* Decorative Gold Leaf/Flower Divider */}
+              <div className="flex items-center gap-3">
+                <div className="h-[1px] w-10 bg-[#c5a880]/30" />
+                <span className="text-[#c5a880] text-xs">✿</span>
+                <div className="h-[1px] w-10 bg-[#c5a880]/30" />
+              </div>
 
-            {/* Decorative Gold Leaf/Flower Divider */}
-            <div className="flex items-center gap-3 justify-center">
-              <div className="h-[1px] w-10 bg-[#c5a880]/30" />
-              <span className="text-[#c5a880] text-xs">✿</span>
-              <div className="h-[1px] w-10 bg-[#c5a880]/30" />
+              <p className="font-sans text-sm sm:text-base text-[#292927]/90 font-light leading-relaxed max-w-xl">
+                Bringing generational heritage recipes and strict Satvik guidelines to Faridabad. From historic older sectors to newer high-rise societies in Greater Faridabad (Neharpar) and Surajkund, we cater to your events of 20 to 300+ guests.
+              </p>
+
+              {/* Action buttons */}
+              <div className="flex flex-col sm:flex-row gap-4 items-center pt-2">
+                <Link
+                  href="/qet_a_quote"
+                  className="px-8 py-3.5 bg-[#74290F] hover:bg-[#61220C] text-white font-sans text-xs sm:text-sm font-semibold tracking-wider text-center rounded-md shadow-md transition-all duration-300 w-full sm:w-auto cursor-pointer"
+                >
+                  Get a Custom Quote
+                </Link>
+                <Link
+                  href="/menu"
+                  className="px-8 py-3.5 bg-transparent hover:bg-[#74290F]/5 text-[#74290F] border border-[#74290F] font-sans text-xs sm:text-sm font-semibold tracking-wider text-center rounded-md transition-all duration-300 w-full sm:w-auto text-center"
+                >
+                  Explore Menus
+                </Link>
+              </div>
             </div>
 
-            <p className="font-sans text-sm sm:text-base text-[#292927]/90 font-light leading-relaxed max-w-2xl">
-              Bringing generational heritage recipes and strict Satvik guidelines to Faridabad. From historic central sectors to newer high-rise societies in Greater Faridabad (Neharpar) and Surajkund, we cater to your events of 20 to 300+ guests.
-            </p>
+            {/* Right side: Styled Showcase with Overlapping Cards (Matching Theme) */}
+            <div className="lg:col-span-6 flex justify-center items-center relative py-12 lg:py-0">
+              <div className="absolute w-72 h-72 rounded-full bg-[#c5a880]/15 blur-3xl -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
+              
+              {/* Relative layout wrapper for overlapping cards */}
+              <div className="relative w-full max-w-[480px] aspect-[4/3]">
+                {/* Main Card (Mundan-Janeu) */}
+                <div className="absolute top-0 left-0 w-[85%] aspect-[4/3] rounded-3xl bg-[#74290F] p-2.5 shadow-xl transition-all duration-500 hover:scale-[1.02]">
+                  <div className="absolute inset-3 border border-[#c5a880]/30 rounded-2xl pointer-events-none z-10" />
+                  <div className="relative w-full h-full rounded-[14px] overflow-hidden">
+                    <Image
+                      src="/mundan-janeu.png"
+                      alt="Traditional Auspicious Indian Ceremony Buffet Setup in Faridabad"
+                      fill
+                      sizes="(max-width: 1024px) 100vw, 40vw"
+                      className="object-cover"
+                      priority
+                    />
+                  </div>
+                </div>
 
-            {/* Action buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-2 w-full sm:w-auto">
-              <Link
-                href="/qet_a_quote"
-                className="px-8 py-3.5 bg-[#74290F] hover:bg-[#61220C] text-white font-sans text-xs sm:text-sm font-semibold tracking-wider text-center rounded-md shadow-md transition-all duration-300 w-full sm:w-auto cursor-pointer"
-              >
-                Get a Custom Quote
-              </Link>
-              <Link
-                href="/menu"
-                className="px-8 py-3.5 bg-transparent hover:bg-[#74290F]/5 text-[#74290F] border border-[#74290F] font-sans text-xs sm:text-sm font-semibold tracking-wider text-center rounded-md transition-all duration-300 w-full sm:w-auto text-center"
-              >
-                Explore Menus
-              </Link>
+                {/* Overlapping Secondary Card (Pooja-Havan) */}
+                <div className="absolute bottom-[-10%] right-[-5%] w-[45%] aspect-square rounded-2xl bg-[#74290F] p-1.5 shadow-2xl border border-[#c5a880]/30 overflow-hidden z-20 hover:scale-105 transition-transform duration-300">
+                  <div className="absolute inset-2 border border-[#c5a880]/20 rounded-xl pointer-events-none z-10" />
+                  <div className="relative w-full h-full rounded-lg overflow-hidden">
+                    <Image
+                      src="/pooja-havan.png"
+                      alt="Strict Satvik Pooja setup for Faridabad events"
+                      fill
+                      sizes="(max-width: 1024px) 40vw, 18vw"
+                      className="object-cover"
+                    />
+                  </div>
+                </div>
+              </div>
             </div>
+
           </div>
         </div>
       </section>
