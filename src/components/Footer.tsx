@@ -87,6 +87,7 @@ export default function Footer() {
                 {[
                   { name: "Delhi", href: "/delhi" },
                   { name: "Gurugram", href: "/gurugram" },
+                  { name: "Noida", href: "/noida" },
                 ].map((link) => (
                   <li key={link.name}>
                     <Link
