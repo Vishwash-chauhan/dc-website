@@ -18,8 +18,8 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-12">
           
-          {/* Column 1: Brand & Philosophy (4 cols) */}
-          <div className="lg:col-span-4 space-y-6">
+          {/* Column 1: Brand & Philosophy (3 cols) */}
+          <div className="md:col-span-2 lg:col-span-3 space-y-6">
             <Link href="/" className="flex items-center gap-3.5 group">
               <div className="relative w-14 h-14 flex items-center justify-center bg-[#FAF6F0]/5 rounded-full p-1 border border-[#c5a880]/20">
                 <Image
@@ -52,61 +52,60 @@ export default function Footer() {
           </div>
 
           {/* Column 2: Navigation Links (2 cols) */}
-          <div className="lg:col-span-2 space-y-6">
-            <div>
-              <h3 className="font-serif text-lg font-semibold tracking-wider text-[#c5a880] border-b border-[#c5a880]/20 pb-2">
-                Quick Links
-              </h3>
-              <ul className="mt-3 space-y-3 font-sans text-sm text-[#FAF6F0]/80 font-light">
-                {[
-                  { name: "Home", href: "/#home" },
-                  { name: "About Us", href: "/about" },
-                  { name: "Services", href: "/services" },
-                  { name: "Menus", href: "/menu" },
-                  { name: "Gallery", href: "/#gallery" },
-                  { name: "FAQs", href: "/faq" },
-                ].map((link) => (
-                  <li key={link.name}>
-                    <Link
-                      href={link.href}
-                      className="hover:text-[#c5a880] transition-colors duration-200 flex items-center gap-1.5"
-                    >
-                      <span className="text-[#c5a880]/40 text-xs">✦</span>
-                      {link.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            
-            <div>
-              <h3 className="font-serif text-lg font-semibold tracking-wider text-[#c5a880] border-b border-[#c5a880]/20 pb-2">
-                Locations
-              </h3>
-              <ul className="mt-3 space-y-3 font-sans text-sm text-[#FAF6F0]/80 font-light">
-                {[
-                  { name: "Delhi", href: "/delhi" },
-                  { name: "Gurugram", href: "/gurugram" },
-                  { name: "Noida", href: "/noida" },
-                  { name: "Faridabad", href: "/faridabad" },
-                  { name: "Ghaziabad", href: "/ghaziabad" },
-                ].map((link) => (
-                  <li key={link.name}>
-                    <Link
-                      href={link.href}
-                      className="hover:text-[#c5a880] transition-colors duration-200 flex items-center gap-1.5"
-                    >
-                      <span className="text-[#c5a880]/40 text-xs">✦</span>
-                      {link.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
+          <div className="md:col-span-1 lg:col-span-2 space-y-5">
+            <h3 className="font-serif text-lg font-semibold tracking-wider text-[#c5a880] border-b border-[#c5a880]/20 pb-2">
+              Quick Links
+            </h3>
+            <ul className="mt-3 space-y-3 font-sans text-sm text-[#FAF6F0]/80 font-light">
+              {[
+                { name: "Home", href: "/#home" },
+                { name: "About Us", href: "/about" },
+                { name: "Services", href: "/services" },
+                { name: "Menus", href: "/menu" },
+                { name: "Gallery", href: "/#gallery" },
+                { name: "FAQs", href: "/faq" },
+              ].map((link) => (
+                <li key={link.name}>
+                  <Link
+                    href={link.href}
+                    className="hover:text-[#c5a880] transition-colors duration-200 flex items-center gap-1.5"
+                  >
+                    <span className="text-[#c5a880]/40 text-xs">✦</span>
+                    {link.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+          
+          {/* Column 3: Locations (2 cols) */}
+          <div className="md:col-span-1 lg:col-span-2 space-y-5">
+            <h3 className="font-serif text-lg font-semibold tracking-wider text-[#c5a880] border-b border-[#c5a880]/20 pb-2">
+              Locations
+            </h3>
+            <ul className="mt-3 space-y-3 font-sans text-sm text-[#FAF6F0]/80 font-light">
+              {[
+                { name: "Delhi", href: "/delhi" },
+                { name: "Gurugram", href: "/gurugram" },
+                { name: "Noida", href: "/noida" },
+                { name: "Faridabad", href: "/faridabad" },
+                { name: "Ghaziabad", href: "/ghaziabad" },
+              ].map((link) => (
+                <li key={link.name}>
+                  <Link
+                    href={link.href}
+                    className="hover:text-[#c5a880] transition-colors duration-200 flex items-center gap-1.5"
+                  >
+                    <span className="text-[#c5a880]/40 text-xs">✦</span>
+                    {link.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </div>
 
-          {/* Column 3: Occasions We Cater (3 cols) */}
-          <div className="lg:col-span-3 space-y-5">
+          {/* Column 4: Occasions We Cater (2 cols) */}
+          <div className="md:col-span-1 lg:col-span-2 space-y-5">
             <h3 className="font-serif text-lg font-semibold tracking-wider text-[#c5a880] border-b border-[#c5a880]/20 pb-2">
               Occasions
             </h3>
@@ -127,8 +126,8 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Column 4: Contact & Regions (3 cols) */}
-          <div className="lg:col-span-3 space-y-5">
+          {/* Column 5: Contact & Regions (3 cols) */}
+          <div className="md:col-span-1 lg:col-span-3 space-y-5">
             <h3 className="font-serif text-lg font-semibold tracking-wider text-[#c5a880] border-b border-[#c5a880]/20 pb-2">
               Contact Us
             </h3>
