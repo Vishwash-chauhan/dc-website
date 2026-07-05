@@ -86,6 +86,7 @@ export default function Footer() {
               <ul className="mt-3 space-y-3 font-sans text-sm text-[#FAF6F0]/80 font-light">
                 {[
                   { name: "Delhi", href: "/delhi" },
+                  { name: "Gurugram", href: "/gurugram" },
                 ].map((link) => (
                   <li key={link.name}>
                     <Link
