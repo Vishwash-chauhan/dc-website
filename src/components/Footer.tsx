@@ -52,30 +52,53 @@ export default function Footer() {
           </div>
 
           {/* Column 2: Navigation Links (2 cols) */}
-          <div className="lg:col-span-2 space-y-5">
-            <h3 className="font-serif text-lg font-semibold tracking-wider text-[#c5a880] border-b border-[#c5a880]/20 pb-2">
-              Quick Links
-            </h3>
-            <ul className="space-y-3 font-sans text-sm text-[#FAF6F0]/80 font-light">
-              {[
-                { name: "Home", href: "/#home" },
-                { name: "About Us", href: "/about" },
-                { name: "Services", href: "/services" },
-                { name: "Menus", href: "/menu" },
-                { name: "Gallery", href: "/#gallery" },
-                { name: "FAQs", href: "/faq" },
-              ].map((link) => (
-                <li key={link.name}>
-                  <Link
-                    href={link.href}
-                    className="hover:text-[#c5a880] transition-colors duration-200 flex items-center gap-1.5"
-                  >
-                    <span className="text-[#c5a880]/40 text-xs">✦</span>
-                    {link.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+          <div className="lg:col-span-2 space-y-6">
+            <div>
+              <h3 className="font-serif text-lg font-semibold tracking-wider text-[#c5a880] border-b border-[#c5a880]/20 pb-2">
+                Quick Links
+              </h3>
+              <ul className="mt-3 space-y-3 font-sans text-sm text-[#FAF6F0]/80 font-light">
+                {[
+                  { name: "Home", href: "/#home" },
+                  { name: "About Us", href: "/about" },
+                  { name: "Services", href: "/services" },
+                  { name: "Menus", href: "/menu" },
+                  { name: "Gallery", href: "/#gallery" },
+                  { name: "FAQs", href: "/faq" },
+                ].map((link) => (
+                  <li key={link.name}>
+                    <Link
+                      href={link.href}
+                      className="hover:text-[#c5a880] transition-colors duration-200 flex items-center gap-1.5"
+                    >
+                      <span className="text-[#c5a880]/40 text-xs">✦</span>
+                      {link.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            
+            <div>
+              <h3 className="font-serif text-lg font-semibold tracking-wider text-[#c5a880] border-b border-[#c5a880]/20 pb-2">
+                Locations
+              </h3>
+              <ul className="mt-3 space-y-3 font-sans text-sm text-[#FAF6F0]/80 font-light">
+                {[
+                  { name: "Delhi", href: "/delhi" },
+                ].map((link) => (
+                  <li key={link.name}>
+                    <Link
+                      href={link.href}
+                      className="hover:text-[#c5a880] transition-colors duration-200 flex items-center gap-1.5"
+                    >
+                      <span className="text-[#c5a880]/40 text-xs">✦</span>
+                      {link.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
 
           {/* Column 3: Occasions We Cater (3 cols) */}
