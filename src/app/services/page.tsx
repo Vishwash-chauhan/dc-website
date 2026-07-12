@@ -58,7 +58,7 @@ export default function ServicesPage() {
       <section className="w-full bg-[#74290F]/5 border-t border-b border-[#c5a880]/20 py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-            
+
             {/* Left side text philosophy */}
             <div className="lg:col-span-7 space-y-6">
               <span className="font-sans text-[10px] sm:text-xs font-bold tracking-[0.2em] text-[#c5a880] uppercase block">
@@ -68,11 +68,11 @@ export default function ServicesPage() {
                 100% Pure Vegetarian Philosophy
               </h2>
               <div className="h-[1px] w-16 bg-[#c5a880]/40" />
-              
+
               <p className="font-sans text-base text-[#292927]/90 font-light leading-relaxed">
                 Purity is not a preference for us; it is a sacred boundary. Dahi Cheeni operates on a strict <span className="font-semibold text-[#74290F]">100% vegetarian standard</span>. We do not prepare, handle, or allow any non-vegetarian ingredients or egg products in our kitchens.
               </p>
-              
+
               <div className="space-y-4 pt-2">
                 {[
                   {
@@ -139,7 +139,7 @@ export default function ServicesPage() {
               href="/qet_a_quote"
               className="px-8 py-3.5 bg-[#FAF6F0] hover:bg-[#FAF6F0]/90 text-[#74290F] font-sans text-sm font-semibold tracking-wider rounded-md shadow-md transition-all duration-300 w-full sm:w-auto text-center"
             >
-              Get a Custom Quote
+              Get A Quote
             </Link>
             <a
               href="https://wa.me/918130964374"

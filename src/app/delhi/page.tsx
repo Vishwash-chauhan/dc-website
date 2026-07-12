@@ -119,7 +119,7 @@ export default function DelhiLandingPage() {
                   href="/qet_a_quote"
                   className="px-8 py-3.5 bg-[#74290F] hover:bg-[#61220C] text-white font-sans text-xs sm:text-sm font-semibold tracking-wider text-center rounded-md shadow-md transition-all duration-300 w-full sm:w-auto cursor-pointer"
                 >
-                  Get a Custom Quote
+                  Get A Quote
                 </Link>
                 <Link
                   href="/menu"
@@ -345,7 +345,7 @@ export default function DelhiLandingPage() {
               href="/qet_a_quote"
               className="px-8 py-3.5 bg-[#FAF6F0] hover:bg-[#FAF6F0]/90 text-[#74290F] font-sans text-sm font-semibold tracking-wider rounded-md shadow-md transition-all duration-300 w-full sm:w-auto text-center cursor-pointer font-semibold"
             >
-              Get a Custom Quote
+              Get A Quote
             </Link>
             <a
               href="https://wa.me/918130964374"

@@ -356,14 +356,14 @@ export default function MenuPage() {
                     key={category.id}
                     onClick={() => scrollToCategory(category.id)}
                     className={`w-full text-left px-3.5 py-2.5 rounded-lg text-sm font-sans font-medium transition-all duration-300 flex items-center justify-between group ${activeCategory === category.id
-                        ? "bg-[#74290F] text-[#FAF6F0] shadow-sm"
-                        : "text-[#74290F]/80 hover:bg-[#74290F]/5 hover:text-[#74290F]"
+                      ? "bg-[#74290F] text-[#FAF6F0] shadow-sm"
+                      : "text-[#74290F]/80 hover:bg-[#74290F]/5 hover:text-[#74290F]"
                       }`}
                   >
                     <span>{category.name}</span>
                     <span className={`text-[10px] px-2 py-0.5 rounded-full font-semibold ${activeCategory === category.id
-                        ? "bg-white/20 text-white"
-                        : "bg-[#74290F]/5 text-[#74290F]/70 group-hover:bg-[#74290F]/10"
+                      ? "bg-white/20 text-white"
+                      : "bg-[#74290F]/5 text-[#74290F]/70 group-hover:bg-[#74290F]/10"
                       }`}>
                       {getCategoryCount(category.id)}
                     </span>
@@ -530,7 +530,7 @@ export default function MenuPage() {
               href="/qet_a_quote"
               className="px-8 py-3.5 bg-[#FAF6F0] hover:bg-[#FAF6F0]/90 text-[#74290F] font-sans text-sm font-semibold tracking-wider rounded-md shadow-md transition-all duration-300 w-full sm:w-auto text-center"
             >
-              Get a Custom Quote
+              Get A Quote
             </Link>
             <a
               href="https://wa.me/918130964374"

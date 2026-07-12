@@ -169,7 +169,7 @@ export default function GetAQuotePage() {
                       BEGIN YOUR EXPERIENCE
                     </span>
                     <h2 className="font-serif text-2xl sm:text-3xl text-[#74290F] font-semibold tracking-wide">
-                      Get a Custom Quote
+                      Get A Quote
                     </h2>
                     <p className="font-sans text-xs text-[#74290F]/70 mt-1.5">
                       Tell us about your event and we will design the perfect menu.

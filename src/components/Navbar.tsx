@@ -71,7 +71,7 @@ export default function Navbar() {
               href="/qet_a_quote"
               className="px-6 py-3 bg-[#74290F] hover:bg-[#61220C] text-white font-sans text-sm font-semibold tracking-wide rounded-md shadow-sm transition-all duration-300 transform active:scale-98 cursor-pointer text-center"
             >
-              Get a Custom Quote
+              Get A Quote
             </Link>
 
             {/* WhatsApp Button */}
@@ -135,7 +135,7 @@ export default function Navbar() {
               onClick={() => setIsMobileMenuOpen(false)}
               className="w-full max-w-xs text-center px-6 py-4 bg-[#74290F] text-white font-sans text-base font-semibold tracking-wide rounded-md shadow-md cursor-pointer"
             >
-              Get a Custom Quote
+              Get A Quote
             </Link>
 
             {/* Mobile WhatsApp Button */}

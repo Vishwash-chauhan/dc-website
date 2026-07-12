@@ -82,13 +82,13 @@ export default function Home() {
                   href="/qet_a_quote"
                   className="px-8 py-4 bg-[#74290F] hover:bg-[#61220C] text-white font-sans text-sm font-semibold tracking-wider text-center rounded-md shadow-md transition-all duration-300 w-full sm:w-auto cursor-pointer"
                 >
-                  Get a Custom Quote
+                  Get A Quote
                 </Link>
                 <a
-                  href="#menus"
+                  href="/menu"
                   className="px-8 py-4 bg-transparent hover:bg-[#74290F]/5 text-[#74290F] border border-[#74290F] font-sans text-sm font-semibold tracking-wider text-center rounded-md transition-all duration-300 flex items-center justify-center gap-2 w-full sm:w-auto"
                 >
-                  View Sample Menus
+                  View Menus
                   <svg className="w-4.5 h-4.5 text-[#74290F] stroke-current" viewBox="0 0 24 24" fill="none" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
                     <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
