@@ -19,12 +19,12 @@ const allFaqs = [
   },
   {
     question: "What types of celebrations and occasions do you cater to?",
-    answer: "We cater to spiritual gatherings (poojas, havans, bhajan sandhyas), baby celebrations, griha pravesh ceremonies, mundan-janeu celebrations, prayer meetings, and intimate family wedding functions (up to 300+ guests).",
+    answer: "We cater to spiritual gatherings (poojas, havans, bhajan sandhyas), baby shower, griha pravesh ceremonies, mundan-janeu celebrations, prayer meetings, and intimate family wedding functions (up to 300+ guests).",
     category: "booking"
   },
   {
     question: "Do you cater events other than spiritual poojas?",
-    answer: "Yes! While we are widely appreciated for our pure satvik pooja catering, we provide full-service catering for baby celebrations, griha pravesh, family get-togethers, prayer meetings, corporate lunches, and intimate weddings up to 1000+ guests.",
+    answer: "Yes! While we are widely appreciated for our pure pooja catering, we provide full-service catering for baby shower, griha pravesh, family get-togethers, prayer meetings, corporate lunches, and intimate weddings up to 1000+ guests.",
     category: "booking"
   },
   {
@@ -70,20 +70,20 @@ const allFaqs = [
     category: "menu"
   },
 
-  // Category: purity (Satvik & Purity)
+  // Category: purity (Purity & Hygiene)
   {
-    question: "Do you provide Satvik options for religious gatherings?",
-    answer: "Yes, purity is our core value. We specialize in strict satvik (no onion, no garlic) catering with separate cooking guidelines, utensils, and dedicated preparation environments for poojas, havans, and spiritual gatherings.",
+    question: "Do you provide onion- and garlic-free options for religious gatherings?",
+    answer: "Yes, purity is our core value. We specialize in strict (no onion, no garlic) catering with separate cooking guidelines, utensils, and dedicated preparation environments for poojas, havans, and spiritual gatherings.",
     category: "purity"
   },
   {
     question: "Do you offer onion- and garlic-free options?",
-    answer: "Yes, purity is our core value. We offer completely Satvik versions of almost all our main courses, starters, and dals. These are prepared under strict guidelines using dedicated cookware and separate kitchen areas to preserve absolute sanctity.",
+    answer: "Yes, purity is our core value. We offer completely onion- and garlic-free versions of almost all our main courses, starters, and dals. These are prepared under strict guidelines using dedicated cookware and separate kitchen areas to preserve absolute sanctity.",
     category: "purity"
   },
   {
     question: "How do you ensure the purity and quality of your food?",
-    answer: "We prepare all dishes fresh daily in a strict sanitization environment using premium, handpicked ingredients. For spiritual occasions that require strict satvik guidelines, we prepare meals with completely separate cooking utensils and custom satvik spaces to preserve scriptural purity.",
+    answer: "We prepare all dishes fresh daily in a strict sanitization environment using premium, handpicked ingredients. For spiritual occasions that require strict preparation guidelines, we prepare meals with completely separate cooking utensils and custom dedicated spaces to preserve scriptural purity.",
     category: "purity"
   },
 
@@ -119,7 +119,7 @@ const categories = [
   { id: "all", name: "All Questions", icon: HelpCircle },
   { id: "booking", name: "Booking & General", icon: Calendar },
   { id: "menu", name: "Menu & Customization", icon: Sparkles },
-  { id: "purity", name: "Satvik & Purity", icon: Shield },
+  { id: "purity", name: "Purity & Hygiene", icon: Shield },
   { id: "logistics", name: "Logistics & Service", icon: Truck }
 ];
 
@@ -137,7 +137,7 @@ export default function FAQPage() {
     const matchesSearch =
       faq.question.toLowerCase().includes(searchQuery.toLowerCase()) ||
       faq.answer.toLowerCase().includes(searchQuery.toLowerCase());
-    
+
     if (activeCategory === "all") return matchesSearch;
     return matchesSearch && faq.category === activeCategory;
   });
@@ -169,7 +169,7 @@ export default function FAQPage() {
       />
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex-grow space-y-12">
-        
+
         {/* Back Link */}
         <div className="pt-2">
           <Link
@@ -195,7 +195,7 @@ export default function FAQPage() {
             <div className="h-[1px] w-12 bg-[#c5a880]/40" />
           </div>
           <p className="font-sans text-sm sm:text-base text-[#292927]/80 font-light max-w-2xl mx-auto leading-relaxed">
-            Have questions about guest counts, satvik kitchen setups, delivery limits, or menus? Explore our detailed guides below.
+            Have questions about guest counts, dedicated kitchen setups, delivery limits, or menus? Explore our detailed guides below.
           </p>
         </div>
 
@@ -239,11 +239,10 @@ export default function FAQPage() {
                   setActiveCategory(cat.id);
                   setOpenFaq(null); // Reset open accordion
                 }}
-                className={`flex items-center gap-2 px-4 py-2.5 rounded-full text-xs font-sans font-medium transition-all duration-300 ${
-                  isActive
+                className={`flex items-center gap-2 px-4 py-2.5 rounded-full text-xs font-sans font-medium transition-all duration-300 ${isActive
                     ? "bg-[#74290F] text-[#FAF6F0] shadow-sm"
                     : "bg-white border border-[#c5a880]/30 text-[#74290F] hover:bg-[#74290F]/5"
-                }`}
+                  }`}
               >
                 <Icon className="w-3.5 h-3.5" />
                 <span>{cat.name}</span>
@@ -278,17 +277,15 @@ export default function FAQPage() {
                       {faq.question}
                     </span>
                   </div>
-                  <span className={`text-[#c5a880] mt-1.5 transform transition-transform duration-300 ${
-                    isOpen ? "rotate-180" : ""
-                  }`}>
+                  <span className={`text-[#c5a880] mt-1.5 transform transition-transform duration-300 ${isOpen ? "rotate-180" : ""
+                    }`}>
                     <ChevronDown className="w-5 h-5" />
                   </span>
                 </button>
 
                 <div
-                  className={`transition-all duration-300 ease-in-out overflow-hidden ${
-                    isOpen ? "max-h-[500px] border-t border-[#c5a880]/15" : "max-h-0"
-                  }`}
+                  className={`transition-all duration-300 ease-in-out overflow-hidden ${isOpen ? "max-h-[500px] border-t border-[#c5a880]/15" : "max-h-0"
+                    }`}
                 >
                   <div className="px-6 py-5 font-sans text-sm sm:text-base text-[#292927]/85 font-light leading-relaxed">
                     {faq.answer}

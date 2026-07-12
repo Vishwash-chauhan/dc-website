@@ -6,8 +6,8 @@ import { MapPin, Utensils, Award, Leaf, Users, Sparkles } from "lucide-react";
 import FAQs from "@/components/FAQs";
 
 export const metadata: Metadata = {
-  title: "Premium Home-Style Vegetarian Catering Services in Gurugram | Dahi Cheeni",
-  description: "Exquisite home-style vegetarian & satvik catering in Gurugram. We provide premium food setups for poojas, baby showers, griha pravesh, and corporate events across DLF, Golf Course Road, and Sohna Road.",
+  title: "Premium Home-Style Catering Services in Gurugram | Dahi Cheeni",
+  description: "Exquisite home-style catering in Gurugram. We provide premium food setups for poojas, baby showers, griha pravesh, and corporate events across DLF, Golf Course Road, and Sohna Road.",
 };
 
 const GURUGRAM_CATERING_FAQS = [
@@ -17,11 +17,11 @@ const GURUGRAM_CATERING_FAQS = [
   },
   {
     question: "Do you cater to corporate office poojas and events in Gurugram?",
-    answer: "Absolutely! We cater to corporate office poojas, Diwali celebrations, corporate lunch gatherings, and new office inaugurations. We offer complete corporate catering setups with high-quality, hygiene-first Satvik options.",
+    answer: "Absolutely! We cater to corporate office poojas, Diwali celebrations, corporate lunch gatherings, and new office inaugurations. We offer complete corporate catering setups with high-quality, hygiene-first options.",
   },
   {
-    question: "How do you maintain strict Satvik purity for religious ceremonies?",
-    answer: "Purity is our core value. For poojas, havans, and griha pravesh, we follow strict Satvik preparation guidelines (no onion, no garlic). The meals are cooked in segregated kitchen zones using dedicated utensils, pure cow ghee, and cold-pressed oils.",
+    question: "How do you maintain strict purity for religious ceremonies?",
+    answer: "Purity is our core value. For poojas, havans, and griha pravesh, we follow strict preparation guidelines (no onion, no garlic). The meals are cooked in segregated kitchen zones using dedicated utensils, pure cow ghee, and cold-pressed oils.",
   },
   {
     question: "What is the guest count range for Dahi Cheeni's catering in Gurugram?",
@@ -62,13 +62,13 @@ export default function GurugramLandingPage() {
     },
     {
       title: "Office & Home Poojas",
-      desc: "Maintain absolute sanctity with 100% onion-garlic free Satvik catering options, prepared with separate utensils and pure cow ghee.",
+      desc: "Maintain absolute sanctity with 100% onion-garlic free catering options, prepared with separate utensils and pure cow ghee.",
       icon: <Leaf className="w-6 h-6 text-[#74290F]" strokeWidth={1.5} />,
       image: "/pooja-havan.png"
     },
     {
       title: "Villa & Apartment Parties",
-      desc: "Elegant and sophisticated vegetarian spreads with live chaat stalls for premium residential dinner parties and get-togethers.",
+      desc: "Elegant and sophisticated spreads with live chaat stalls for premium residential dinner parties and get-togethers.",
       icon: <Utensils className="w-6 h-6 text-[#74290F]" strokeWidth={1.5} />,
       image: "/family-get-together.png"
     },
@@ -99,7 +99,7 @@ export default function GurugramLandingPage() {
                 <div className="relative w-full h-full rounded-[14px] overflow-hidden">
                   <Image
                     src="/experience-service.png"
-                    alt="Premium Indian Vegetarian Catering Service in Gurugram"
+                    alt="Premium Indian Catering Service in Gurugram"
                     fill
                     sizes="(max-width: 1024px) 100vw, 40vw"
                     className="object-cover"
@@ -112,7 +112,7 @@ export default function GurugramLandingPage() {
             {/* Right side: Text content */}
             <div className="lg:col-span-6 flex flex-col justify-center text-left space-y-6 order-1 lg:order-2">
               <span className="font-sans text-[10px] sm:text-xs font-bold tracking-[0.2em] text-[#c5a880] uppercase block">
-                PREMIUM VEGETARIAN CATERING IN GURUGRAM
+                PREMIUM CATERING IN GURUGRAM
               </span>
               <h1 className="font-serif text-4xl md:text-5xl lg:text-[54px] text-[#74290F] font-semibold leading-[1.15] tracking-wide">
                 Exquisite Home-Style <br />
@@ -128,7 +128,7 @@ export default function GurugramLandingPage() {
               </div>
 
               <p className="font-sans text-sm sm:text-base text-[#292927]/90 font-light leading-relaxed max-w-xl">
-                Elevating your celebrations with 100% vegetarian satvik purity, authentic heritage flavors, and clean cooking practices. We seamlessly coordinate high-rise logistics and corporate setups across DLF, Golf Course Road, and Nirvana Country.
+                Elevating your celebrations with kitchen purity, authentic heritage flavors, and clean cooking practices. We seamlessly coordinate high-rise logistics and corporate setups across DLF, Golf Course Road, and Nirvana Country.
               </p>
 
               {/* Action buttons */}
@@ -172,7 +172,7 @@ export default function GurugramLandingPage() {
               </div>
               <h3 className="font-serif text-lg font-bold text-[#74290F]">Corporate Auspicious Catering</h3>
               <p className="font-sans text-xs sm:text-sm text-[#292927]/85 font-light leading-relaxed">
-                Dedicated setups for corporate office openings, Diwali celebrations, and Board Room launches with strict onion-garlic free Satvik foods.
+                Dedicated setups for corporate office openings, Diwali celebrations, and Board Room launches with strict onion-garlic free options.
               </p>
             </div>
 
@@ -205,7 +205,7 @@ export default function GurugramLandingPage() {
               <div className="h-[1px] w-12 bg-[#c5a880]/30" />
             </div>
             <p className="font-sans text-sm text-[#292927]/85 font-light max-w-xl mx-auto mt-4 leading-relaxed">
-              We design custom culinary layouts and wholesome vegetarian menus tailored specifically for Gurugram residential and commercial sectors.
+              We design custom culinary layouts and wholesome menus tailored specifically for Gurugram residential and commercial sectors.
             </p>
           </div>
 

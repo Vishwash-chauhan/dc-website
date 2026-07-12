@@ -72,10 +72,10 @@ export default function TermsPage() {
 
           <section className="space-y-3">
             <h2 className="font-serif text-xl sm:text-2xl text-[#74290F] font-medium tracking-wide">
-              4. 100% Vegetarian Standard
+              4. Purity Standard
             </h2>
             <p>
-              Dahi Cheeni operates under a strict, non-negotiable <strong>100% Vegetarian standard</strong>. We do not prepare, carry, or serve non-vegetarian ingredients, egg products, or alcohol. Clients agree not to bring or request any non-vegetarian elements to be handled by our culinary and service staff at the venue.
+              Dahi Cheeni operates under a strict, non-negotiable <strong>purity standard</strong>. We do not prepare, carry, or serve meat, seafood, egg products, or alcohol. Clients agree not to bring or request any such elements to be handled by our culinary and service staff at the venue.
             </p>
           </section>
 

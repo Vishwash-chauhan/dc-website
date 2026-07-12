@@ -61,7 +61,7 @@ export default function Occasions() {
     {
       image: "/baby-celebrations.png",
       icon: <Footprints className="w-6 h-6 text-[#74290F]" strokeWidth={1.5} />,
-      title: "Baby Celebrations",
+      title: "Baby ",
       desc: "Baby Shower, Naamkaran and Annaprashan ceremonies.",
     },
     {

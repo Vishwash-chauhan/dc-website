@@ -60,7 +60,7 @@ export default function PrivacyPage() {
             <ul className="list-disc pl-5 space-y-2 text-[#74290F]/90 font-medium">
               <li>Contact Details: Full Name, Phone Number, and Email Address.</li>
               <li>Event Specifications: Event Date, Type of Occasion (Pooja, Havan, Wedding, etc.), Location/Venue details, and Approximate Guest Count.</li>
-              <li>Special Requirements: Culinary preferences, dietary restrictions, or Satvik (no onion, no garlic) preparation guidelines.</li>
+              <li>Special Requirements: Culinary preferences, dietary restrictions, or onion- and garlic-free preparation guidelines.</li>
             </ul>
           </section>
 

@@ -6,8 +6,8 @@ import { MapPin, Utensils, Award, Leaf, Users, Sparkles } from "lucide-react";
 import FAQs from "@/components/FAQs";
 
 export const metadata: Metadata = {
-  title: "Premium Home-Style Vegetarian Catering Services in Noida | Dahi Cheeni",
-  description: "Exquisite home-style vegetarian & satvik catering in Noida. We offer premium food setups for poojas, baby showers, griha pravesh, and family events across Noida and Greater Noida West.",
+  title: "Premium Home-Style Catering Services in Noida | Dahi Cheeni",
+  description: "Exquisite home-style catering in Noida. We offer premium food setups for poojas, baby showers, griha pravesh, and family events across Noida and Greater Noida West.",
 };
 
 const NOIDA_CATERING_FAQS = [
@@ -16,8 +16,8 @@ const NOIDA_CATERING_FAQS = [
     answer: "Yes, we serve all major residential and commercial sectors in Noida, including Central Noida (Sectors 50, 15, 21), Noida Expressway (Sectors 93, 137, 143, 150), Noida East (Sectors 62, 74, 75, 78), and Noida Extension (Greater Noida West).",
   },
   {
-    question: "Can you provide strict onion- and garlic-free Satvik food for poojas in Noida?",
-    answer: "Absolutely. Purity is our core promise. For devotional occasions like Griha Pravesh and Havans, we offer strict Satvik preparation. The food is prepared in dedicated zones of our kitchen using separate utensils, cold-pressed oils, and pure ghee.",
+    question: "Can you provide strict onion- and garlic-free food for poojas in Noida?",
+    answer: "Absolutely. Purity is our core promise. For devotional occasions like Griha Pravesh and Havans, we offer strict onion- and garlic-free preparation. The food is prepared in dedicated zones of our kitchen using separate utensils, cold-pressed oils, and pure ghee.",
   },
   {
     question: "How do you handle security and cargo lift logistics in Noida high-rise societies?",
@@ -25,7 +25,7 @@ const NOIDA_CATERING_FAQS = [
   },
   {
     question: "Do you cater to smaller family gatherings of 20-30 guests in Noida?",
-    answer: "Yes, we specialize in intimate events. Our catering packages are perfectly optimized for small to medium gatherings of 20 to 300+ guests, bringing premium home-style vegetarian food and warm service to your private celebrations.",
+    answer: "Yes, we specialize in intimate events. Our catering packages are perfectly optimized for small to medium gatherings of 20 to 300+ guests, bringing premium home-style food and warm service to your private celebrations.",
   },
   {
     question: "What is your policy regarding travel and logistics charges in Noida?",
@@ -74,7 +74,7 @@ export default function NoidaLandingPage() {
     },
     {
       title: "Devotional Poojas & Havans",
-      desc: "Strictly prepared Satvik options (onion & garlic free) using segregated utensils, cold-pressed oils, and pure ghee.",
+      desc: "Strictly prepared options (onion & garlic free) using segregated utensils, cold-pressed oils, and pure ghee.",
       icon: <Leaf className="w-6 h-6 text-[#74290F]" strokeWidth={1.5} />,
       image: "/pooja-havan.png"
     }
@@ -90,7 +90,7 @@ export default function NoidaLandingPage() {
       <section className="relative w-full py-16 md:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 bg-[#FAF6F0] z-10 border-b border-[#c5a880]/15">
         <div className="max-w-4xl mx-auto text-center space-y-6 flex flex-col items-center">
           <span className="font-sans text-[10px] sm:text-xs font-bold tracking-[0.2em] text-[#c5a880] uppercase block">
-            TRADITIONAL VEGETARIAN CATERING IN NOIDA
+            TRADITIONAL CATERING IN NOIDA
           </span>
           <h1 className="font-serif text-4xl md:text-5xl lg:text-[56px] text-[#74290F] font-semibold leading-[1.15] tracking-wide">
             Celebrate Auspicious Milestones <br />
@@ -105,7 +105,7 @@ export default function NoidaLandingPage() {
           </div>
 
           <p className="font-sans text-sm sm:text-base text-[#292927]/90 font-light leading-relaxed max-w-2xl mx-auto">
-            From central residential sectors to Expressway condominiums and Greater Noida West, we bring 100% pure vegetarian satvik standards, generational heritage recipes, and elegant hospitality to your gatherings of 20 to 300+ guests.
+            From central residential sectors to Expressway condominiums and Greater Noida West, we bring shudh purity standards, generational heritage recipes, and elegant hospitality to your gatherings of 20 to 300+ guests.
           </p>
 
           {/* Action buttons */}
@@ -161,7 +161,7 @@ export default function NoidaLandingPage() {
               </div>
               <h3 className="font-serif text-lg font-bold text-[#74290F]">100% Veg Purity Standard</h3>
               <p className="font-sans text-xs sm:text-sm text-[#292927]/85 font-light leading-relaxed">
-                Segregated cooking units, zero commercial preservatives or artificial coloring, and strict Satvik guidelines when requested.
+                Segregated cooking units, zero commercial preservatives or artificial coloring, and strict guidelines when requested.
               </p>
             </div>
 
@@ -194,7 +194,7 @@ export default function NoidaLandingPage() {
               <div className="h-[1px] w-12 bg-[#c5a880]/30" />
             </div>
             <p className="font-sans text-sm text-[#292927]/85 font-light max-w-xl mx-auto mt-4 leading-relaxed">
-              We design specific vegetarian menus and clean, elegant table setups tailored precisely for Noida family ceremonies.
+              We design specific menus and clean, elegant table setups tailored precisely for Noida family ceremonies.
             </p>
           </div>
 
@@ -234,7 +234,7 @@ export default function NoidaLandingPage() {
             {/* Left Column: Copy content */}
             <div className="lg:col-span-7 space-y-6">
               <span className="font-sans text-[10px] sm:text-xs font-bold tracking-[0.2em] text-[#c5a880] uppercase block">
-                SPECIALIZED SATVIK KITCHEN
+                SPECIALIZED PURITY KITCHEN
               </span>
               <h2 className="font-serif text-3xl sm:text-4xl text-[#74290F] font-semibold leading-tight tracking-wide">
                 Dedicated Purity for Sacred Celebrations
@@ -242,11 +242,11 @@ export default function NoidaLandingPage() {
               <div className="h-[1px] w-16 bg-[#c5a880]/40" />
 
               <p className="font-sans text-base text-[#292927]/90 font-light leading-relaxed">
-                For Havans, Poojas, and Griha Pravesh ceremonies that require strict adherence to scriptural guidelines, Dahi Cheeni provides premium onion- and garlic-free Satvik menus.
+                For Havans, Poojas, and Griha Pravesh ceremonies that require strict adherence to scriptural guidelines, Dahi Cheeni provides premium onion- and garlic-free menus.
               </p>
 
               <p className="font-sans text-sm text-[#292927]/80 font-light leading-relaxed">
-                We respect your family&apos;s faith and traditions. All Satvik catering is prepared under direct chef supervision, utilizing segregated cookware, separate kitchen spaces, premium oils, and pure ghee. We handle the entire process with the utmost sanctity and hygiene.
+                We respect your family&apos;s faith and traditions. All onion- and garlic-free catering is prepared under direct chef supervision, utilizing segregated cookware, separate kitchen spaces, premium oils, and pure ghee. We handle the entire process with the utmost sanctity and hygiene.
               </p>
             </div>
 

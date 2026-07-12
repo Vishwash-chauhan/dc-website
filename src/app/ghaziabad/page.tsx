@@ -6,8 +6,8 @@ import { MapPin, Utensils, Award, Leaf, Users, Sparkles } from "lucide-react";
 import FAQs from "@/components/FAQs";
 
 export const metadata: Metadata = {
-  title: "Premium Home-Style Vegetarian Catering Services in Ghaziabad | Dahi Cheeni",
-  description: "Exquisite home-style vegetarian & satvik catering in Ghaziabad. We offer premium food setups for poojas, baby showers, griha pravesh, and family events across Indirapuram, Vaishali, Vasundhara, and Raj Nagar Extension.",
+  title: "Premium Home-Style Catering Services in Ghaziabad | Dahi Cheeni",
+  description: "Exquisite home-style catering in Ghaziabad. We offer premium food setups for poojas, baby showers, griha pravesh, and family events across Indirapuram, Vaishali, Vasundhara, and Raj Nagar Extension.",
 };
 
 const GHAZIABAD_CATERING_FAQS = [
@@ -16,8 +16,8 @@ const GHAZIABAD_CATERING_FAQS = [
     answer: "Yes, we serve all major residential areas and townships in Ghaziabad, including Indirapuram (Shipra Sun City, Ahinsa Khand), Vaishali, Vasundhara, Kaushambi, Raj Nagar Extension, Siddharth Vihar, Shastri Nagar, and Crossings Republik.",
   },
   {
-    question: "How do you ensure strict Satvik purity for poojas and housewarmings in Ghaziabad?",
-    answer: "Purity is our core value. For poojas, havans, and griha pravesh, we follow strict Satvik guidelines (no onion, no garlic). The food is prepared in dedicated zones of our kitchen using separate cooking utensils, cold-pressed oils, and pure cow ghee.",
+    question: "How do you ensure strict purity for poojas and housewarmings in Ghaziabad?",
+    answer: "Purity is our core value. For poojas, havans, and griha pravesh, we follow strict guidelines (no onion, no garlic). The food is prepared in dedicated zones of our kitchen using separate cooking utensils, cold-pressed oils, and pure cow ghee.",
   },
   {
     question: "Do you provide catering service staff and buffet counter setups in Indirapuram apartments?",
@@ -25,7 +25,7 @@ const GHAZIABAD_CATERING_FAQS = [
   },
   {
     question: "What is the minimum guest size for bookings in Ghaziabad?",
-    answer: "We cater to intimate family events starting from 20 guests up to medium-large celebrations of 300+ guests, providing high-quality home-style vegetarian food tailored to your gathering.",
+    answer: "We cater to intimate family events starting from 20 guests up to medium-large celebrations of 300+ guests, providing high-quality home-style food tailored to your gathering.",
   },
   {
     question: "Are there travel or delivery fees for locations like Raj Nagar Extension or Wave City?",
@@ -52,13 +52,13 @@ export default function GhaziabadLandingPage() {
   const customOccasions = [
     {
       title: "Griha Pravesh Housewarmings",
-      desc: "Welcome friends and family to your new home in Vaishali, Vasundhara, or Indirapuram with comforting, pure vegetarian feasts.",
+      desc: "Welcome friends and family to your new home in Vaishali, Vasundhara, or Indirapuram with comforting, pure feasts.",
       icon: <Utensils className="w-6 h-6 text-[#74290F]" strokeWidth={1.5} />,
       image: "/griha-pravesh.png"
     },
     {
       title: "Devotional Poojas & Havans",
-      desc: "Strictly prepared Satvik options (onion & garlic free) using segregated utensils, cold-pressed oils, and pure ghee.",
+      desc: "Strictly prepared options (onion & garlic free) using segregated utensils, cold-pressed oils, and pure ghee.",
       icon: <Leaf className="w-6 h-6 text-[#74290F]" strokeWidth={1.5} />,
       image: "/pooja-havan.png"
     },
@@ -90,7 +90,7 @@ export default function GhaziabadLandingPage() {
             {/* Left side: Text content */}
             <div className="lg:col-span-7 flex flex-col justify-center text-left space-y-6">
               <span className="font-sans text-[10px] sm:text-xs font-bold tracking-[0.2em] text-[#c5a880] uppercase block">
-                PREMIUM VEGETARIAN CATERING IN GHAZIABAD
+                PREMIUM CATERING IN GHAZIABAD
               </span>
               <h1 className="font-serif text-4xl md:text-5xl lg:text-[54px] text-[#74290F] font-semibold leading-[1.15] tracking-wide">
                 Home-Style Catering for <br />
@@ -106,7 +106,7 @@ export default function GhaziabadLandingPage() {
               </div>
 
               <p className="font-sans text-sm sm:text-base text-[#292927]/90 font-light leading-relaxed max-w-xl">
-                Bringing shudh vegetarian satvik purity, authentic heritage recipes, and dedicated buffet layouts directly to your home. Serving societies and townships across Indirapuram, Vaishali, Vasundhara, and Raj Nagar Extension for events of 20 to 300+ guests.
+                Bringing shudh purity and hygiene, authentic heritage recipes, and dedicated buffet layouts directly to your home. Serving societies and townships across Indirapuram, Vaishali, Vasundhara, and Raj Nagar Extension for events of 20 to 300+ guests.
               </p>
 
               {/* Action buttons */}
@@ -166,7 +166,7 @@ export default function GhaziabadLandingPage() {
               <div className="w-12 h-12 bg-[#74290F]/5 rounded-full flex items-center justify-center text-[#74290F] mx-auto border border-[#74290F]/10">
                 <Leaf className="w-5.5 h-5.5" />
               </div>
-              <h3 className="font-serif text-lg font-bold text-[#74290F]">100% Satvik Kitchen Setup</h3>
+              <h3 className="font-serif text-lg font-bold text-[#74290F]">Dedicated Kitchen Setup</h3>
               <p className="font-sans text-xs sm:text-sm text-[#292927]/85 font-light leading-relaxed">
                 No onion, no garlic preparations using separate utensils and dedicated kitchen zones to preserve absolute sanctity for poojas and ceremonies.
               </p>
@@ -201,7 +201,7 @@ export default function GhaziabadLandingPage() {
               <div className="h-[1px] w-12 bg-[#c5a880]/30" />
             </div>
             <p className="font-sans text-sm text-[#292927]/85 font-light max-w-xl mx-auto mt-4 leading-relaxed">
-              We design specific vegetarian menus and clean, elegant table setups tailored precisely for Ghaziabad family ceremonies.
+              We design specific menus and clean, elegant table setups tailored precisely for Ghaziabad family ceremonies.
             </p>
           </div>
 

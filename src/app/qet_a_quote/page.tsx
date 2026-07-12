@@ -121,7 +121,7 @@ export default function GetAQuotePage() {
               </div>
 
               <p className="font-sans text-base text-[#292927]/85 font-light leading-relaxed mb-8">
-                Every gathering has a unique spirit. We honor your celebrations with clean, comforting home-style catering, heritage recipes, and custom menus curated with love and satvik purity.
+                Every gathering has a unique spirit. We honor your celebrations with clean, comforting home-style catering, heritage recipes, and custom menus curated with love and purity.
               </p>
 
               {/* Showcase items */}
@@ -129,7 +129,7 @@ export default function GetAQuotePage() {
                 {[
                   "Heritage recipes crafted by generational cooks",
                   "Strict hygiene standards and fresh ingredients",
-                  "Satvik preparation options for spiritual celebrations",
+                  "Onion- and garlic-free preparation options for spiritual celebrations",
                   "Full-service catering for up to 300+ guests",
                 ].map((perk, i) => (
                   <div key={i} className="flex items-start gap-3">

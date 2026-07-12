@@ -19,7 +19,7 @@ const outfit = Outfit({
 
 export const metadata: Metadata = {
   title: "Dahi Cheeni | Legacy of Trust, Taste of Tradition | Exquisite Indian Catering",
-  description: "Exquisite Indian Catering for Life's Auspicious Moments. From intimate weddings to spiritual celebrations, we deliver curated menus and authentic satvik options.",
+  description: "Exquisite Indian Catering for Life's Auspicious Moments. From intimate weddings to spiritual celebrations, we deliver curated menus and onion- and garlic-free options.",
 };
 
 export default function RootLayout({

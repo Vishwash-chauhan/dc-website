@@ -47,7 +47,7 @@ export default function ServicesPage() {
           <div className="h-[1px] w-12 bg-[#c5a880]/40" />
         </div>
         <p className="font-sans text-sm sm:text-base md:text-lg text-[#292927]/80 font-light max-w-2xl mx-auto leading-relaxed">
-          From sacred pooja ceremonies and family gatherings to intimate celebrations, we bring clean, premium home-style vegetarian catering to Delhi NCR.
+          From sacred pooja ceremonies and family gatherings to intimate celebrations, we bring clean, premium home-style catering to Delhi NCR.
         </p>
       </section>
 
@@ -65,19 +65,19 @@ export default function ServicesPage() {
                 OUR UNCOMPROMISING CODE
               </span>
               <h2 className="font-serif text-3xl sm:text-4xl text-[#74290F] font-semibold leading-tight tracking-wide">
-                100% Pure Vegetarian Philosophy
+                Pure Purity & Quality Philosophy
               </h2>
               <div className="h-[1px] w-16 bg-[#c5a880]/40" />
 
               <p className="font-sans text-base text-[#292927]/90 font-light leading-relaxed">
-                Purity is not a preference for us; it is a sacred boundary. Dahi Cheeni operates on a strict <span className="font-semibold text-[#74290F]">100% vegetarian standard</span>. We do not prepare, handle, or allow any non-vegetarian ingredients or egg products in our kitchens.
+                Purity is not a preference for us; it is a sacred boundary. Dahi Cheeni operates on a strict <span className="font-semibold text-[#74290F]">purity standard</span>. We do not prepare, handle, or allow any meat, seafood, or egg products in our kitchens.
               </p>
 
               <div className="space-y-4 pt-2">
                 {[
                   {
-                    title: "Segregated Satvik Cooking",
-                    desc: "For religious ceremonies and rituals, we use completely segregated cookware and follow scriptural codes to ensure absolute satvik standards."
+                    title: "Segregated Cooking",
+                    desc: "For religious ceremonies and rituals, we use completely segregated cookware and follow scriptural codes to ensure absolute purity standards."
                   },
                   {
                     title: "Premium Cold-Pressed Oils",
@@ -106,7 +106,7 @@ export default function ServicesPage() {
                 <div className="relative w-full h-full rounded-[14px] overflow-hidden">
                   <Image
                     src="/luxury-buffet-setup.png"
-                    alt="Dahi Cheeni Pure Vegetarian Buffet Setup"
+                    alt="Dahi Cheeni Premium Buffet Setup"
                     fill
                     className="object-cover"
                     sizes="(max-width: 1024px) 100vw, 35vw"

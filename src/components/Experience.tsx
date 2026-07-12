@@ -17,7 +17,7 @@ export default function Experience() {
     {
       number: "02",
       title: "Purity in Preparation",
-      desc: "Wholesome, home-style meals prepared fresh on the day of the gathering. We adhere to strict satvik standards, utilizing the highest quality ingredients.",
+      desc: "Wholesome, home-style meals prepared fresh on the day of the gathering. We adhere to strict quality standards, utilizing the highest quality ingredients.",
     },
     {
       number: "03",

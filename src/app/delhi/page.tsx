@@ -6,8 +6,8 @@ import { MapPin, Utensils, Award, Leaf, Users, Sparkles } from "lucide-react";
 import FAQs from "@/components/FAQs";
 
 export const metadata: Metadata = {
-  title: "Premium Home-Style Vegetarian Catering Services in Delhi | Dahi Cheeni",
-  description: "Exquisite home-style vegetarian & satvik catering in Delhi. Dahi Cheeni offers premium food setups for poojas, baby showers, griha pravesh, and weddings across Delhi NCR.",
+  title: "Premium Home-Style Catering Services in Delhi | Dahi Cheeni",
+  description: "Exquisite home-style catering in Delhi. Dahi Cheeni offers premium food setups for poojas, baby showers, griha pravesh, and weddings across Delhi NCR.",
 };
 
 const DELHI_CATERING_FAQS = [
@@ -16,8 +16,8 @@ const DELHI_CATERING_FAQS = [
     answer: "Yes, we serve all major residential and commercial locations across Delhi, including South Delhi (GK, Vasant Kunj, Saket), West Delhi (Dwarka, Punjabi Bagh, Rajouri Garden), North Delhi (Pitampura, Rohini, Civil Lines), East Delhi (Mayur Vihar, Preet Vihar), and Central Delhi.",
   },
   {
-    question: "How do you ensure the purity of Satvik food for poojas in Delhi?",
-    answer: "Purity is our core promise. For religious gatherings, poojas, and griha pravesh, we follow strict Satvik guidelines (no onion, no garlic). The food is prepared in dedicated kitchen areas using separate cooking utensils, premium cold-pressed oils, and pure ghee.",
+    question: "How do you ensure the purity of food for poojas in Delhi?",
+    answer: "Purity is our core promise. For religious gatherings, poojas, and griha pravesh, we follow strict guidelines (no onion, no garlic). The food is prepared in dedicated kitchen areas using separate cooking utensils, premium cold-pressed oils, and pure ghee.",
   },
   {
     question: "Can we get live street food or chaat counters at our event?",
@@ -56,13 +56,13 @@ export default function DelhiLandingPage() {
   const customOccasions = [
     {
       title: "Spiritual Poojas & Havans",
-      desc: "100% onion-garlic free Satvik catering with custom-made preparations and dedicated utensils to protect ritual sanctity.",
+      desc: "100% onion-garlic free catering with custom-made preparations and dedicated utensils to protect ritual sanctity.",
       icon: <Leaf className="w-6 h-6 text-[#74290F]" strokeWidth={1.5} />,
       image: "/pooja-havan.png"
     },
     {
       title: "Griha Pravesh Housewarmings",
-      desc: "Welcome friends and family to your new home with comforting, traditional vegetarian food cooked fresh on the day.",
+      desc: "Welcome friends and family to your new home with comforting, traditional food cooked fresh on the day.",
       icon: <Award className="w-6 h-6 text-[#74290F]" strokeWidth={1.5} />,
       image: "/griha-pravesh.png"
     },
@@ -97,7 +97,7 @@ export default function DelhiLandingPage() {
                 AUTHENTIC CATERING IN DELHI
               </span>
               <h1 className="font-serif text-4xl md:text-5xl lg:text-[54px] text-[#74290F] font-semibold leading-[1.15] tracking-wide">
-                Home-Style Vegetarian <br />
+                Home-Style Premium <br />
                 Catering for Delhi&apos;s <br />
                 Auspicious Occasions
               </h1>
@@ -110,7 +110,7 @@ export default function DelhiLandingPage() {
               </div>
 
               <p className="font-sans text-sm sm:text-base text-[#292927]/90 font-light leading-relaxed max-w-xl">
-                We bring pure traditions and clean flavors directly to your home or venue. Specializing in home-style vegetarian feasts, dedicated Satvik preparations, and live food counters across Delhi, tailored for gatherings of 20 to 300+ guests.
+                We bring pure traditions and clean flavors directly to your home or venue. Specializing in home-style feasts, dedicated onion- and garlic-free preparations, and live food counters across Delhi, tailored for gatherings of 20 to 300+ guests.
               </p>
 
               {/* Action buttons */}
@@ -138,7 +138,7 @@ export default function DelhiLandingPage() {
                 <div className="relative w-full h-full rounded-[14px] overflow-hidden">
                   <Image
                     src="/luxury-buffet-setup.png"
-                    alt="Premium Indian Vegetarian Buffet Setup in Delhi"
+                    alt="Premium Indian Buffet Setup in Delhi"
                     fill
                     sizes="(max-width: 1024px) 100vw, 40vw"
                     className="object-cover"
@@ -160,7 +160,7 @@ export default function DelhiLandingPage() {
               <div className="w-12 h-12 bg-[#74290F]/5 rounded-full flex items-center justify-center text-[#74290F] mx-auto border border-[#74290F]/10">
                 <Leaf className="w-5.5 h-5.5" />
               </div>
-              <h3 className="font-serif text-lg font-bold text-[#74290F]">Strict Satvik Quality</h3>
+              <h3 className="font-serif text-lg font-bold text-[#74290F]">Strict Purity Quality</h3>
               <p className="font-sans text-xs sm:text-sm text-[#292927]/85 font-light leading-relaxed">
                 Dedicated preparation areas and separate cookware to ensure 100% onion and garlic free food for poojas, havans, and spiritual gatherings.
               </p>

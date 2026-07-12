@@ -2,7 +2,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Our Catering Services | Dahi Cheeni | Delhi NCR",
-  description: "Explore Dahi Cheeni's premium vegetarian catering services. From Griha Pravesh and Poojas to weddings and family functions, we bring satvik excellence to your table.",
+  description: "Explore Dahi Cheeni's premium catering services. From Griha Pravesh and Poojas to weddings and family functions, we bring culinary excellence to your table.",
 };
 
 export default function ServicesLayout({

@@ -2,7 +2,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Get a Custom Catering Quote | Dahi Cheeni | Delhi NCR",
-  description: "Request a custom quote for your auspicious occasion. Dahi Cheeni offers clean, home-style premium catering, custom menus, and strict satvik options.",
+  description: "Request a custom quote for your auspicious occasion. Dahi Cheeni offers clean, home-style premium catering, custom menus, and strict onion- and garlic-free options.",
 };
 
 export default function QuoteLayout({

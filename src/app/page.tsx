@@ -18,12 +18,12 @@ const HOMEPAGE_FAQS = [
     answer: "We focus on clean, home-style food prepared fresh with heritage recipes, premium ingredients, and strict hygiene standards. We avoid commercial shortcuts, artificial colorings, and heavy preservatives to bring you genuine home-style flavors.",
   },
   {
-    question: "Do you provide Satvik options for religious gatherings?",
-    answer: "Yes, purity is our core value. We specialize in strict satvik (no onion, no garlic) catering with separate cooking guidelines, utensils, and dedicated preparation environments for poojas, havans, and spiritual gatherings.",
+    question: "Do you provide onion- and garlic-free options for religious gatherings?",
+    answer: "Yes, purity is our core value. We specialize in strict (no onion, no garlic) catering with separate cooking guidelines, utensils, and dedicated preparation environments for poojas, havans, and spiritual gatherings.",
   },
   {
     question: "What types of celebrations and occasions do you cater to?",
-    answer: "We cater to spiritual gatherings (poojas, havans, bhajan sandhyas), baby celebrations, griha pravesh ceremonies, mundan-janeu celebrations, prayer meetings, and intimate family wedding functions (up to 300+ guests).",
+    answer: "We cater to spiritual gatherings (poojas, havans, bhajan sandhyas), baby shower, griha pravesh ceremonies, mundan-janeu celebrations, prayer meetings, and intimate family wedding functions (up to 300+ guests).",
   },
 ];
 
@@ -72,7 +72,7 @@ export default function Home() {
 
               {/* Paragraph / Subtitle */}
               <p className="font-sans text-[17px] text-[#292927] font-light leading-relaxed max-w-xl mb-10">
-                Comforting, freshly prepared food for poojas, baby celebrations,
+                Comforting, freshly prepared food for poojas, baby shower,
                 family functions, prayer meetings and intimate gatherings across Delhi NCR.
               </p>
 

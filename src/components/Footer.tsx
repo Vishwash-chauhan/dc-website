@@ -17,7 +17,7 @@ export default function Footer() {
       {/* Main Footer Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-12">
-          
+
           {/* Column 1: Brand & Philosophy (3 cols) */}
           <div className="md:col-span-2 lg:col-span-3 space-y-6">
             <Link href="/" className="flex items-center gap-3.5 group">
@@ -41,7 +41,7 @@ export default function Footer() {
             </Link>
 
             <p className="font-sans text-sm text-[#FAF6F0]/80 font-light leading-relaxed max-w-sm">
-              Exquisite Indian catering for life&apos;s auspicious moments. We bring generational heritage recipes, 100% vegetarian satvik purity, and clean, wholesome flavors to your gatherings.
+              Exquisite Indian catering for life&apos;s auspicious moments. We bring generational heritage recipes, kitchen purity, and clean, wholesome flavors to your gatherings.
             </p>
 
             {/* Philosophy tagline */}
@@ -77,7 +77,7 @@ export default function Footer() {
               ))}
             </ul>
           </div>
-          
+
           {/* Column 3: Locations (2 cols) */}
           <div className="md:col-span-1 lg:col-span-2 space-y-5">
             <h3 className="font-serif text-lg font-semibold tracking-wider text-[#c5a880] border-b border-[#c5a880]/20 pb-2">
@@ -112,7 +112,7 @@ export default function Footer() {
             <ul className="space-y-3 font-sans text-sm text-[#FAF6F0]/80 font-light">
               {[
                 "Spiritual Gatherings & Poojas",
-                "Baby Celebrations (Naming, Shower)",
+                "Baby Shower",
                 "Griha Pravesh Ceremonies",
                 "Mundan & Janeu Celebrations",
                 "Intimate Wedding Functions",
@@ -131,7 +131,7 @@ export default function Footer() {
             <h3 className="font-serif text-lg font-semibold tracking-wider text-[#c5a880] border-b border-[#c5a880]/20 pb-2">
               Contact Us
             </h3>
-            
+
             <div className="space-y-4 font-sans text-sm text-[#FAF6F0]/80 font-light">
               <div className="flex items-start gap-2.5">
                 <MapPin className="w-4.5 h-4.5 text-[#c5a880] mt-0.5 flex-shrink-0" />
@@ -177,7 +177,7 @@ export default function Footer() {
             </div>
           </div>
           <div className="flex items-center gap-1.5 font-sans font-light">
-            <span>Crafted with Satvik purity & heritage recipes</span>
+            <span>Crafted with purity & heritage recipes</span>
             <Heart className="w-3.5 h-3.5 text-[#c5a880] fill-current" />
           </div>
         </div>

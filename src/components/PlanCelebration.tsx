@@ -28,7 +28,7 @@ export default function PlanCelebration() {
             </div>
 
             <p className="font-sans text-sm sm:text-base text-[#292927]/85 font-light leading-relaxed max-w-xl mb-8">
-              From intimate family gatherings to grand festive weddings, we bring the essence of purity and auspiciousness to your table. Every menu is curated with meticulous care, incorporating heritage recipes passed down through generations, prepared fresh with strict satvik standards and premium ingredients.
+              From intimate family gatherings to grand festive weddings, we bring the essence of purity and auspiciousness to your table. Every menu is curated with meticulous care, incorporating heritage recipes passed down through generations, prepared fresh with strict standards and premium ingredients.
             </p>
 
             {/* Action buttons */}

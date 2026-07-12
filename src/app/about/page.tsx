@@ -12,11 +12,11 @@ const ABOUT_PAGE_FAQS = [
   },
   {
     question: "Do you cater events other than spiritual poojas?",
-    answer: "Yes! While we are widely appreciated for our pure satvik pooja catering, we provide full-service catering for baby celebrations, griha pravesh, family get-togethers, prayer meetings, corporate lunches, and intimate weddings up to 300+ guests.",
+    answer: "Yes! While we are widely appreciated for our pure pooja catering, we provide full-service catering for baby shower, griha pravesh, family get-togethers, prayer meetings, corporate lunches, and intimate weddings up to 300+ guests.",
   },
   {
     question: "How do you ensure the purity and quality of your food?",
-    answer: "We prepare all dishes fresh daily in a strict sanitization environment using premium, handpicked ingredients. For spiritual occasions that require strict satvik guidelines, we prepare meals with completely separate cooking utensils and custom satvik spaces to preserve scriptural purity.",
+    answer: "We prepare all dishes fresh daily in a strict sanitization environment using premium, handpicked ingredients. For spiritual occasions that require strict preparation guidelines, we prepare meals with completely separate cooking utensils and custom dedicated spaces to preserve scriptural purity.",
   },
   {
     question: "Can we request a menu tasting session before booking?",
@@ -49,7 +49,7 @@ export default function AboutPage() {
       {/* 2. About Us - The Brand Story */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-10 md:py-16">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          
+
           {/* Story Text Content */}
           <div className="lg:col-span-7 space-y-6">
             <span className="font-sans text-[10px] sm:text-xs font-bold tracking-[0.2em] text-[#c5a880] uppercase block">
@@ -59,13 +59,13 @@ export default function AboutPage() {
               An Auspicious Start to Every Culinary Journey
             </h2>
             <p className="font-sans text-base text-[#292927]/90 font-light leading-relaxed">
-              In every Indian home, a spoonful of <span className="font-semibold text-[#74290F]">Dahi Cheeni</span> is more than just yogurt and sugar—it is a mother's blessing, a grandmother's prayer, and a traditional token of good luck given before embarking on any significant milestone. 
+              In every Indian home, a spoonful of <span className="font-semibold text-[#74290F]">Dahi Cheeni</span> is more than just yogurt and sugar—it is a mother&apos;s blessing, a grandmother&apos;s prayer, and a traditional token of good luck given before embarking on any significant milestone.
             </p>
             <p className="font-sans text-base text-[#292927]/85 font-light leading-relaxed">
-              Founded on this very essence of purity and auspiciousness, Dahi Cheeni brings clean, home-style premium catering to life's most meaningful gatherings. We believe that festive food should not only taste exquisite but should also comfort the soul and respect traditional values.
+              Founded on this very essence of purity and auspiciousness, Dahi Cheeni brings clean, home-style premium catering to life&apos;s most meaningful gatherings. We believe that festive food should not only taste exquisite but should also comfort the soul and respect traditional values.
             </p>
             <p className="font-sans text-base text-[#292927]/85 font-light leading-relaxed">
-              From family poojas and baby celebrations to spiritual assemblies and intimate weddings, our culinary team uses generational heritage recipes and fresh, locally sourced ingredients to design custom menus that carry the genuine warmth of home.
+              From family poojas and baby  to spiritual assemblies and intimate weddings, our culinary team uses generational heritage recipes and fresh, locally sourced ingredients to design custom menus that carry the genuine warmth of home.
             </p>
           </div>
 
@@ -76,8 +76,8 @@ export default function AboutPage() {
               <div className="absolute inset-3 border border-[#c5a880]/30 rounded-2xl pointer-events-none z-10" />
               <div className="relative w-full h-full rounded-[14px] overflow-hidden">
                 <Image
-                  src="/plan-celebration.png"
-                  alt="Dahi Cheeni Traditional Celebration Layout"
+                  src="/premium-thali.png"
+                  alt="Traditional Premium Indian Thali Feast"
                   fill
                   sizes="(max-width: 1024px) 100vw, 35vw"
                   className="object-cover"
@@ -93,7 +93,7 @@ export default function AboutPage() {
       {/* 3. Our Philosophy Grid */}
       <section className="w-full bg-[#FAF6F0] border-t border-[#c5a880]/20 py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          
+
           <div className="text-center mb-16">
             <span className="font-sans text-[10px] sm:text-xs font-bold tracking-[0.2em] text-[#c5a880] uppercase mb-2 block">
               HOW WE CATER
@@ -112,8 +112,8 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               {
-                title: "Satvik Purity",
-                desc: "We respect spiritual values and offer strict satvik menu options. Prepared with dedicated clean utensils and pure vegetarian ingredients for religious gatherings and poojas.",
+                title: "Pure Kitchen Standards",
+                desc: "We respect spiritual values and offer strict onion- and garlic-free options. Prepared with dedicated clean utensils and pure ingredients for religious gatherings and poojas.",
                 icon: "✦"
               },
               {
@@ -132,7 +132,7 @@ export default function AboutPage() {
                 icon: "✺"
               }
             ].map((card, idx) => (
-              <div 
+              <div
                 key={idx}
                 className="bg-[#FAF6F0] border border-[#c5a880]/30 hover:border-[#74290F]/45 rounded-2xl p-6 sm:p-8 flex flex-col items-center text-center shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1"
               >

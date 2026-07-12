@@ -6,8 +6,8 @@ import { MapPin, Utensils, Award, Leaf, Users, Sparkles } from "lucide-react";
 import FAQs from "@/components/FAQs";
 
 export const metadata: Metadata = {
-  title: "Premium Home-Style Vegetarian Catering Services in Faridabad | Dahi Cheeni",
-  description: "Exquisite home-style vegetarian & satvik catering in Faridabad. We offer premium food setups for poojas, baby showers, griha pravesh, and family events across Faridabad and Neharpar.",
+  title: "Premium Home-Style Catering Services in Faridabad | Dahi Cheeni",
+  description: "Exquisite home-style catering in Faridabad. We offer premium food setups for poojas, baby showers, griha pravesh, and family events across Faridabad and Neharpar.",
 };
 
 const FARIDABAD_CATERING_FAQS = [
@@ -16,8 +16,8 @@ const FARIDABAD_CATERING_FAQS = [
     answer: "Yes, we serve all locations in Faridabad, including established older sectors (Sectors 14, 15, 16, 21, 37), premium areas near Surajkund (Charmwood Village, Green Valley), and all newer high-rise societies in Greater Faridabad (Neharpar Sectors 75 to 89).",
   },
   {
-    question: "Do you specialize in strict onion- and garlic-free Satvik catering for poojas?",
-    answer: "Absolutely. Purity is at the heart of our cooking. For Havans, spiritual gatherings, and poojas, we offer strict Satvik preparation. We use separate cooking utensils, dedicated kitchen zones, cold-pressed oils, and pure cow ghee.",
+    question: "Do you specialize in strict onion- and garlic-free catering for poojas?",
+    answer: "Absolutely. Purity is at the heart of our cooking. For Havans, spiritual gatherings, and poojas, we offer strict onion- and garlic-free preparation. We use separate cooking utensils, dedicated kitchen zones, cold-pressed oils, and pure cow ghee.",
   },
   {
     question: "Can we book Dahi Cheeni for traditional milestones like Mundan or Janeu ceremonies?",
@@ -58,7 +58,7 @@ export default function FaridabadLandingPage() {
     },
     {
       title: "Devotional Poojas & Havans",
-      desc: "Strictly prepared Satvik options (onion & garlic free) using segregated utensils, cold-pressed oils, and pure ghee.",
+      desc: "Strictly prepared options (onion & garlic free) using segregated utensils, cold-pressed oils, and pure ghee.",
       icon: <Leaf className="w-6 h-6 text-[#74290F]" strokeWidth={1.5} />,
       image: "/pooja-havan.png"
     },
@@ -90,7 +90,7 @@ export default function FaridabadLandingPage() {
             {/* Left side: Text content */}
             <div className="lg:col-span-6 flex flex-col justify-center text-left space-y-6">
               <span className="font-sans text-[10px] sm:text-xs font-bold tracking-[0.2em] text-[#c5a880] uppercase block">
-                PREMIUM VEGETARIAN CATERING IN FARIDABAD
+                PREMIUM CATERING IN FARIDABAD
               </span>
               <h1 className="font-serif text-4xl md:text-5xl lg:text-[54px] text-[#74290F] font-semibold leading-[1.15] tracking-wide">
                 Home-Style Catering for <br />
@@ -106,7 +106,7 @@ export default function FaridabadLandingPage() {
               </div>
 
               <p className="font-sans text-sm sm:text-base text-[#292927]/90 font-light leading-relaxed max-w-xl">
-                Bringing generational heritage recipes and strict Satvik guidelines to Faridabad. From historic older sectors to newer high-rise societies in Greater Faridabad (Neharpar) and Surajkund, we cater to your events of 20 to 300+ guests.
+                Bringing generational heritage recipes and strict guidelines to Faridabad. From historic older sectors to newer high-rise societies in Greater Faridabad (Neharpar) and Surajkund, we cater to your events of 20 to 300+ guests.
               </p>
 
               {/* Action buttons */}
@@ -153,7 +153,7 @@ export default function FaridabadLandingPage() {
                   <div className="relative w-full h-full rounded-lg overflow-hidden">
                     <Image
                       src="/pooja-havan.png"
-                      alt="Strict Satvik Pooja setup for Faridabad events"
+                      alt="Strict Pooja setup for Faridabad events"
                       fill
                       sizes="(max-width: 1024px) 40vw, 18vw"
                       className="object-cover"
@@ -185,7 +185,7 @@ export default function FaridabadLandingPage() {
               <div className="w-12 h-12 bg-[#74290F]/5 rounded-full flex items-center justify-center text-[#74290F] mx-auto border border-[#74290F]/10">
                 <Leaf className="w-5.5 h-5.5" />
               </div>
-              <h3 className="font-serif text-lg font-bold text-[#74290F]">Strict Satvik Promise</h3>
+              <h3 className="font-serif text-lg font-bold text-[#74290F]">Strict Purity Promise</h3>
               <p className="font-sans text-xs sm:text-sm text-[#292927]/85 font-light leading-relaxed">
                 Segregated cooking utensils and dedicated kitchen zones to guarantee 100% onion and garlic free food for poojas, havans, and spiritual ceremonies.
               </p>
@@ -220,7 +220,7 @@ export default function FaridabadLandingPage() {
               <div className="h-[1px] w-12 bg-[#c5a880]/30" />
             </div>
             <p className="font-sans text-sm text-[#292927]/85 font-light max-w-xl mx-auto mt-4 leading-relaxed">
-              We design specific vegetarian menus and clean, elegant table setups tailored precisely for Faridabad family ceremonies.
+              We design specific menus and clean, elegant table setups tailored precisely for Faridabad family ceremonies.
             </p>
           </div>
 

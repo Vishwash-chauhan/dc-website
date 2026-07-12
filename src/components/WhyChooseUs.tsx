@@ -17,7 +17,7 @@ export default function WhyChooseUs() {
     },
     {
       icon: <Leaf className="w-6 h-6 text-[#74290F]" strokeWidth={1.5} />,
-      label: "Satvik options available",
+      label: "Onion & garlic free options available",
     },
     {
       icon: <Users className="w-6 h-6 text-[#74290F]" strokeWidth={1.5} />,

@@ -195,7 +195,7 @@ const MENU_PAGE_FAQS = [
   },
   {
     question: "Do you offer onion- and garlic-free options?",
-    answer: "Yes, purity is our core value. We offer completely Satvik versions of almost all our main courses, starters, and dals. These are prepared under strict guidelines using dedicated cookware and separate kitchen areas to preserve absolute sanctity.",
+    answer: "Yes, purity is our core value. We offer completely onion- and garlic-free versions of almost all our main courses, starters, and dals. These are prepared under strict guidelines using dedicated cookware and separate kitchen areas to preserve absolute sanctity.",
   },
   {
     question: "What is the minimum guest count required for catering orders?",
@@ -306,7 +306,7 @@ export default function MenuPage() {
           <div className="h-[1px] w-12 bg-[#c5a880]/40" />
         </div>
         <p className="font-sans text-sm sm:text-base md:text-lg text-[#292927]/80 font-light max-w-2xl mx-auto leading-relaxed">
-          Generous portions, pure cold-pressed oils, and zero commercial shortcuts. Explore our menu selections crafted with satvik purity and culinary heritage.
+          Generous portions, pure cold-pressed oils, and zero commercial shortcuts. Explore our menu selections crafted with purity and culinary heritage.
         </p>
 
         {/* Live Search Bar */}
