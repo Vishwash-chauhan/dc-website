@@ -42,7 +42,7 @@ export default function Experience() {
           {/* Left Side: Premium Process Image Showcase */}
           <div className="lg:col-span-5 relative w-full aspect-[4/3] sm:aspect-square lg:aspect-[4/5] rounded-2xl md:rounded-[30px] overflow-hidden border border-[#c5a880]/15 shadow-sm">
             <Image
-              src="/experience-service.png"
+              src="/1.jpeg"
               alt="Dahi Cheeni Luxury Event Presentation Setup"
               fill
               sizes="(max-width: 1024px) 100vw, 40vw"

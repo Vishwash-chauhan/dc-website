@@ -467,9 +467,9 @@ export default function MenuPage() {
                                   <span className="font-sans text-lg font-bold text-[#74290F]">
                                     ₹{item.Rate}
                                   </span>
-                                  {item.Unit && (
+                                  {item.Unit && item.Unit.toLowerCase() !== "na" && (
                                     <span className="font-sans text-[11px] text-[#74290F]/60">
-                                      / {item.Unit.toLowerCase()}
+                                      / {item.Unit.toLowerCase() === "pc" ? "pcs" : item.Unit.toLowerCase()}
                                     </span>
                                   )}
                                 </div>

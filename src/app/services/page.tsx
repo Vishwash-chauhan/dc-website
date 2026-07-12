@@ -105,7 +105,7 @@ export default function ServicesPage() {
                 <div className="absolute inset-3 border border-[#c5a880]/30 rounded-2xl pointer-events-none z-10" />
                 <div className="relative w-full h-full rounded-[14px] overflow-hidden">
                   <Image
-                    src="/luxury-buffet-setup.png"
+                    src="/2.jpeg"
                     alt="Dahi Cheeni Premium Buffet Setup"
                     fill
                     className="object-cover"

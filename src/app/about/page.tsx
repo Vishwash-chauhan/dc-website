@@ -76,7 +76,7 @@ export default function AboutPage() {
               <div className="absolute inset-3 border border-[#c5a880]/30 rounded-2xl pointer-events-none z-10" />
               <div className="relative w-full h-full rounded-[14px] overflow-hidden">
                 <Image
-                  src="/premium-thali.png"
+                  src="/3.jpeg"
                   alt="Traditional Premium Indian Thali Feast"
                   fill
                   sizes="(max-width: 1024px) 100vw, 35vw"

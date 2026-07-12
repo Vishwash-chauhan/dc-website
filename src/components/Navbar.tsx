@@ -15,7 +15,7 @@ export default function Navbar() {
     { name: "About Us", href: "/about", active: pathname === "/about" },
     { name: "Services", href: "/services", active: pathname === "/services" },
     { name: "Menus", href: "/menu", active: pathname === "/menu" },
-    { name: "Gallery", href: isHome ? "#gallery" : "/#gallery", active: false },
+    // { name: "Gallery", href: isHome ? "#gallery" : "/#gallery", active: false },
     { name: "FAQs", href: "/faq", active: pathname === "/faq" },
     // { name: "Contact", href: isHome ? "#contact" : "/#contact", active: false },
   ];
