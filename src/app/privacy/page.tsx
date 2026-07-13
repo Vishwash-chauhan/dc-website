@@ -101,7 +101,7 @@ export default function PrivacyPage() {
               If you have any questions about this Privacy Policy or wish to modify/delete any information you previously submitted to us, please feel free to reach out directly via:
             </p>
             <p className="font-medium text-[#74290F]">
-              Phone/WhatsApp: <a href="tel:+918130964374" className="hover:underline">+91 81309 64374</a>
+              Phone/WhatsApp: <a href="tel:+919971118559" className="hover:underline">+91 99711 18559</a>
             </p>
           </section>
 

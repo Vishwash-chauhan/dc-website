@@ -76,7 +76,7 @@ export default function Navbar() {
 
             {/* WhatsApp Button */}
             <a
-              href="https://wa.me/918130964374"
+              href="https://wa.me/919971118559"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Contact on WhatsApp"
@@ -140,7 +140,7 @@ export default function Navbar() {
 
             {/* Mobile WhatsApp Button */}
             <a
-              href="https://wa.me/918130964374"
+              href="https://wa.me/919971118559"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-3 px-6 py-3 bg-[#25D366] text-white font-sans text-sm font-semibold tracking-wide rounded-full shadow-md"

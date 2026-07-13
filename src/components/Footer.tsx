@@ -145,14 +145,14 @@ export default function Footer() {
                 <Phone className="w-4.5 h-4.5 text-[#c5a880] mt-0.5 flex-shrink-0" />
                 <div>
                   <span className="font-medium text-[#FAF6F0] block">Call / Inquiry</span>
-                  <a href="tel:+918130964374" className="hover:text-[#c5a880] transition-colors font-sans">+91 81309 64374</a>
+                  <a href="tel:+919971118559" className="hover:text-[#c5a880] transition-colors font-sans">+91 99711 18559</a>
                 </div>
               </div>
 
               {/* WhatsApp CTA */}
               <div className="pt-2">
                 <a
-                  href="https://wa.me/918130964374"
+                  href="https://wa.me/919971118559"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-4 py-2 bg-[#25D366] hover:bg-[#20ba59] text-white font-sans text-xs font-semibold rounded-lg shadow-sm transition-all duration-300 transform hover:scale-103 active:scale-97 cursor-pointer"

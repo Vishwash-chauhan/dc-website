@@ -348,7 +348,7 @@ export default function GurugramLandingPage() {
               Get A Quote
             </Link>
             <a
-              href="https://wa.me/918130964374"
+              href="https://wa.me/919971118559"
               target="_blank"
               rel="noopener noreferrer"
               className="px-8 py-3.5 bg-transparent hover:bg-white/5 text-[#FAF6F0] border border-[#FAF6F0]/40 hover:border-[#FAF6F0] font-sans text-sm font-semibold tracking-wider rounded-md transition-all duration-300 w-full sm:w-auto text-center flex items-center justify-center gap-2"
