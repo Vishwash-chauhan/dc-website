@@ -53,25 +53,25 @@ export default function FaridabadLandingPage() {
     {
       title: "Mundan & Janeu Milestones",
       desc: "Honor traditional family milestones with authentic heritage recipes cooked fresh with strict hygiene and absolute purity.",
-      icon: <Award className="w-6 h-6 text-[#74290F]" strokeWidth={1.5} />,
+      icon: <Award className="w-6 h-6 text-[#8C3316]" strokeWidth={1.5} />,
       image: "/mundan-janeu.png"
     },
     {
       title: "Devotional Poojas & Havans",
       desc: "Strictly prepared options (onion & garlic free) using segregated utensils, cold-pressed oils, and pure ghee.",
-      icon: <Leaf className="w-6 h-6 text-[#74290F]" strokeWidth={1.5} />,
+      icon: <Leaf className="w-6 h-6 text-[#8C3316]" strokeWidth={1.5} />,
       image: "/pooja-havan.png"
     },
     {
       title: "Neharpar Griha Pravesh",
       desc: "Welcome auspicious beginnings in Faridabad's newer high-rise societies with dedicated buffet setups and traditional menus.",
-      icon: <Utensils className="w-6 h-6 text-[#74290F]" strokeWidth={1.5} />,
+      icon: <Utensils className="w-6 h-6 text-[#8C3316]" strokeWidth={1.5} />,
       image: "/griha-pravesh.png"
     },
     {
       title: "Intimate Family Feasts",
       desc: "Perfect spreads and personalized layouts for anniversaries, birthdays, naming ceremonies, and close family gatherings.",
-      icon: <Users className="w-6 h-6 text-[#74290F]" strokeWidth={1.5} />,
+      icon: <Users className="w-6 h-6 text-[#8C3316]" strokeWidth={1.5} />,
       image: "/family-get-together.png"
     }
   ];
@@ -80,7 +80,7 @@ export default function FaridabadLandingPage() {
     <main className="min-h-screen bg-[#FAF6F0] pt-24 md:pt-28 flex flex-col justify-between overflow-x-hidden">
       {/* Background decoration elements */}
       <div className="absolute top-24 right-0 w-96 h-96 rounded-full bg-[#c5a880]/10 blur-3xl -z-10 pointer-events-none" />
-      <div className="absolute top-[80vh] left-0 w-96 h-96 rounded-full bg-[#74290F]/5 blur-3xl -z-10 pointer-events-none" />
+      <div className="absolute top-[80vh] left-0 w-96 h-96 rounded-full bg-[#8C3316]/5 blur-3xl -z-10 pointer-events-none" />
 
       {/* 1. Redesigned Split Hero Section with Overlapping Visual Cards */}
       <section className="relative w-full py-12 md:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 bg-[#FAF6F0] z-10 border-b border-[#c5a880]/15">
@@ -92,7 +92,7 @@ export default function FaridabadLandingPage() {
               <span className="font-sans text-[10px] sm:text-xs font-bold tracking-[0.2em] text-[#c5a880] uppercase block">
                 PREMIUM CATERING IN FARIDABAD
               </span>
-              <h1 className="font-serif text-4xl md:text-5xl lg:text-[54px] text-[#74290F] font-semibold leading-[1.15] tracking-wide">
+              <h1 className="font-serif text-4xl md:text-5xl lg:text-[54px] text-[#8C3316] font-semibold leading-[1.15] tracking-wide">
                 Home-Style Catering for <br />
                 Faridabad&apos;s Auspicious <br />
                 Occasions
@@ -113,13 +113,13 @@ export default function FaridabadLandingPage() {
               <div className="flex flex-col sm:flex-row gap-4 items-center pt-2">
                 <Link
                   href="/qet_a_quote"
-                  className="px-8 py-3.5 bg-[#74290F] hover:bg-[#61220C] text-white font-sans text-xs sm:text-sm font-semibold tracking-wider text-center rounded-md shadow-md transition-all duration-300 w-full sm:w-auto cursor-pointer"
+                  className="px-8 py-3.5 bg-[#8C3316] hover:bg-[#74290F] text-white font-sans text-xs sm:text-sm font-semibold tracking-wider text-center rounded-md shadow-md transition-all duration-300 w-full sm:w-auto cursor-pointer"
                 >
                   Get A Quote
                 </Link>
                 <Link
                   href="/menu"
-                  className="px-8 py-3.5 bg-transparent hover:bg-[#74290F]/5 text-[#74290F] border border-[#74290F] font-sans text-xs sm:text-sm font-semibold tracking-wider text-center rounded-md transition-all duration-300 w-full sm:w-auto text-center"
+                  className="px-8 py-3.5 bg-transparent hover:bg-[#8C3316]/5 text-[#8C3316] border border-[#8C3316] font-sans text-xs sm:text-sm font-semibold tracking-wider text-center rounded-md transition-all duration-300 w-full sm:w-auto text-center"
                 >
                   Explore Menus
                 </Link>
@@ -133,7 +133,7 @@ export default function FaridabadLandingPage() {
               {/* Relative layout wrapper for overlapping cards */}
               <div className="relative w-full max-w-[480px] aspect-[4/3]">
                 {/* Main Card (Mundan-Janeu) */}
-                <div className="absolute top-0 left-0 w-[85%] aspect-[4/3] rounded-3xl bg-[#74290F] p-2.5 shadow-xl transition-all duration-500 hover:scale-[1.02]">
+                <div className="absolute top-0 left-0 w-[85%] aspect-[4/3] rounded-3xl bg-[#8C3316] p-2.5 shadow-xl transition-all duration-500 hover:scale-[1.02]">
                   <div className="absolute inset-3 border border-[#c5a880]/30 rounded-2xl pointer-events-none z-10" />
                   <div className="relative w-full h-full rounded-[14px] overflow-hidden">
                     <Image
@@ -148,7 +148,7 @@ export default function FaridabadLandingPage() {
                 </div>
 
                 {/* Overlapping Secondary Card (Pooja-Havan) */}
-                <div className="absolute bottom-[-10%] right-[-5%] w-[45%] aspect-square rounded-2xl bg-[#74290F] p-1.5 shadow-2xl border border-[#c5a880]/30 overflow-hidden z-20 hover:scale-105 transition-transform duration-300">
+                <div className="absolute bottom-[-10%] right-[-5%] w-[45%] aspect-square rounded-2xl bg-[#8C3316] p-1.5 shadow-2xl border border-[#c5a880]/30 overflow-hidden z-20 hover:scale-105 transition-transform duration-300">
                   <div className="absolute inset-2 border border-[#c5a880]/20 rounded-xl pointer-events-none z-10" />
                   <div className="relative w-full h-full rounded-lg overflow-hidden">
                     <Image
@@ -172,30 +172,30 @@ export default function FaridabadLandingPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-[#FAF6F0]/80 border border-[#c5a880]/15 rounded-2xl p-6 text-center space-y-3.5 hover:shadow-md transition-all duration-300">
-              <div className="w-12 h-12 bg-[#74290F]/5 rounded-full flex items-center justify-center text-[#74290F] mx-auto border border-[#74290F]/10">
+              <div className="w-12 h-12 bg-[#8C3316]/5 rounded-full flex items-center justify-center text-[#8C3316] mx-auto border border-[#8C3316]/10">
                 <Users className="w-5.5 h-5.5" />
               </div>
-              <h3 className="font-serif text-lg font-bold text-[#74290F]">Traditional Recipes</h3>
+              <h3 className="font-serif text-lg font-bold text-[#8C3316]">Traditional Recipes</h3>
               <p className="font-sans text-xs sm:text-sm text-[#292927]/85 font-light leading-relaxed">
                 Authentic, home-style tastes prepared using generational family recipes. We avoid low-grade commercial shortcuts or heavy artificial ingredients.
               </p>
             </div>
 
             <div className="bg-[#FAF6F0]/80 border border-[#c5a880]/15 rounded-2xl p-6 text-center space-y-3.5 hover:shadow-md transition-all duration-300">
-              <div className="w-12 h-12 bg-[#74290F]/5 rounded-full flex items-center justify-center text-[#74290F] mx-auto border border-[#74290F]/10">
+              <div className="w-12 h-12 bg-[#8C3316]/5 rounded-full flex items-center justify-center text-[#8C3316] mx-auto border border-[#8C3316]/10">
                 <Leaf className="w-5.5 h-5.5" />
               </div>
-              <h3 className="font-serif text-lg font-bold text-[#74290F]">Strict Purity Promise</h3>
+              <h3 className="font-serif text-lg font-bold text-[#8C3316]">Strict Purity Promise</h3>
               <p className="font-sans text-xs sm:text-sm text-[#292927]/85 font-light leading-relaxed">
                 Segregated cooking utensils and dedicated kitchen zones to guarantee 100% onion and garlic free food for poojas, havans, and spiritual ceremonies.
               </p>
             </div>
 
             <div className="bg-[#FAF6F0]/80 border border-[#c5a880]/15 rounded-2xl p-6 text-center space-y-3.5 hover:shadow-md transition-all duration-300">
-              <div className="w-12 h-12 bg-[#74290F]/5 rounded-full flex items-center justify-center text-[#74290F] mx-auto border border-[#74290F]/10">
+              <div className="w-12 h-12 bg-[#8C3316]/5 rounded-full flex items-center justify-center text-[#8C3316] mx-auto border border-[#8C3316]/10">
                 <Sparkles className="w-5.5 h-5.5" />
               </div>
-              <h3 className="font-serif text-lg font-bold text-[#74290F]">Complete Logistics Setup</h3>
+              <h3 className="font-serif text-lg font-bold text-[#8C3316]">Complete Logistics Setup</h3>
               <p className="font-sans text-xs sm:text-sm text-[#292927]/85 font-light leading-relaxed">
                 We handle the delivery, elegant buffet counters, table decorations, and professional service staff, leaving your venue pristine.
               </p>
@@ -211,7 +211,7 @@ export default function FaridabadLandingPage() {
             <span className="font-sans text-[10px] sm:text-xs font-bold tracking-[0.2em] text-[#c5a880] uppercase mb-2 block">
               FARIDABAD CELEBRATIONS
             </span>
-            <h2 className="font-serif text-3xl sm:text-4xl text-[#74290F] font-semibold tracking-wide">
+            <h2 className="font-serif text-3xl sm:text-4xl text-[#8C3316] font-semibold tracking-wide">
               Occasions We Cater to in Faridabad
             </h2>
             <div className="flex items-center gap-3 mt-3 w-full justify-center">
@@ -235,13 +235,13 @@ export default function FaridabadLandingPage() {
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                   />
-                  <div className="absolute inset-0 bg-[#74290F]/5" />
+                  <div className="absolute inset-0 bg-[#8C3316]/5" />
                 </div>
                 <div className="p-6 flex flex-col items-center text-center flex-grow space-y-2.5">
-                  <div className="w-10 h-10 bg-[#74290F]/5 rounded-full flex items-center justify-center text-[#74290F] border border-[#74290F]/5">
+                  <div className="w-10 h-10 bg-[#8C3316]/5 rounded-full flex items-center justify-center text-[#8C3316] border border-[#8C3316]/5">
                     {item.icon}
                   </div>
-                  <h3 className="font-serif text-lg text-[#74290F] font-bold tracking-wide">{item.title}</h3>
+                  <h3 className="font-serif text-lg text-[#8C3316] font-bold tracking-wide">{item.title}</h3>
                   <p className="font-sans text-xs md:text-[13px] text-[#292927]/75 font-light leading-relaxed">
                     {item.desc}
                   </p>
@@ -253,7 +253,7 @@ export default function FaridabadLandingPage() {
       </section>
 
       {/* 4. Highlight Section: experience-service showcase */}
-      <section className="w-full py-16 md:py-24 bg-[#74290F]/5 border-b border-[#c5a880]/10 relative z-10">
+      <section className="w-full py-16 md:py-24 bg-[#8C3316]/5 border-b border-[#c5a880]/10 relative z-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
 
@@ -262,7 +262,7 @@ export default function FaridabadLandingPage() {
               <span className="font-sans text-[10px] sm:text-xs font-bold tracking-[0.2em] text-[#c5a880] uppercase block">
                 EXQUISITE BUFFET PRESENTATION
               </span>
-              <h2 className="font-serif text-3xl sm:text-4xl text-[#74290F] font-semibold leading-tight tracking-wide">
+              <h2 className="font-serif text-3xl sm:text-4xl text-[#8C3316] font-semibold leading-tight tracking-wide">
                 Immaculate Setup & Warm Hospitality
               </h2>
               <div className="h-[1px] w-16 bg-[#c5a880]/40" />
@@ -278,7 +278,7 @@ export default function FaridabadLandingPage() {
 
             {/* Right Column: Image */}
             <div className="lg:col-span-5 flex justify-center items-center">
-              <div className="relative w-full max-w-[450px] aspect-[4/3] rounded-3xl bg-[#74290F] p-2.5 shadow-xl">
+              <div className="relative w-full max-w-[450px] aspect-[4/3] rounded-3xl bg-[#8C3316] p-2.5 shadow-xl">
                 <div className="absolute inset-3 border border-[#c5a880]/30 rounded-2xl pointer-events-none z-10" />
                 <div className="relative w-full h-full rounded-[14px] overflow-hidden">
                   <Image
@@ -303,7 +303,7 @@ export default function FaridabadLandingPage() {
             <span className="font-sans text-[10px] sm:text-xs font-bold tracking-[0.2em] text-[#c5a880] uppercase mb-2 block">
               FARIDABAD COVERAGE AREAS
             </span>
-            <h2 className="font-serif text-3xl sm:text-4xl text-[#74290F] font-semibold tracking-wide">
+            <h2 className="font-serif text-3xl sm:text-4xl text-[#8C3316] font-semibold tracking-wide">
               Locations We Serve in Faridabad
             </h2>
             <div className="flex items-center gap-3 mt-3 w-full justify-center">
@@ -319,7 +319,7 @@ export default function FaridabadLandingPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {regions.map((region, idx) => (
               <div key={idx} className="bg-white/80 border border-[#c5a880]/20 rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow duration-300">
-                <div className="flex items-center gap-2.5 mb-4 text-[#74290F]">
+                <div className="flex items-center gap-2.5 mb-4 text-[#8C3316]">
                   <MapPin className="w-5 h-5 flex-shrink-0" />
                   <h3 className="font-serif text-xl font-bold tracking-wide">{region.name}</h3>
                 </div>
@@ -341,7 +341,7 @@ export default function FaridabadLandingPage() {
       <FAQs items={FARIDABAD_CATERING_FAQS} />
 
       {/* 7. CTA / Custom Quote */}
-      <section className="w-full bg-[#74290F] text-[#FAF6F0] py-16 md:py-20 relative overflow-hidden z-10">
+      <section className="w-full bg-[#8C3316] text-[#FAF6F0] py-16 md:py-20 relative overflow-hidden z-10">
         <div className="absolute -top-24 -right-24 w-80 h-80 bg-[#c5a880]/10 rounded-full blur-3xl pointer-events-none" />
         <div className="absolute -bottom-24 -left-24 w-80 h-80 bg-[#c5a880]/15 rounded-full blur-3xl pointer-events-none" />
 
@@ -358,7 +358,7 @@ export default function FaridabadLandingPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
             <Link
               href="/qet_a_quote"
-              className="px-8 py-3.5 bg-[#FAF6F0] hover:bg-[#FAF6F0]/90 text-[#74290F] font-sans text-sm font-semibold tracking-wider rounded-md shadow-md transition-all duration-300 w-full sm:w-auto text-center cursor-pointer font-semibold"
+              className="px-8 py-3.5 bg-[#FAF6F0] hover:bg-[#FAF6F0]/90 text-[#8C3316] font-sans text-sm font-semibold tracking-wider rounded-md shadow-md transition-all duration-300 w-full sm:w-auto text-center cursor-pointer font-semibold"
             >
               Get A Quote
             </Link>

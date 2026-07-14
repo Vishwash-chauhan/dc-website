@@ -9,7 +9,7 @@ export default function TermsPage() {
     <main className="min-h-screen bg-[#FAF6F0] pt-32 pb-20 flex flex-col justify-between overflow-x-hidden">
       {/* Background ambient lighting */}
       <div className="absolute top-24 right-0 w-96 h-96 rounded-full bg-[#c5a880]/10 blur-3xl -z-10 pointer-events-none" />
-      <div className="absolute bottom-10 left-10 w-96 h-96 rounded-full bg-[#74290F]/5 blur-3xl -z-10 pointer-events-none" />
+      <div className="absolute bottom-10 left-10 w-96 h-96 rounded-full bg-[#8C3316]/5 blur-3xl -z-10 pointer-events-none" />
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex-grow space-y-10">
         
@@ -17,7 +17,7 @@ export default function TermsPage() {
         <div className="pt-2">
           <Link
             href="/"
-            className="inline-flex items-center gap-2 text-sm font-sans font-medium text-[#74290F] hover:text-[#c5a880] transition-colors group"
+            className="inline-flex items-center gap-2 text-sm font-sans font-medium text-[#8C3316] hover:text-[#c5a880] transition-colors group"
           >
             <ArrowLeft className="w-4 h-4 transition-transform group-hover:-translate-x-1" />
             Back to Home
@@ -29,11 +29,11 @@ export default function TermsPage() {
           <span className="font-sans text-[10px] sm:text-xs font-bold tracking-[0.2em] text-[#c5a880] uppercase block">
             LEGAL INFORMATION
           </span>
-          <h1 className="font-serif text-4xl sm:text-5xl text-[#74290F] font-semibold tracking-wide">
+          <h1 className="font-serif text-4xl sm:text-5xl text-[#8C3316] font-semibold tracking-wide">
             Terms & Conditions
           </h1>
           <div className="h-[1px] w-24 bg-[#c5a880]/40" />
-          <p className="font-sans text-xs text-[#74290F]/60">
+          <p className="font-sans text-xs text-[#8C3316]/60">
             Last Updated: June 2026
           </p>
         </div>
@@ -42,7 +42,7 @@ export default function TermsPage() {
         <div className="prose prose-stone prose-brown max-w-none font-sans text-sm sm:text-base text-[#292927]/90 font-light leading-relaxed space-y-8">
           
           <section className="space-y-3">
-            <h2 className="font-serif text-xl sm:text-2xl text-[#74290F] font-medium tracking-wide">
+            <h2 className="font-serif text-xl sm:text-2xl text-[#8C3316] font-medium tracking-wide">
               1. Scope of Agreement
             </h2>
             <p>
@@ -51,7 +51,7 @@ export default function TermsPage() {
           </section>
 
           <section className="space-y-3">
-            <h2 className="font-serif text-xl sm:text-2xl text-[#74290F] font-medium tracking-wide">
+            <h2 className="font-serif text-xl sm:text-2xl text-[#8C3316] font-medium tracking-wide">
               2. Guest Count & Capacity Policies
             </h2>
             <ul className="list-disc pl-5 space-y-2">
@@ -62,7 +62,7 @@ export default function TermsPage() {
           </section>
 
           <section className="space-y-3">
-            <h2 className="font-serif text-xl sm:text-2xl text-[#74290F] font-medium tracking-wide">
+            <h2 className="font-serif text-xl sm:text-2xl text-[#8C3316] font-medium tracking-wide">
               3. Menu Customization Timeline
             </h2>
             <p>
@@ -71,7 +71,7 @@ export default function TermsPage() {
           </section>
 
           <section className="space-y-3">
-            <h2 className="font-serif text-xl sm:text-2xl text-[#74290F] font-medium tracking-wide">
+            <h2 className="font-serif text-xl sm:text-2xl text-[#8C3316] font-medium tracking-wide">
               4. Purity Standard
             </h2>
             <p>
@@ -80,7 +80,7 @@ export default function TermsPage() {
           </section>
 
           <section className="space-y-3">
-            <h2 className="font-serif text-xl sm:text-2xl text-[#74290F] font-medium tracking-wide">
+            <h2 className="font-serif text-xl sm:text-2xl text-[#8C3316] font-medium tracking-wide">
               5. Venue Access & Logistics
             </h2>
             <p>

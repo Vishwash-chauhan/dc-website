@@ -28,10 +28,10 @@ export default function Experience() {
 
   return (
     <section className="w-full py-16 px-4 sm:px-6 lg:px-8 bg-[#FAF6F0] relative z-10">
-      <div className="max-w-7xl mx-auto bg-white/60 backdrop-blur-sm border border-[#c5a880]/20 text-[#74290F] rounded-[28px] md:rounded-[40px] p-6 sm:p-10 md:p-14 lg:p-16 shadow-sm relative overflow-hidden">
+      <div className="max-w-7xl mx-auto bg-white/60 backdrop-blur-sm border border-[#c5a880]/20 text-[#8C3316] rounded-[28px] md:rounded-[40px] p-6 sm:p-10 md:p-14 lg:p-16 shadow-sm relative overflow-hidden">
         
         {/* Subtle decorative background watermark */}
-        <div className="absolute right-0 bottom-0 w-[400px] h-[400px] text-[#74290F]/2 pointer-events-none transform translate-x-20 translate-y-20 select-none">
+        <div className="absolute right-0 bottom-0 w-[400px] h-[400px] text-[#8C3316]/2 pointer-events-none transform translate-x-20 translate-y-20 select-none">
           <svg fill="currentColor" viewBox="0 0 24 24" className="w-full h-full">
             <path d="M17 2c-10 0-15 8-15 15 0 2.5 1.5 5 4 5s11-10 11-15v-5z" />
           </svg>
@@ -58,7 +58,7 @@ export default function Experience() {
             <span className="font-sans text-[10px] sm:text-xs font-bold tracking-[0.2em] text-[#c5a880] uppercase mb-3 block">
               Our Process
             </span>
-            <h2 className="font-serif text-3xl md:text-4xl lg:text-[46px] text-[#74290F] font-semibold leading-tight mb-8 md:mb-10 tracking-wide">
+            <h2 className="font-serif text-3xl md:text-4xl lg:text-[46px] text-[#8C3316] font-semibold leading-tight mb-8 md:mb-10 tracking-wide">
               The Dahi Cheeni <br /> Experience
             </h2>
 
@@ -76,7 +76,7 @@ export default function Experience() {
                   
                   {/* Title & Description */}
                   <div className="flex flex-col">
-                    <h3 className="font-serif text-lg sm:text-xl md:text-[22px] text-[#74290F] font-semibold tracking-wide mb-1 sm:mb-2 transition-colors duration-300 group-hover:text-[#c5a880]">
+                    <h3 className="font-serif text-lg sm:text-xl md:text-[22px] text-[#8C3316] font-semibold tracking-wide mb-1 sm:mb-2 transition-colors duration-300 group-hover:text-[#c5a880]">
                       {step.title}
                     </h3>
                     <p className="font-sans text-xs sm:text-sm text-[#292927]/75 font-light leading-relaxed max-w-xl">

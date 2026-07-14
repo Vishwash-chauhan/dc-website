@@ -55,7 +55,7 @@ export default function Home() {
             <div className="lg:col-span-6 flex flex-col items-start text-left">
 
               {/* Main Headline */}
-              <h1 className="font-serif text-4xl md:text-[50px] lg:text-[58px] font-semibold text-[#74290F] leading-[1.2] tracking-wide">
+              <h1 className="font-serif text-4xl md:text-[50px] lg:text-[58px] font-semibold text-[#8C3316] leading-[1.2] tracking-wide">
                 Home-Style Catering <br />
                 For Life’s Most <br />
                 Meaningful Gatherings
@@ -80,16 +80,16 @@ export default function Home() {
               <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto items-center">
                 <Link
                   href="/qet_a_quote"
-                  className="px-8 py-4 bg-[#74290F] hover:bg-[#61220C] text-white font-sans text-sm font-semibold tracking-wider text-center rounded-md shadow-md transition-all duration-300 w-full sm:w-auto cursor-pointer"
+                  className="px-8 py-4 bg-[#8C3316] hover:bg-[#74290F] text-white font-sans text-sm font-semibold tracking-wider text-center rounded-md shadow-md transition-all duration-300 w-full sm:w-auto cursor-pointer"
                 >
                   Get A Quote
                 </Link>
                 <a
                   href="/menu"
-                  className="px-8 py-4 bg-transparent hover:bg-[#74290F]/5 text-[#74290F] border border-[#74290F] font-sans text-sm font-semibold tracking-wider text-center rounded-md transition-all duration-300 flex items-center justify-center gap-2 w-full sm:w-auto"
+                  className="px-8 py-4 bg-transparent hover:bg-[#8C3316]/5 text-[#8C3316] border border-[#8C3316] font-sans text-sm font-semibold tracking-wider text-center rounded-md transition-all duration-300 flex items-center justify-center gap-2 w-full sm:w-auto"
                 >
                   View Menus
-                  <svg className="w-4.5 h-4.5 text-[#74290F] stroke-current" viewBox="0 0 24 24" fill="none" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                  <svg className="w-4.5 h-4.5 text-[#8C3316] stroke-current" viewBox="0 0 24 24" fill="none" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
                     <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
                   </svg>

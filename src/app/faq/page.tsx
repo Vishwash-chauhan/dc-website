@@ -160,7 +160,7 @@ export default function FAQPage() {
     <main className="min-h-screen bg-[#FAF6F0] pt-32 pb-24 flex flex-col justify-between overflow-x-hidden">
       {/* Background decoration elements */}
       <div className="absolute top-24 right-0 w-96 h-96 rounded-full bg-[#c5a880]/15 blur-3xl -z-10 pointer-events-none" />
-      <div className="absolute bottom-10 left-10 w-96 h-96 rounded-full bg-[#74290F]/5 blur-3xl -z-10 pointer-events-none" />
+      <div className="absolute bottom-10 left-10 w-96 h-96 rounded-full bg-[#8C3316]/5 blur-3xl -z-10 pointer-events-none" />
 
       {/* Inject SEO Schema */}
       <script
@@ -174,7 +174,7 @@ export default function FAQPage() {
         <div className="pt-2">
           <Link
             href="/"
-            className="inline-flex items-center gap-2 text-sm font-sans font-medium text-[#74290F] hover:text-[#c5a880] transition-colors group"
+            className="inline-flex items-center gap-2 text-sm font-sans font-medium text-[#8C3316] hover:text-[#c5a880] transition-colors group"
           >
             <ArrowLeft className="w-4 h-4 transition-transform group-hover:-translate-x-1" />
             Back to Home
@@ -186,7 +186,7 @@ export default function FAQPage() {
           <span className="font-sans text-[10px] sm:text-xs font-bold tracking-[0.2em] text-[#c5a880] uppercase block">
             HOW CAN WE HELP YOU?
           </span>
-          <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl text-[#74290F] font-semibold tracking-wide leading-tight">
+          <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl text-[#8C3316] font-semibold tracking-wide leading-tight">
             Frequently Asked Questions
           </h1>
           <div className="flex items-center gap-3 mt-4 w-full justify-center">
@@ -202,7 +202,7 @@ export default function FAQPage() {
         {/* Search Input */}
         <div className="max-w-md mx-auto relative pt-4">
           <div className="relative flex items-center bg-white border border-[#c5a880]/40 rounded-full overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
-            <span className="pl-4 text-[#74290F]/50">
+            <span className="pl-4 text-[#8C3316]/50">
               <Search className="w-5 h-5" />
             </span>
             <input
@@ -213,12 +213,12 @@ export default function FAQPage() {
                 setSearchQuery(e.target.value);
                 setOpenFaq(null); // Close active accordion during search
               }}
-              className="w-full px-3 py-3.5 text-sm text-[#74290F] placeholder-[#74290F]/40 focus:outline-none bg-transparent font-sans"
+              className="w-full px-3 py-3.5 text-sm text-[#8C3316] placeholder-[#8C3316]/40 focus:outline-none bg-transparent font-sans"
             />
             {searchQuery && (
               <button
                 onClick={() => setSearchQuery("")}
-                className="pr-4 text-[#74290F]/50 hover:text-[#74290F] transition-colors"
+                className="pr-4 text-[#8C3316]/50 hover:text-[#8C3316] transition-colors"
                 aria-label="Clear search"
               >
                 <X className="w-4 h-4" />
@@ -240,8 +240,8 @@ export default function FAQPage() {
                   setOpenFaq(null); // Reset open accordion
                 }}
                 className={`flex items-center gap-2 px-4 py-2.5 rounded-full text-xs font-sans font-medium transition-all duration-300 ${isActive
-                    ? "bg-[#74290F] text-[#FAF6F0] shadow-sm"
-                    : "bg-white border border-[#c5a880]/30 text-[#74290F] hover:bg-[#74290F]/5"
+                    ? "bg-[#8C3316] text-[#FAF6F0] shadow-sm"
+                    : "bg-white border border-[#c5a880]/30 text-[#8C3316] hover:bg-[#8C3316]/5"
                   }`}
               >
                 <Icon className="w-3.5 h-3.5" />
@@ -273,7 +273,7 @@ export default function FAQPage() {
                         {catLabel}
                       </span>
                     )}
-                    <span className="font-serif text-base sm:text-[19px] text-[#74290F] font-semibold leading-snug block">
+                    <span className="font-serif text-base sm:text-[19px] text-[#8C3316] font-semibold leading-snug block">
                       {faq.question}
                     </span>
                   </div>
@@ -299,7 +299,7 @@ export default function FAQPage() {
           {filteredFaqs.length === 0 && (
             <div className="text-center py-16 bg-white/40 border border-[#c5a880]/20 rounded-2xl space-y-4">
               <HelpCircle className="w-12 h-12 text-[#c5a880]/60 mx-auto" />
-              <h3 className="font-serif text-xl font-semibold text-[#74290F]">No Questions Found</h3>
+              <h3 className="font-serif text-xl font-semibold text-[#8C3316]">No Questions Found</h3>
               <p className="font-sans text-sm text-[#292927]/70 max-w-sm mx-auto">
                 We couldn&apos;t find any questions matching your criteria. Try searching for a different keyword or resetting the category filter.
               </p>
@@ -308,7 +308,7 @@ export default function FAQPage() {
                   setSearchQuery("");
                   setActiveCategory("all");
                 }}
-                className="px-5 py-2.5 bg-[#74290F] hover:bg-[#61220C] text-white font-sans text-xs font-semibold tracking-wider rounded-md transition-colors"
+                className="px-5 py-2.5 bg-[#8C3316] hover:bg-[#74290F] text-white font-sans text-xs font-semibold tracking-wider rounded-md transition-colors"
               >
                 Reset Search & Filters
               </button>

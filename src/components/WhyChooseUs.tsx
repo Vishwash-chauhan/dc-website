@@ -4,40 +4,40 @@ import { Home, Flame, CookingPot, Leaf, Users, ChefHat } from "lucide-react";
 export default function WhyChooseUs() {
   const features = [
     {
-      icon: <Home className="w-6 h-6 text-[#74290F]" strokeWidth={1.5} />,
+      icon: <Home className="w-6 h-6 text-[#8C3316]" strokeWidth={1.5} />,
       label: "Home-style flavours",
     },
     {
-      icon: <Flame className="w-6 h-6 text-[#74290F]" strokeWidth={1.5} />,
+      icon: <Flame className="w-6 h-6 text-[#8C3316]" strokeWidth={1.5} />,
       label: "Light & balanced spices",
     },
     {
-      icon: <CookingPot className="w-6 h-6 text-[#74290F]" strokeWidth={1.5} />,
+      icon: <CookingPot className="w-6 h-6 text-[#8C3316]" strokeWidth={1.5} />,
       label: "Freshly prepared on the day",
     },
     {
-      icon: <Leaf className="w-6 h-6 text-[#74290F]" strokeWidth={1.5} />,
+      icon: <Leaf className="w-6 h-6 text-[#8C3316]" strokeWidth={1.5} />,
       label: "Onion & garlic free options available",
     },
     {
-      icon: <Users className="w-6 h-6 text-[#74290F]" strokeWidth={1.5} />,
+      icon: <Users className="w-6 h-6 text-[#8C3316]" strokeWidth={1.5} />,
       label: "Ideal for 20-100 guests",
     },
     {
-      icon: <ChefHat className="w-6 h-6 text-[#74290F]" strokeWidth={1.5} />,
+      icon: <ChefHat className="w-6 h-6 text-[#8C3316]" strokeWidth={1.5} />,
       label: "Professional setup & service",
     },
   ];
 
   return (
     <section className="w-full relative z-20 -mt-16 sm:-mt-24 lg:-mt-28 pt-0 pb-12 sm:pb-3 lg:pb-20 px-4 sm:px-6 lg:px-8 bg-transparent">
-      <div className="max-w-7xl mx-auto bg-white/95 backdrop-blur-md border border-[#74290F]/10 rounded-[24px] md:rounded-[32px] py-8 px-4 md:py-10 md:px-8 shadow-xl shadow-[#74290F]/5 relative overflow-hidden">
+      <div className="max-w-7xl mx-auto bg-white/95 backdrop-blur-md border border-[#8C3316]/10 rounded-[24px] md:rounded-[32px] py-8 px-4 md:py-10 md:px-8 shadow-xl shadow-[#8C3316]/5 relative overflow-hidden">
 
         {/* Section Heading */}
         <div className="flex items-center justify-center gap-2 mb-10">
-          <h2 className="font-serif text-2xl md:text-3xl text-[#74290F] font-semibold text-center tracking-wide flex items-center gap-2">
+          <h2 className="font-serif text-2xl md:text-3xl text-[#8C3316] font-semibold text-center tracking-wide flex items-center gap-2">
             Why Families Choose Dahi Cheeni
-            <span className="inline-block text-base align-middle text-[#74290F]/80">🍃</span>
+            <span className="inline-block text-base align-middle text-[#8C3316]/80">🍃</span>
           </h2>
         </div>
 
@@ -48,13 +48,13 @@ export default function WhyChooseUs() {
               key={idx}
               className={`flex flex-col items-center text-center px-2 transition-all duration-300 hover:scale-105 ${
                 // Add vertical border lines between columns on desktop
-                idx < 5 ? "lg:border-r lg:border-[#74290F]/10" : ""
+                idx < 5 ? "lg:border-r lg:border-[#8C3316]/10" : ""
                 } ${
                 // Add vertical borders for tablet (3 columns)
-                idx % 3 !== 2 ? "md:max-lg:border-r md:max-lg:border-[#74290F]/10" : ""
+                idx % 3 !== 2 ? "md:max-lg:border-r md:max-lg:border-[#8C3316]/10" : ""
                 } ${
                 // Add vertical borders for mobile (2 columns)
-                idx % 2 === 0 ? "max-md:border-r max-md:border-[#74290F]/10" : ""
+                idx % 2 === 0 ? "max-md:border-r max-md:border-[#8C3316]/10" : ""
                 }`}
             >
               {/* Icon Container */}

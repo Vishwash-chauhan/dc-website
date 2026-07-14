@@ -4,15 +4,15 @@
   --font-serif: var(--font-cormorant), Georgia, serif;
   --font-sans: var(--font-outfit), sans-serif;
   
-  --color-brand-brown: #74290F;
-  --color-brand-brown-light: #74290F;
+  --color-brand-brown: #8C3316;
+  --color-brand-brown-light: #8C3316;
   --color-brand-cream: #FAF6F0;
   --color-brand-gold: #c5a880;
 }
 
 :root {
   --background: #FAF6F0;
-  --foreground: #74290F;
+  --foreground: #8C3316;
 }
 
 body {

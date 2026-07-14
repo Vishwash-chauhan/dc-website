@@ -15,7 +15,7 @@ export default function PlanCelebration() {
             <span className="font-sans text-[10px] sm:text-xs font-bold tracking-[0.2em] text-[#c5a880] uppercase mb-3 block">
               BEGIN YOUR JOURNEY
             </span>
-            <h2 className="font-serif text-4xl md:text-5xl lg:text-[52px] text-[#74290F] font-semibold leading-tight tracking-wide mb-6">
+            <h2 className="font-serif text-4xl md:text-5xl lg:text-[52px] text-[#8C3316] font-semibold leading-tight tracking-wide mb-6">
               Plan Your <br />
               <span className="italic font-normal font-serif">Celebration</span>
             </h2>
@@ -35,13 +35,13 @@ export default function PlanCelebration() {
             <div className="flex flex-col sm:flex-row gap-4 items-center">
               <Link
                 href="/qet_a_quote"
-                className="px-8 py-3.5 bg-[#74290F] hover:bg-[#61220C] text-white font-sans text-xs sm:text-sm font-semibold tracking-wider text-center rounded-md shadow-md transition-all duration-300 w-full sm:w-auto cursor-pointer font-semibold"
+                className="px-8 py-3.5 bg-[#8C3316] hover:bg-[#74290F] text-white font-sans text-xs sm:text-sm font-semibold tracking-wider text-center rounded-md shadow-md transition-all duration-300 w-full sm:w-auto cursor-pointer font-semibold"
               >
                 Get A Quote
               </Link>
               <a
                 href="#menus"
-                className="px-8 py-3.5 bg-transparent hover:bg-[#74290F]/5 text-[#74290F] border border-[#74290F] font-sans text-xs sm:text-sm font-semibold tracking-wider text-center rounded-md transition-all duration-300 w-full sm:w-auto"
+                className="px-8 py-3.5 bg-transparent hover:bg-[#8C3316]/5 text-[#8C3316] border border-[#8C3316] font-sans text-xs sm:text-sm font-semibold tracking-wider text-center rounded-md transition-all duration-300 w-full sm:w-auto"
               >
                 Explore Offerings
               </a>
@@ -54,7 +54,7 @@ export default function PlanCelebration() {
             <div className="absolute w-72 h-72 rounded-full bg-[#c5a880]/10 blur-3xl -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
 
             {/* Rotated background card */}
-            <div className="relative w-full max-w-[500px] aspect-[4/3.2] sm:aspect-[4/3] rounded-3xl bg-[#74290F] p-3 shadow-xl transition-all duration-500 hover:rotate-0 hover:scale-[1.02] transform -rotate-3 md:-rotate-4 select-none">
+            <div className="relative w-full max-w-[500px] aspect-[4/3.2] sm:aspect-[4/3] rounded-3xl bg-[#8C3316] p-3 shadow-xl transition-all duration-500 hover:rotate-0 hover:scale-[1.02] transform -rotate-3 md:-rotate-4 select-none">
 
               {/* Inner card border */}
               <div className="absolute inset-4 border border-[#c5a880]/30 rounded-2xl pointer-events-none z-10" />

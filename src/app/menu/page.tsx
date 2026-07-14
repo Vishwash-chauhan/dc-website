@@ -290,14 +290,14 @@ export default function MenuPage() {
     <main className="min-h-screen bg-[#FAF6F0] pt-24 md:pt-28 flex flex-col justify-between">
       {/* Background decoration elements */}
       <div className="absolute top-24 right-0 w-96 h-96 rounded-full bg-[#c5a880]/10 blur-3xl -z-10 pointer-events-none" />
-      <div className="absolute top-[80vh] left-0 w-96 h-96 rounded-full bg-[#74290F]/5 blur-3xl -z-10 pointer-events-none" />
+      <div className="absolute top-[80vh] left-0 w-96 h-96 rounded-full bg-[#8C3316]/5 blur-3xl -z-10 pointer-events-none" />
 
       {/* 1. Page Header */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pt-8 pb-8 text-center space-y-4">
         <span className="font-sans text-[10px] sm:text-xs font-bold tracking-[0.2em] text-[#c5a880] uppercase block">
           OUR CULINARY REPERTOIRE
         </span>
-        <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl text-[#74290F] font-semibold tracking-wide max-w-4xl mx-auto leading-tight">
+        <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl text-[#8C3316] font-semibold tracking-wide max-w-4xl mx-auto leading-tight">
           A Symphony of Home-Style Flavors
         </h1>
         <div className="flex items-center gap-3 mt-4 w-full justify-center">
@@ -312,7 +312,7 @@ export default function MenuPage() {
         {/* Live Search Bar */}
         <div className="max-w-md mx-auto pt-6 relative">
           <div className="relative flex items-center bg-white border border-[#c5a880]/40 rounded-full overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
-            <span className="pl-4 text-[#74290F]/50">
+            <span className="pl-4 text-[#8C3316]/50">
               <Search className="w-5 h-5" />
             </span>
             <input
@@ -320,12 +320,12 @@ export default function MenuPage() {
               placeholder="Search dishes (e.g. Paneer, Shorba, Chaat)..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full px-3 py-3.5 text-sm text-[#74290F] placeholder-[#74290F]/40 focus:outline-none bg-transparent font-sans"
+              className="w-full px-3 py-3.5 text-sm text-[#8C3316] placeholder-[#8C3316]/40 focus:outline-none bg-transparent font-sans"
             />
             {searchQuery && (
               <button
                 onClick={() => setSearchQuery("")}
-                className="pr-4 text-[#74290F]/50 hover:text-[#74290F] transition-colors"
+                className="pr-4 text-[#8C3316]/50 hover:text-[#8C3316] transition-colors"
                 aria-label="Clear search"
               >
                 <X className="w-4 h-4" />
@@ -333,7 +333,7 @@ export default function MenuPage() {
             )}
           </div>
           {searchQuery && (
-            <div className="text-xs text-[#74290F]/70 mt-2.5 font-sans">
+            <div className="text-xs text-[#8C3316]/70 mt-2.5 font-sans">
               Found {filteredItems.length} items matching your search
             </div>
           )}
@@ -356,14 +356,14 @@ export default function MenuPage() {
                     key={category.id}
                     onClick={() => scrollToCategory(category.id)}
                     className={`w-full text-left px-3.5 py-2.5 rounded-lg text-sm font-sans font-medium transition-all duration-300 flex items-center justify-between group ${activeCategory === category.id
-                      ? "bg-[#74290F] text-[#FAF6F0] shadow-sm"
-                      : "text-[#74290F]/80 hover:bg-[#74290F]/5 hover:text-[#74290F]"
+                      ? "bg-[#8C3316] text-[#FAF6F0] shadow-sm"
+                      : "text-[#8C3316]/80 hover:bg-[#8C3316]/5 hover:text-[#8C3316]"
                       }`}
                   >
                     <span>{category.name}</span>
                     <span className={`text-[10px] px-2 py-0.5 rounded-full font-semibold ${activeCategory === category.id
                       ? "bg-white/20 text-white"
-                      : "bg-[#74290F]/5 text-[#74290F]/70 group-hover:bg-[#74290F]/10"
+                      : "bg-[#8C3316]/5 text-[#8C3316]/70 group-hover:bg-[#8C3316]/10"
                       }`}>
                       {getCategoryCount(category.id)}
                     </span>
@@ -385,8 +385,8 @@ export default function MenuPage() {
                     onClick={() => scrollToCategory(category.id)}
                     className={`flex-shrink-0 px-4 py-2 rounded-full text-xs font-sans font-medium transition-all duration-200 ${
                       activeCategory === category.id
-                        ? "bg-[#74290F] text-[#FAF6F0]"
-                        : "bg-white/80 border border-[#c5a880]/30 text-[#74290F]"
+                        ? "bg-[#8C3316] text-[#FAF6F0]"
+                        : "bg-white/80 border border-[#c5a880]/30 text-[#8C3316]"
                     }`}
                   >
                     {category.name} ({getCategoryCount(category.id)})
@@ -413,7 +413,7 @@ export default function MenuPage() {
                   {/* Category Header */}
                   <div className="flex items-center justify-between border-b border-[#c5a880]/30 pb-3">
                     <div className="space-y-1">
-                      <h2 className="font-serif text-2xl sm:text-3xl font-semibold text-[#74290F] tracking-wide">
+                      <h2 className="font-serif text-2xl sm:text-3xl font-semibold text-[#8C3316] tracking-wide">
                         {category.name}
                       </h2>
                       {category.id === "Add-Ons" && (
@@ -440,7 +440,7 @@ export default function MenuPage() {
                           <div className="space-y-2">
                             {/* Veg Icon and Name */}
                             <div className="flex items-start justify-between gap-3">
-                              <h3 className="font-serif text-lg sm:text-xl font-semibold text-[#74290F] tracking-wide group-hover:text-[#61220C] transition-colors leading-tight">
+                              <h3 className="font-serif text-lg sm:text-xl font-semibold text-[#8C3316] tracking-wide group-hover:text-[#74290F] transition-colors leading-tight">
                                 {item.Name}
                               </h3>
                               {/* Veg Sign */}
@@ -464,11 +464,11 @@ export default function MenuPage() {
                                 </span>
                               ) : (
                                 <div className="flex items-baseline gap-1">
-                                  <span className="font-sans text-lg font-bold text-[#74290F]">
+                                  <span className="font-sans text-lg font-bold text-[#8C3316]">
                                     ₹{item.Rate}
                                   </span>
                                   {item.Unit && item.Unit.toLowerCase() !== "na" && (
-                                    <span className="font-sans text-[11px] text-[#74290F]/60">
+                                    <span className="font-sans text-[11px] text-[#8C3316]/60">
                                       / {item.Unit.toLowerCase() === "pc" ? "pcs" : item.Unit.toLowerCase()}
                                     </span>
                                   )}
@@ -493,13 +493,13 @@ export default function MenuPage() {
             {filteredItems.length === 0 && (
               <div className="text-center py-16 bg-white/40 border border-[#c5a880]/20 rounded-2xl space-y-4">
                 <Sparkles className="w-10 h-10 text-[#c5a880]/60 mx-auto" />
-                <h3 className="font-serif text-xl font-semibold text-[#74290F]">No Dishes Found</h3>
+                <h3 className="font-serif text-xl font-semibold text-[#8C3316]">No Dishes Found</h3>
                 <p className="font-sans text-sm text-[#292927]/70 max-w-sm mx-auto">
                   We couldn&apos;t find any items matching &quot;{searchQuery}&quot;. Try checking for spelling errors or searching a different category.
                 </p>
                 <button
                   onClick={() => setSearchQuery("")}
-                  className="px-5 py-2.5 bg-[#74290F] hover:bg-[#61220C] text-white font-sans text-xs font-semibold tracking-wider rounded-md transition-colors"
+                  className="px-5 py-2.5 bg-[#8C3316] hover:bg-[#74290F] text-white font-sans text-xs font-semibold tracking-wider rounded-md transition-colors"
                 >
                   Clear Search Filter
                 </button>
@@ -511,7 +511,7 @@ export default function MenuPage() {
       </section>
 
       {/* 3. Pure Philosophy & CTA Banner */}
-      <section className="w-full bg-[#74290F] text-[#FAF6F0] py-16 md:py-20 relative overflow-hidden z-10">
+      <section className="w-full bg-[#8C3316] text-[#FAF6F0] py-16 md:py-20 relative overflow-hidden z-10">
         <div className="absolute -top-24 -right-24 w-80 h-80 bg-[#c5a880]/10 rounded-full blur-3xl pointer-events-none" />
         <div className="absolute -bottom-24 -left-24 w-80 h-80 bg-[#c5a880]/15 rounded-full blur-3xl pointer-events-none" />
 
@@ -528,7 +528,7 @@ export default function MenuPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
             <Link
               href="/qet_a_quote"
-              className="px-8 py-3.5 bg-[#FAF6F0] hover:bg-[#FAF6F0]/90 text-[#74290F] font-sans text-sm font-semibold tracking-wider rounded-md shadow-md transition-all duration-300 w-full sm:w-auto text-center"
+              className="px-8 py-3.5 bg-[#FAF6F0] hover:bg-[#FAF6F0]/90 text-[#8C3316] font-sans text-sm font-semibold tracking-wider rounded-md shadow-md transition-all duration-300 w-full sm:w-auto text-center"
             >
               Get A Quote
             </Link>

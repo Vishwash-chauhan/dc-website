@@ -33,7 +33,7 @@ export default function FAQs({ items }: FAQsProps) {
   };
 
   return (
-    <section id="faqs" className="w-full bg-[#74290F]/5 py-16 md:py-20 border-t border-b border-[#c5a880]/20 z-10 relative">
+    <section id="faqs" className="w-full bg-[#8C3316]/5 py-16 md:py-20 border-t border-b border-[#c5a880]/20 z-10 relative">
       {/* Injecting JSON-LD FAQ Schema directly into the page */}
       <script
         type="application/ld+json"
@@ -46,7 +46,7 @@ export default function FAQs({ items }: FAQsProps) {
           <span className="font-sans text-[10px] sm:text-xs font-bold tracking-[0.2em] text-[#c5a880] uppercase mb-2 block">
             QUESTIONS & ANSWERS
           </span>
-          <h2 className="font-serif text-3xl sm:text-4xl text-[#74290F] font-semibold tracking-wide">
+          <h2 className="font-serif text-3xl sm:text-4xl text-[#8C3316] font-semibold tracking-wide">
             Frequently Asked Questions
           </h2>
           <div className="flex items-center gap-3 mt-3 w-full justify-center">
@@ -68,7 +68,7 @@ export default function FAQs({ items }: FAQsProps) {
                   onClick={() => toggleFaq(index)}
                   className="w-full text-left px-5 py-4 sm:px-6 sm:py-5 flex justify-between items-center gap-4 hover:bg-[#FAF6F0]/50 transition-colors duration-200"
                 >
-                  <span className="font-serif text-base sm:text-lg text-[#74290F] font-medium leading-snug">
+                  <span className="font-serif text-base sm:text-lg text-[#8C3316] font-medium leading-snug">
                     {item.question}
                   </span>
                   <span className={`text-[#c5a880] transform transition-transform duration-300 ${isOpen ? "rotate-180" : ""}`}>

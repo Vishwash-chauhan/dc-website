@@ -96,7 +96,7 @@ export default function GetAQuotePage() {
     <main className="min-h-screen bg-[#FAF6F0] pt-24 md:pt-28 flex flex-col justify-between">
       {/* Background ambient lighting */}
       <div className="absolute top-20 right-0 w-96 h-96 rounded-full bg-[#c5a880]/15 blur-3xl -z-10 pointer-events-none" />
-      <div className="absolute bottom-10 left-10 w-96 h-96 rounded-full bg-[#74290F]/5 blur-3xl -z-10 pointer-events-none" />
+      <div className="absolute bottom-10 left-10 w-96 h-96 rounded-full bg-[#8C3316]/5 blur-3xl -z-10 pointer-events-none" />
 
       {/* Main Container */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-12 md:py-16 flex-grow flex items-center justify-center">
@@ -108,7 +108,7 @@ export default function GetAQuotePage() {
               <span className="font-sans text-[10px] sm:text-xs font-bold tracking-[0.2em] text-[#c5a880] uppercase mb-3 block">
                 CRAFTING MEMORIES
               </span>
-              <h1 className="font-serif text-4xl sm:text-5xl lg:text-[54px] text-[#74290F] font-semibold leading-tight tracking-wide mb-6">
+              <h1 className="font-serif text-4xl sm:text-5xl lg:text-[54px] text-[#8C3316] font-semibold leading-tight tracking-wide mb-6">
                 Let Us Elevate <br />
                 Your <span className="italic font-normal font-serif">Occasion</span>
               </h1>
@@ -134,7 +134,7 @@ export default function GetAQuotePage() {
                 ].map((perk, i) => (
                   <div key={i} className="flex items-start gap-3">
                     <span className="text-[#c5a880] text-sm mt-0.5">✦</span>
-                    <span className="font-sans text-sm text-[#74290F]/90 font-medium">{perk}</span>
+                    <span className="font-sans text-sm text-[#8C3316]/90 font-medium">{perk}</span>
                   </div>
                 ))}
               </div>
@@ -168,10 +168,10 @@ export default function GetAQuotePage() {
                     <span className="font-sans text-[10px] sm:text-xs font-bold tracking-[0.2em] text-[#c5a880] uppercase mb-1 block">
                       BEGIN YOUR EXPERIENCE
                     </span>
-                    <h2 className="font-serif text-2xl sm:text-3xl text-[#74290F] font-semibold tracking-wide">
+                    <h2 className="font-serif text-2xl sm:text-3xl text-[#8C3316] font-semibold tracking-wide">
                       Get A Quote
                     </h2>
-                    <p className="font-sans text-xs text-[#74290F]/70 mt-1.5">
+                    <p className="font-sans text-xs text-[#8C3316]/70 mt-1.5">
                       Tell us about your event and we will design the perfect menu.
                     </p>
                   </div>
@@ -187,7 +187,7 @@ export default function GetAQuotePage() {
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                       {/* Name */}
                       <div className="flex flex-col">
-                        <label htmlFor="name" className="block text-[11px] sm:text-xs font-semibold text-[#74290F]/80 uppercase tracking-wider mb-1.5">
+                        <label htmlFor="name" className="block text-[11px] sm:text-xs font-semibold text-[#8C3316]/80 uppercase tracking-wider mb-1.5">
                           Full Name <span className="text-red-500">*</span>
                         </label>
                         <input
@@ -198,13 +198,13 @@ export default function GetAQuotePage() {
                           value={formData.name}
                           onChange={handleChange}
                           placeholder="e.g. Rahul Sharma"
-                          className="w-full px-4 py-2.5 bg-white border border-[#c5a880]/30 rounded-lg text-sm text-[#74290F] placeholder-[#74290F]/40 focus:outline-none focus:ring-1 focus:ring-[#74290F] focus:border-[#74290F] transition-all duration-200"
+                          className="w-full px-4 py-2.5 bg-white border border-[#c5a880]/30 rounded-lg text-sm text-[#8C3316] placeholder-[#8C3316]/40 focus:outline-none focus:ring-1 focus:ring-[#8C3316] focus:border-[#8C3316] transition-all duration-200"
                         />
                       </div>
 
                       {/* Contact Number */}
                       <div className="flex flex-col">
-                        <label htmlFor="contactNumber" className="block text-[11px] sm:text-xs font-semibold text-[#74290F]/80 uppercase tracking-wider mb-1.5">
+                        <label htmlFor="contactNumber" className="block text-[11px] sm:text-xs font-semibold text-[#8C3316]/80 uppercase tracking-wider mb-1.5">
                           Contact Number <span className="text-red-500">*</span>
                         </label>
                         <input
@@ -215,13 +215,13 @@ export default function GetAQuotePage() {
                           value={formData.contactNumber}
                           onChange={handleChange}
                           placeholder="e.g. +91 98765 43210"
-                          className="w-full px-4 py-2.5 bg-white border border-[#c5a880]/30 rounded-lg text-sm text-[#74290F] placeholder-[#74290F]/40 focus:outline-none focus:ring-1 focus:ring-[#74290F] focus:border-[#74290F] transition-all duration-200"
+                          className="w-full px-4 py-2.5 bg-white border border-[#c5a880]/30 rounded-lg text-sm text-[#8C3316] placeholder-[#8C3316]/40 focus:outline-none focus:ring-1 focus:ring-[#8C3316] focus:border-[#8C3316] transition-all duration-200"
                         />
                       </div>
 
                       {/* Event Date */}
                       <div className="flex flex-col">
-                        <label htmlFor="eventDate" className="block text-[11px] sm:text-xs font-semibold text-[#74290F]/80 uppercase tracking-wider mb-1.5">
+                        <label htmlFor="eventDate" className="block text-[11px] sm:text-xs font-semibold text-[#8C3316]/80 uppercase tracking-wider mb-1.5">
                           Event Date
                         </label>
                         <input
@@ -230,13 +230,13 @@ export default function GetAQuotePage() {
                           name="eventDate"
                           value={formData.eventDate}
                           onChange={handleChange}
-                          className="w-full px-4 py-2.5 bg-white border border-[#c5a880]/30 rounded-lg text-sm text-[#74290F] placeholder-[#74290F]/40 focus:outline-none focus:ring-1 focus:ring-[#74290F] focus:border-[#74290F] transition-all duration-200"
+                          className="w-full px-4 py-2.5 bg-white border border-[#c5a880]/30 rounded-lg text-sm text-[#8C3316] placeholder-[#8C3316]/40 focus:outline-none focus:ring-1 focus:ring-[#8C3316] focus:border-[#8C3316] transition-all duration-200"
                         />
                       </div>
 
                       {/* Occasion Type */}
                       <div className="flex flex-col">
-                        <label htmlFor="occasion" className="block text-[11px] sm:text-xs font-semibold text-[#74290F]/80 uppercase tracking-wider mb-1.5">
+                        <label htmlFor="occasion" className="block text-[11px] sm:text-xs font-semibold text-[#8C3316]/80 uppercase tracking-wider mb-1.5">
                           Occasion Type <span className="text-red-500">*</span>
                         </label>
                         <input
@@ -247,13 +247,13 @@ export default function GetAQuotePage() {
                           value={formData.occasion}
                           onChange={handleChange}
                           placeholder="e.g. Wedding Ceremony, Pooja"
-                          className="w-full px-4 py-2.5 bg-white border border-[#c5a880]/30 rounded-lg text-sm text-[#74290F] placeholder-[#74290F]/40 focus:outline-none focus:ring-1 focus:ring-[#74290F] focus:border-[#74290F] transition-all duration-200"
+                          className="w-full px-4 py-2.5 bg-white border border-[#c5a880]/30 rounded-lg text-sm text-[#8C3316] placeholder-[#8C3316]/40 focus:outline-none focus:ring-1 focus:ring-[#8C3316] focus:border-[#8C3316] transition-all duration-200"
                         />
                       </div>
 
                       {/* Approximate Guest Count */}
                       <div className="flex flex-col">
-                        <label htmlFor="guestCount" className="block text-[11px] sm:text-xs font-semibold text-[#74290F]/80 uppercase tracking-wider mb-1.5">
+                        <label htmlFor="guestCount" className="block text-[11px] sm:text-xs font-semibold text-[#8C3316]/80 uppercase tracking-wider mb-1.5">
                           Approx. Guest Count
                         </label>
                         <input
@@ -264,13 +264,13 @@ export default function GetAQuotePage() {
                           onChange={handleChange}
                           placeholder="e.g. 50"
                           min="1"
-                          className="w-full px-4 py-2.5 bg-white border border-[#c5a880]/30 rounded-lg text-sm text-[#74290F] placeholder-[#74290F]/40 focus:outline-none focus:ring-1 focus:ring-[#74290F] focus:border-[#74290F] transition-all duration-200"
+                          className="w-full px-4 py-2.5 bg-white border border-[#c5a880]/30 rounded-lg text-sm text-[#8C3316] placeholder-[#8C3316]/40 focus:outline-none focus:ring-1 focus:ring-[#8C3316] focus:border-[#8C3316] transition-all duration-200"
                         />
                       </div>
 
                       {/* Location */}
                       <div className="flex flex-col">
-                        <label htmlFor="location" className="block text-[11px] sm:text-xs font-semibold text-[#74290F]/80 uppercase tracking-wider mb-1.5">
+                        <label htmlFor="location" className="block text-[11px] sm:text-xs font-semibold text-[#8C3316]/80 uppercase tracking-wider mb-1.5">
                           Event Location
                         </label>
                         <input
@@ -280,7 +280,7 @@ export default function GetAQuotePage() {
                           value={formData.location}
                           onChange={handleChange}
                           placeholder="e.g. Vasant Kunj, New Delhi"
-                          className="w-full px-4 py-2.5 bg-white border border-[#c5a880]/30 rounded-lg text-sm text-[#74290F] placeholder-[#74290F]/40 focus:outline-none focus:ring-1 focus:ring-[#74290F] focus:border-[#74290F] transition-all duration-200"
+                          className="w-full px-4 py-2.5 bg-white border border-[#c5a880]/30 rounded-lg text-sm text-[#8C3316] placeholder-[#8C3316]/40 focus:outline-none focus:ring-1 focus:ring-[#8C3316] focus:border-[#8C3316] transition-all duration-200"
                         />
                       </div>
                     </div>
@@ -289,7 +289,7 @@ export default function GetAQuotePage() {
                     <button
                       type="submit"
                       disabled={isSubmitting}
-                      className="w-full mt-6 py-4 bg-[#74290F] hover:bg-[#61220C] disabled:bg-[#74290F]/70 text-white font-sans text-xs sm:text-sm font-semibold tracking-wider text-center rounded-lg shadow-md hover:shadow-lg transition-all duration-300 flex items-center justify-center gap-2 cursor-pointer disabled:cursor-not-allowed"
+                      className="w-full mt-6 py-4 bg-[#8C3316] hover:bg-[#74290F] disabled:bg-[#8C3316]/70 text-white font-sans text-xs sm:text-sm font-semibold tracking-wider text-center rounded-lg shadow-md hover:shadow-lg transition-all duration-300 flex items-center justify-center gap-2 cursor-pointer disabled:cursor-not-allowed"
                     >
                       {isSubmitting ? (
                         <>
@@ -317,7 +317,7 @@ export default function GetAQuotePage() {
                   <span className="font-sans text-[10px] sm:text-xs font-bold tracking-[0.2em] text-[#c5a880] uppercase mb-1 block">
                     THANK YOU
                   </span>
-                  <h3 className="font-serif text-3xl text-[#74290F] font-semibold tracking-wide mb-4">
+                  <h3 className="font-serif text-3xl text-[#8C3316] font-semibold tracking-wide mb-4">
                     Quote Request Received
                   </h3>
 
@@ -333,7 +333,7 @@ export default function GetAQuotePage() {
 
                   <Link
                     href="/"
-                    className="inline-flex items-center justify-center px-6 py-3 bg-[#74290F] hover:bg-[#61220C] text-white font-sans text-xs sm:text-sm font-semibold tracking-wide rounded-md shadow-sm transition-all duration-300"
+                    className="inline-flex items-center justify-center px-6 py-3 bg-[#8C3316] hover:bg-[#74290F] text-white font-sans text-xs sm:text-sm font-semibold tracking-wide rounded-md shadow-sm transition-all duration-300"
                   >
                     Return to Homepage
                   </Link>

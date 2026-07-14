@@ -4,9 +4,9 @@ import { Home, Footprints, Users } from "lucide-react";
 
 // Custom SVG Diya Icon
 const DiyaIcon = () => (
-  <svg className="w-6 h-6 text-[#74290F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
+  <svg className="w-6 h-6 text-[#8C3316]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
     {/* Diya flame */}
-    <path d="M12 2.5c-.7 1.8-1.8 3.2-1.8 5s1 3.2 1.8 3.2 1.8-1.4 1.8-3.2-1.1-3.2-1.8-5z" fill="#74290F" stroke="none" />
+    <path d="M12 2.5c-.7 1.8-1.8 3.2-1.8 5s1 3.2 1.8 3.2 1.8-1.4 1.8-3.2-1.1-3.2-1.8-5z" fill="#8C3316" stroke="none" />
     {/* Oil container bowl */}
     <path d="M4 14c0 3.5 3.58 6.5 8 6.5s8-3 8-6.5c0-1.2-1.5-2.2-4-2.2s-3.5 1.2-4 1.2-1.5-1.2-4-1.2-4 1-4 2.2z" strokeLinecap="round" strokeLinejoin="round" />
   </svg>
@@ -14,7 +14,7 @@ const DiyaIcon = () => (
 
 // Custom SVG Lotus/Ritual Icon
 const LotusIcon = () => (
-  <svg className="w-6 h-6 text-[#74290F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+  <svg className="w-6 h-6 text-[#8C3316]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
     {/* Central petal */}
     <path d="M12 3c-1.5 3-2 6-2 9s.5 6 2 9c1.5-3 2-6 2-9s-.5-6-2-9z" />
     {/* Left petal */}
@@ -28,7 +28,7 @@ const LotusIcon = () => (
 
 // Custom SVG Praying Hands Icon
 const PrayingHandsIcon = () => (
-  <svg className="w-6 h-6 text-[#74290F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+  <svg className="w-6 h-6 text-[#8C3316]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
     <path d="M12 4c-.5 1-1.5 3-1.5 5.5s.8 4 1.5 5.5" />
     <path d="M12 4c.5 1 1.5 3 1.5 5.5s-.8 4-1.5 5.5" />
     <path d="M10 20c-1.5-1.5-2.5-3.5-2.5-5.5 0-2 1.5-3.5 2-4" />
@@ -48,7 +48,7 @@ export default function Occasions() {
   const list: OccasionItem[] = [
     {
       image: "/griha-pravesh.png",
-      icon: <Home className="w-6 h-6 text-[#74290F]" strokeWidth={1.5} />,
+      icon: <Home className="w-6 h-6 text-[#8C3316]" strokeWidth={1.5} />,
       title: "Griha Pravesh",
       desc: "Celebrate new beginnings with comforting food your guests will remember.",
     },
@@ -60,7 +60,7 @@ export default function Occasions() {
     },
     {
       image: "/baby-celebrations.png",
-      icon: <Footprints className="w-6 h-6 text-[#74290F]" strokeWidth={1.5} />,
+      icon: <Footprints className="w-6 h-6 text-[#8C3316]" strokeWidth={1.5} />,
       title: "Baby ",
       desc: "Baby Shower, Naamkaran and Annaprashan ceremonies.",
     },
@@ -78,7 +78,7 @@ export default function Occasions() {
     },
     {
       image: "/family-get-together.png",
-      icon: <Users className="w-6 h-6 text-[#74290F]" strokeWidth={1.5} />,
+      icon: <Users className="w-6 h-6 text-[#8C3316]" strokeWidth={1.5} />,
       title: "Family Get-Togethers",
       desc: "Perfect for birthdays, anniversaries and intimate celebrations.",
     },
@@ -90,7 +90,7 @@ export default function Occasions() {
 
         {/* Section Heading */}
         <div className="text-center mb-12 flex flex-col items-center">
-          <h2 className="font-serif text-3xl md:text-4xl text-[#74290F] font-semibold tracking-wide">
+          <h2 className="font-serif text-3xl md:text-4xl text-[#8C3316] font-semibold tracking-wide">
             Occasions We Cater To
           </h2>
           {/* Decorative Divider */}
@@ -119,7 +119,7 @@ export default function Occasions() {
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 33vw, 16vw"
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                   />
-                  <div className="absolute inset-0 bg-[#74290F]/5 group-hover:bg-transparent transition-colors duration-300" />
+                  <div className="absolute inset-0 bg-[#8C3316]/5 group-hover:bg-transparent transition-colors duration-300" />
                 </div>
 
                 {/* Overlapping Circle Button (Placed outside overflow-hidden) */}
@@ -130,7 +130,7 @@ export default function Occasions() {
 
               {/* Text / Info Container */}
               <div className="pt-8 pb-6 px-4 flex flex-col items-center text-center flex-grow">
-                <h3 className="font-serif text-base md:text-lg text-[#74290F] font-bold tracking-wide mb-2">
+                <h3 className="font-serif text-base md:text-lg text-[#8C3316] font-bold tracking-wide mb-2">
                   {item.title}
                 </h3>
                 <p className="font-sans text-xs md:text-[13px] text-[#292927]/75 font-normal leading-relaxed">

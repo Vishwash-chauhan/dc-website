@@ -29,14 +29,14 @@ export default function AboutPage() {
     <main className="min-h-screen bg-[#FAF6F0] pt-24 md:pt-28 flex flex-col justify-between overflow-x-hidden">
       {/* Background decoration elements */}
       <div className="absolute top-24 left-0 w-96 h-96 rounded-full bg-[#c5a880]/10 blur-3xl -z-10 pointer-events-none" />
-      <div className="absolute top-[60vh] right-0 w-96 h-96 rounded-full bg-[#74290F]/5 blur-3xl -z-10 pointer-events-none" />
+      <div className="absolute top-[60vh] right-0 w-96 h-96 rounded-full bg-[#8C3316]/5 blur-3xl -z-10 pointer-events-none" />
 
       {/* 1. Header Banner */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pt-10 pb-8 text-center">
         <span className="font-sans text-[10px] sm:text-xs font-bold tracking-[0.2em] text-[#c5a880] uppercase mb-2 block">
           OUR LEGACY & MISSION
         </span>
-        <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl text-[#74290F] font-semibold tracking-wide">
+        <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl text-[#8C3316] font-semibold tracking-wide">
           About Dahi Cheeni
         </h1>
         <div className="flex items-center gap-3 mt-4 w-full justify-center">
@@ -55,11 +55,11 @@ export default function AboutPage() {
             <span className="font-sans text-[10px] sm:text-xs font-bold tracking-[0.2em] text-[#c5a880] uppercase block">
               SWEET BEGINNINGS
             </span>
-            <h2 className="font-serif text-3xl sm:text-4xl text-[#74290F] font-semibold leading-tight tracking-wide">
+            <h2 className="font-serif text-3xl sm:text-4xl text-[#8C3316] font-semibold leading-tight tracking-wide">
               An Auspicious Start to Every Culinary Journey
             </h2>
             <p className="font-sans text-base text-[#292927]/90 font-light leading-relaxed">
-              In every Indian home, a spoonful of <span className="font-semibold text-[#74290F]">Dahi Cheeni</span> is more than just yogurt and sugar—it is a mother&apos;s blessing, a grandmother&apos;s prayer, and a traditional token of good luck given before embarking on any significant milestone.
+              In every Indian home, a spoonful of <span className="font-semibold text-[#8C3316]">Dahi Cheeni</span> is more than just yogurt and sugar—it is a mother&apos;s blessing, a grandmother&apos;s prayer, and a traditional token of good luck given before embarking on any significant milestone.
             </p>
             <p className="font-sans text-base text-[#292927]/85 font-light leading-relaxed">
               Founded on this very essence of purity and auspiciousness, Dahi Cheeni brings clean, home-style premium catering to life&apos;s most meaningful gatherings. We believe that festive food should not only taste exquisite but should also comfort the soul and respect traditional values.
@@ -72,7 +72,7 @@ export default function AboutPage() {
           {/* Story Image Section */}
           <div className="lg:col-span-5 flex justify-center items-center relative py-4">
             <div className="absolute w-64 h-64 rounded-full bg-[#c5a880]/15 blur-3xl -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
-            <div className="relative w-full max-w-[420px] aspect-[4/3] rounded-3xl bg-[#74290F] p-2.5 shadow-xl rotate-2 hover:rotate-0 transition-transform duration-500">
+            <div className="relative w-full max-w-[420px] aspect-[4/3] rounded-3xl bg-[#8C3316] p-2.5 shadow-xl rotate-2 hover:rotate-0 transition-transform duration-500">
               <div className="absolute inset-3 border border-[#c5a880]/30 rounded-2xl pointer-events-none z-10" />
               <div className="relative w-full h-full rounded-[14px] overflow-hidden">
                 <Image
@@ -98,7 +98,7 @@ export default function AboutPage() {
             <span className="font-sans text-[10px] sm:text-xs font-bold tracking-[0.2em] text-[#c5a880] uppercase mb-2 block">
               HOW WE CATER
             </span>
-            <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl text-[#74290F] font-semibold tracking-wide">
+            <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl text-[#8C3316] font-semibold tracking-wide">
               Our Culinary Philosophy
             </h2>
             <div className="flex items-center gap-3 mt-4 w-full justify-center">
@@ -134,12 +134,12 @@ export default function AboutPage() {
             ].map((card, idx) => (
               <div
                 key={idx}
-                className="bg-[#FAF6F0] border border-[#c5a880]/30 hover:border-[#74290F]/45 rounded-2xl p-6 sm:p-8 flex flex-col items-center text-center shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1"
+                className="bg-[#FAF6F0] border border-[#c5a880]/30 hover:border-[#8C3316]/45 rounded-2xl p-6 sm:p-8 flex flex-col items-center text-center shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1"
               >
-                <div className="w-12 h-12 rounded-full bg-[#74290F]/5 flex items-center justify-center text-[#c5a880] text-xl font-bold mb-6 border border-[#c5a880]/20">
+                <div className="w-12 h-12 rounded-full bg-[#8C3316]/5 flex items-center justify-center text-[#c5a880] text-xl font-bold mb-6 border border-[#c5a880]/20">
                   {card.icon}
                 </div>
-                <h3 className="font-serif text-xl text-[#74290F] font-semibold mb-3 tracking-wide">
+                <h3 className="font-serif text-xl text-[#8C3316] font-semibold mb-3 tracking-wide">
                   {card.title}
                 </h3>
                 <p className="font-sans text-sm text-[#292927]/80 font-light leading-relaxed">
@@ -153,7 +153,7 @@ export default function AboutPage() {
       </section>
 
       {/* 4. CTA Banner Section */}
-      <section className="w-full bg-[#74290F] text-[#FAF6F0] py-16 md:py-20 relative overflow-hidden z-10">
+      <section className="w-full bg-[#8C3316] text-[#FAF6F0] py-16 md:py-20 relative overflow-hidden z-10">
         {/* Dynamic golden circular background effects */}
         <div className="absolute -top-24 -left-24 w-80 h-80 rounded-full bg-[#c5a880]/10 blur-3xl pointer-events-none" />
         <div className="absolute -bottom-24 -right-24 w-80 h-80 rounded-full bg-[#c5a880]/15 blur-3xl pointer-events-none" />
@@ -171,7 +171,7 @@ export default function AboutPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
             <Link
               href="/qet_a_quote"
-              className="px-8 py-3.5 bg-[#FAF6F0] hover:bg-[#FAF6F0]/90 text-[#74290F] font-sans text-sm font-semibold tracking-wider rounded-md shadow-md transition-all duration-300 w-full sm:w-auto text-center"
+              className="px-8 py-3.5 bg-[#FAF6F0] hover:bg-[#FAF6F0]/90 text-[#8C3316] font-sans text-sm font-semibold tracking-wider rounded-md shadow-md transition-all duration-300 w-full sm:w-auto text-center"
             >
               Request a Quote
             </Link>

@@ -39,7 +39,7 @@ export default function Navbar() {
                 />
               </div>
               <div className="flex flex-col">
-                <span className="font-serif text-[28px] text-[#74290F] font-semibold leading-none tracking-normal">
+                <span className="font-serif text-[28px] text-[#8C3316] font-semibold leading-none tracking-normal">
                   Dahi Cheeni
                 </span>
                 <span className="font-sans text-[8px] text-[#c5a880] tracking-[0.16em] uppercase font-bold mt-1">
@@ -56,8 +56,8 @@ export default function Navbar() {
                 key={link.name}
                 href={link.href}
                 className={`relative text-[15px] font-sans font-medium tracking-wide transition-colors duration-200 py-1 ${link.active
-                  ? "text-[#74290F] border-b-2 border-[#74290F]"
-                  : "text-[#74290F]/75 hover:text-[#74290F]"
+                  ? "text-[#8C3316] border-b-2 border-[#8C3316]"
+                  : "text-[#8C3316]/75 hover:text-[#8C3316]"
                   }`}
               >
                 {link.name}
@@ -69,7 +69,7 @@ export default function Navbar() {
           <div className="hidden md:flex items-center space-x-4">
             <Link
               href="/qet_a_quote"
-              className="px-6 py-3 bg-[#74290F] hover:bg-[#61220C] text-white font-sans text-sm font-semibold tracking-wide rounded-md shadow-sm transition-all duration-300 transform active:scale-98 cursor-pointer text-center"
+              className="px-6 py-3 bg-[#8C3316] hover:bg-[#74290F] text-white font-sans text-sm font-semibold tracking-wide rounded-md shadow-sm transition-all duration-300 transform active:scale-98 cursor-pointer text-center"
             >
               Get A Quote
             </Link>
@@ -93,7 +93,7 @@ export default function Navbar() {
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               type="button"
-              className="inline-flex items-center justify-center p-2 rounded-md text-[#74290F] hover:bg-[#74290F]/5 focus:outline-none transition-colors duration-200"
+              className="inline-flex items-center justify-center p-2 rounded-md text-[#8C3316] hover:bg-[#8C3316]/5 focus:outline-none transition-colors duration-200"
               aria-expanded="false"
             >
               <span className="sr-only">Open main menu</span>
@@ -121,7 +121,7 @@ export default function Navbar() {
                 key={link.name}
                 href={link.href}
                 onClick={() => setIsMobileMenuOpen(false)}
-                className={`text-xl font-sans font-medium tracking-wide ${link.active ? "text-[#74290F] underline underline-offset-8 decoration-[#74290F] decoration-2" : "text-[#74290F]/80"
+                className={`text-xl font-sans font-medium tracking-wide ${link.active ? "text-[#8C3316] underline underline-offset-8 decoration-[#8C3316] decoration-2" : "text-[#8C3316]/80"
                   }`}
               >
                 {link.name}
@@ -133,7 +133,7 @@ export default function Navbar() {
             <Link
               href="/qet_a_quote"
               onClick={() => setIsMobileMenuOpen(false)}
-              className="w-full max-w-xs text-center px-6 py-4 bg-[#74290F] text-white font-sans text-base font-semibold tracking-wide rounded-md shadow-md cursor-pointer"
+              className="w-full max-w-xs text-center px-6 py-4 bg-[#8C3316] text-white font-sans text-base font-semibold tracking-wide rounded-md shadow-md cursor-pointer"
             >
               Get A Quote
             </Link>
