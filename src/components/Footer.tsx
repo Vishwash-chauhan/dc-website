@@ -136,6 +136,18 @@ export default function Footer() {
               <div className="flex items-start gap-2.5">
                 <MapPin className="w-4.5 h-4.5 text-[#c5a880] mt-0.5 flex-shrink-0" />
                 <div>
+                  <span className="font-medium text-[#FAF6F0] block">Office Address</span>
+                  <span className="text-xs text-[#FAF6F0]/70 block leading-relaxed">
+                    E 5 Kalindi Colony,<br />
+                    Near New Friends Colony,<br />
+                    New Delhi 110065
+                  </span>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-2.5">
+                <MapPin className="w-4.5 h-4.5 text-[#c5a880] mt-0.5 flex-shrink-0" />
+                <div>
                   <span className="font-medium text-[#FAF6F0] block">Service Area</span>
                   <span className="text-xs text-[#FAF6F0]/70">Delhi, Gurugram, Noida, Ghaziabad, Faridabad & NCR</span>
                 </div>

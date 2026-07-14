@@ -100,9 +100,14 @@ export default function PrivacyPage() {
             <p>
               If you have any questions about this Privacy Policy or wish to modify/delete any information you previously submitted to us, please feel free to reach out directly via:
             </p>
-            <p className="font-medium text-[#74290F]">
-              Phone/WhatsApp: <a href="tel:+919971118559" className="hover:underline">+91 99711 18559</a>
-            </p>
+            <div className="font-medium text-[#74290F] space-y-1">
+              <p>
+                Address: E 5 Kalindi Colony, Near New Friends Colony, New Delhi 110065
+              </p>
+              <p>
+                Phone/WhatsApp: <a href="tel:+919971118559" className="hover:underline">+91 99711 18559</a>
+              </p>
+            </div>
           </section>
 
         </div>

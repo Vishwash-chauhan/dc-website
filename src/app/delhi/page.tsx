@@ -37,7 +37,7 @@ export default function DelhiLandingPage() {
   const regions = [
     {
       name: "South Delhi",
-      areas: ["Greater Kailash", "Vasant Kunj", "Saket", "Hauz Khas", "Safdarjung", "Gulmohar Park", "South Ext."]
+      areas: ["Greater Kailash", "Vasant Kunj", "Saket", "Hauz Khas", "Safdarjung", "Gulmohar Park", "South Ext.", "Kalindi Colony", "New Friends Colony"]
     },
     {
       name: "West Delhi",
