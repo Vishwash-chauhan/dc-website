@@ -13,7 +13,7 @@ export default function Navbar() {
   const navLinks = [
     { name: "Home", href: isHome ? "#home" : "/#home", active: isHome },
     { name: "About Us", href: "/about", active: pathname === "/about" },
-    { name: "Services", href: "/services", active: pathname === "/services" },
+    { name: "Occasions", href: "/occasions_we_serve", active: pathname === "/occasions_we_serve" },
     { name: "Menu", href: "/menu", active: pathname === "/menu" },
     // { name: "Gallery", href: isHome ? "#gallery" : "/#gallery", active: false },
     { name: "FAQs", href: "/faq", active: pathname === "/faq" },

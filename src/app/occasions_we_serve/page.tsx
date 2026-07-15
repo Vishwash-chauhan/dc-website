@@ -6,7 +6,7 @@ import Image from "next/image";
 import Occasions from "@/components/Occasions";
 import FAQs from "@/components/FAQs";
 
-const SERVICES_PAGE_FAQS = [
+const OCCASIONS_PAGE_FAQS = [
   {
     question: "Do you provide buffet counters and service staff?",
     answer: "Yes, we provide full buffet counters, themed table setups, and trained professional service staff to manage the food presentation and guest hospitality throughout your event.",
@@ -25,7 +25,7 @@ const SERVICES_PAGE_FAQS = [
   },
 ];
 
-export default function ServicesPage() {
+export default function OccasionsPage() {
   return (
     <main className="min-h-screen bg-[#FAF6F0] pt-24 md:pt-28 flex flex-col justify-between overflow-x-hidden">
       {/* Background decoration elements */}
@@ -38,7 +38,7 @@ export default function ServicesPage() {
           A CULINARY EXPERIENCE
         </span>
         <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl text-[#8C3316] font-semibold tracking-wide max-w-4xl mx-auto leading-tight">
-          Catering Services Crafted <br />
+          Catering for Occasions Crafted <br />
           with Purity & Passion
         </h1>
         <div className="flex items-center gap-3 mt-4 w-full justify-center">
@@ -154,7 +154,7 @@ export default function ServicesPage() {
       </section>
 
       {/* 6. FAQs Section */}
-      <FAQs items={SERVICES_PAGE_FAQS} />
+      <FAQs items={OCCASIONS_PAGE_FAQS} />
     </main>
   );
 }

@@ -53,16 +53,16 @@ export default function PlanCelebration() {
             {/* Background decorative blob or glow */}
             <div className="absolute w-72 h-72 rounded-full bg-[#c5a880]/10 blur-3xl -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
 
-            {/* Rotated background card */}
-            <div className="relative w-full max-w-[500px] aspect-[4/3.2] sm:aspect-[4/3] rounded-3xl bg-[#8C3316] p-3 shadow-xl transition-all duration-500 hover:rotate-0 hover:scale-[1.02] transform -rotate-3 md:-rotate-4 select-none">
+            {/* Background card */}
+            <div className="relative w-full max-w-[500px] aspect-[4/3.2] sm:aspect-[4/3] rounded-3xl bg-[#8C3316] p-3 shadow-xl transition-all duration-300 hover:scale-[1.02] select-none">
 
               {/* Inner card border */}
               <div className="absolute inset-4 border border-[#c5a880]/30 rounded-2xl pointer-events-none z-10" />
 
-              {/* Tilted image */}
+              {/* Image */}
               <div className="relative w-full h-full rounded-[18px] overflow-hidden">
                 <Image
-                  src="/plan-celebration.png"
+                  src="/6.jpeg"
                   alt="Traditional Premium Thali Celebration Feast"
                   fill
                   sizes="(max-width: 1024px) 100vw, 50vw"
