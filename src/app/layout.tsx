@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Cormorant_Garamond, Outfit } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import InstagramCTA from "@/components/InstagramCTA";
 import "./globals.css";
 
 const cormorant = Cormorant_Garamond({
@@ -35,6 +36,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col bg-[#FAF6F0] text-[#8C3316] font-sans">
         <Navbar />
         {children}
+        <InstagramCTA />
         <Footer />
       </body>
     </html>

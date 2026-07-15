@@ -5,6 +5,23 @@ import Link from "next/link";
 import Image from "next/image";
 import { Phone, MessageSquare, MapPin, Calendar, Heart } from "lucide-react";
 
+const Instagram = ({ className }: { className?: string }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className={className}
+  >
+    <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+    <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+  </svg>
+);
+
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
@@ -48,6 +65,19 @@ export default function Footer() {
             <div className="flex items-center gap-2 text-[#c5a880] text-xs font-serif italic pt-1">
               <span>✿</span>
               <span>Pure Traditions. Clean Flavors.</span>
+            </div>
+
+            {/* Social Links */}
+            <div className="flex items-center gap-3 pt-2">
+              <a
+                href="https://www.instagram.com/dahicheeni.catering?igsh=ZmJibmYxc3hxM2Fw&utm_source=qr"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-9 h-9 flex items-center justify-center rounded-full bg-[#FAF6F0]/5 border border-[#c5a880]/20 text-[#FAF6F0] hover:text-[#c5a880] hover:border-[#c5a880] transition-all duration-300 hover:scale-105 animate-pulse-slow"
+                aria-label="Instagram"
+              >
+                <Instagram className="w-4.5 h-4.5" />
+              </a>
             </div>
           </div>
 
