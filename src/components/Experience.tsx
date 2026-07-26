@@ -11,18 +11,18 @@ export default function Experience() {
   const steps: StepItem[] = [
     {
       number: "01",
-      title: "Menu Curation",
-      desc: "Work alongside our culinary curators to design a custom menu tailored to your family's heritage, preferences, and the specific spiritual or celebratory occasion.",
+      title: "Tell Us About Your Occasion",
+      desc: "Share your event date, guest count and the type of celebration you're planning.",
     },
     {
       number: "02",
-      title: "Purity in Preparation",
-      desc: "Wholesome, home-style meals prepared fresh on the day of the gathering. We adhere to strict quality standards, utilizing the highest quality ingredients.",
+      title: "Curate Your Menu",
+      desc: "We'll recommend a menu based on your occasion, preferences and budget.",
     },
     {
       number: "03",
-      title: "Elegance in Execution",
-      desc: "Impeccable hospitality served in traditional copper chafing dishes, complete with floral styling and attentive staff delivering a seamless dining experience.",
+      title: "Leave the Rest to Us",
+      desc: "Our team prepares, delivers and serves fresh food so you can enjoy your celebration with complete peace of mind.",
     },
   ];
 

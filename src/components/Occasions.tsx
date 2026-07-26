@@ -12,20 +12,6 @@ const DiyaIcon = () => (
   </svg>
 );
 
-// Custom SVG Lotus/Ritual Icon
-const LotusIcon = () => (
-  <svg className="w-6 h-6 text-[#8C3316]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-    {/* Central petal */}
-    <path d="M12 3c-1.5 3-2 6-2 9s.5 6 2 9c1.5-3 2-6 2-9s-.5-6-2-9z" />
-    {/* Left petal */}
-    <path d="M12 9c-3-1.5-6-1.5-8 0c1 2.5 3 4.5 8 5" />
-    {/* Right petal */}
-    <path d="M12 9c3-1.5 6-1.5 8 0c-1 2.5-3 4.5-8 5" />
-    {/* Base stem / leaves */}
-    <path d="M9 19c2 1.5 4 1.5 6 0" />
-  </svg>
-);
-
 // Custom SVG Praying Hands Icon
 const PrayingHandsIcon = () => (
   <svg className="w-6 h-6 text-[#8C3316]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
@@ -49,38 +35,32 @@ export default function Occasions() {
     {
       image: "/griha-pravesh.png",
       icon: <Home className="w-6 h-6 text-[#8C3316]" strokeWidth={1.5} />,
-      title: "Griha Pravesh",
-      desc: "Celebrate new beginnings with comforting food your guests will remember.",
+      title: "Griha Pravesh Catering",
+      desc: "A new home marks the beginning of a new chapter. Welcome family and friends with comforting meals that create a warm and memorable first gathering.",
     },
     {
       image: "/pooja-havan.png",
       icon: <DiyaIcon />,
-      title: "Pooja & Havan",
-      desc: "Thoughtfully prepared menus suitable for spiritual occasions.",
+      title: "Pooja & Havan Catering",
+      desc: "From intimate home poojas to larger religious ceremonies, we offer thoughtfully prepared menus, including satvik options, allowing you to focus on your prayers while we take care of the hospitality.",
     },
     {
       image: "/baby-celebrations.png",
       icon: <Footprints className="w-6 h-6 text-[#8C3316]" strokeWidth={1.5} />,
-      title: "Baby ",
-      desc: "Baby Shower, Naamkaran and Annaprashan ceremonies.",
-    },
-    {
-      image: "/mundan-janeu.png",
-      icon: <LotusIcon />,
-      title: "Mundan & Janeu",
-      desc: "Traditional gatherings catered with care and purity.",
+      title: "Baby Celebrations",
+      desc: "Whether it's a Naamkaran, Annaprashan, Mundan or a baby's first birthday at home, we'll help you celebrate with fresh food that guests of every generation will enjoy.",
     },
     {
       image: "/prayer-meetings.png",
       icon: <PrayingHandsIcon />,
       title: "Prayer Meetings",
-      desc: "Simple, respectful and wholesome meals.",
+      desc: "Respectful, simple and comforting meals prepared with sensitivity for families and guests coming together during difficult times.",
     },
     {
       image: "/family-get-together.png",
       icon: <Users className="w-6 h-6 text-[#8C3316]" strokeWidth={1.5} />,
-      title: "Family Get-Togethers",
-      desc: "Perfect for birthdays, anniversaries and intimate celebrations.",
+      title: "Small Family Gatherings",
+      desc: "Not every celebration needs a special occasion. Sometimes, the best memories are created simply by sharing a meal with loved ones.",
     },
   ];
 
@@ -102,7 +82,7 @@ export default function Occasions() {
         </div>
 
         {/* Responsive Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-4 lg:gap-3 overflow-visible">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-4 lg:gap-3 overflow-visible">
           {list.map((item, index) => (
             <div
               key={index}

@@ -4,6 +4,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import FAQs from "@/components/FAQs";
+import Experience from "@/components/Experience";
 
 const ABOUT_PAGE_FAQS = [
   {
@@ -53,19 +54,22 @@ export default function AboutPage() {
           {/* Story Text Content */}
           <div className="lg:col-span-7 space-y-6">
             <span className="font-sans text-[10px] sm:text-xs font-bold tracking-[0.2em] text-[#c5a880] uppercase block">
-              SWEET BEGINNINGS
+              Thoughtfully Prepared Food. Warm Hospitality. Celebrations That Feel Like Home.
             </span>
             <h2 className="font-serif text-3xl sm:text-4xl text-[#8C3316] font-semibold leading-tight tracking-wide">
-              An Auspicious Start to Every Culinary Journey
+              Some occasions deserve more than just good food.
             </h2>
             <p className="font-sans text-base text-[#292927]/90 font-light leading-relaxed">
-              In every Indian home, a spoonful of <span className="font-semibold text-[#8C3316]">Dahi Cheeni</span> is more than just yogurt and sugar—it is a mother&apos;s blessing, a grandmother&apos;s prayer, and a traditional token of good luck given before embarking on any significant milestone.
+              They deserve food that brings people together, conversations that last a little longer, and hospitality that makes every guest feel welcome.
             </p>
             <p className="font-sans text-base text-[#292927]/85 font-light leading-relaxed">
-              Founded on this very essence of purity and auspiciousness, Dahi Cheeni brings clean, home-style premium catering to life&apos;s most meaningful gatherings. We believe that festive food should not only taste exquisite but should also comfort the soul and respect traditional values.
+              At <span className="font-semibold text-[#8C3316]">Dahi Cheeni</span>, we specialise in home-style catering for intimate celebrations across Delhi NCR. From Griha Pravesh ceremonies and Pooja & Havan gatherings to baby celebrations, prayer meetings and family get-togethers, we create wholesome, freshly prepared meals that feel comforting, familiar and memorable.
             </p>
             <p className="font-sans text-base text-[#292927]/85 font-light leading-relaxed">
-              From family poojas and baby  to spiritual assemblies and intimate weddings, our culinary team uses generational heritage recipes and fresh, locally sourced ingredients to design custom menus that carry the genuine warmth of home.
+              Inspired by the warmth of Indian homes, our menus are thoughtfully curated using quality ingredients, traditional recipes and modern presentation. Whether you&apos;re hosting 20 guests or 200, we help you celebrate with food that&apos;s prepared with care and served with genuine hospitality.
+            </p>
+            <p className="font-sans text-base text-[#8C3316] font-medium leading-relaxed italic">
+              Because life&apos;s most meaningful occasions deserve food that feels like home.
             </p>
           </div>
 
@@ -90,69 +94,124 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* 3. Our Philosophy Grid */}
-      <section className="w-full bg-[#FAF6F0] border-t border-[#c5a880]/20 py-16 md:py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* 3. Why Families Choose Dahi Cheeni */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-10 md:py-16 border-t border-[#c5a880]/15">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
 
-          <div className="text-center mb-16">
-            <span className="font-sans text-[10px] sm:text-xs font-bold tracking-[0.2em] text-[#c5a880] uppercase mb-2 block">
-              HOW WE CATER
-            </span>
-            <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl text-[#8C3316] font-semibold tracking-wide">
-              Our Culinary Philosophy
-            </h2>
-            <div className="flex items-center gap-3 mt-4 w-full justify-center">
-              <div className="h-[1px] w-10 bg-[#c5a880]/30" />
-              <span className="text-[#c5a880] text-xs">✿</span>
-              <div className="h-[1px] w-10 bg-[#c5a880]/30" />
+          {/* Left side: Showcase Image Card (Alternating layout) */}
+          <div className="lg:col-span-5 flex justify-center items-center relative py-4 order-2 lg:order-1">
+            <div className="absolute w-64 h-64 rounded-full bg-[#8C3316]/5 blur-3xl -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
+            <div className="relative w-full max-w-[420px] aspect-[4/3] rounded-3xl bg-[#8C3316] p-2.5 shadow-xl -rotate-2 hover:rotate-0 transition-transform duration-500">
+              <div className="absolute inset-3 border border-[#c5a880]/30 rounded-2xl pointer-events-none z-10" />
+              <div className="relative w-full h-full rounded-[14px] overflow-hidden">
+                <Image
+                  src="/5.jpeg"
+                  alt="Premium home-style catering food presentation"
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 35vw"
+                  className="object-cover"
+                />
+              </div>
             </div>
           </div>
 
-          {/* Cards Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[
-              {
-                title: "Pure Kitchen Standards",
-                desc: "We respect spiritual values and offer strict onion- and garlic-free options. Prepared with dedicated clean utensils and pure ingredients for religious gatherings and poojas.",
-                icon: "✦"
-              },
-              {
-                title: "Generational Recipes",
-                desc: "Our recipes are heritage formulas passed down through home cooks. We deliver comforting, home-style flavors that trigger nostalgic memories of family reunions.",
-                icon: "❀"
-              },
-              {
-                title: "Zero Compromises",
-                desc: "We use daily fresh, high-quality ingredients. No artificial colors, no heavy commercial additives, and no chemical preservatives. Only clean, wholesome ingredients.",
-                icon: "✿"
-              },
-              {
-                title: "Auspicious Service",
-                desc: "Catering is not just a commercial service to us; it is auspicious hospitality. We arrange setups with strict hygiene, aesthetic setups, and genuine warmth.",
-                icon: "✺"
-              }
-            ].map((card, idx) => (
-              <div
-                key={idx}
-                className="bg-[#FAF6F0] border border-[#c5a880]/30 hover:border-[#8C3316]/45 rounded-2xl p-6 sm:p-8 flex flex-col items-center text-center shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1"
-              >
-                <div className="w-12 h-12 rounded-full bg-[#8C3316]/5 flex items-center justify-center text-[#c5a880] text-xl font-bold mb-6 border border-[#c5a880]/20">
-                  {card.icon}
-                </div>
-                <h3 className="font-serif text-xl text-[#8C3316] font-semibold mb-3 tracking-wide">
-                  {card.title}
-                </h3>
-                <p className="font-sans text-sm text-[#292927]/80 font-light leading-relaxed">
-                  {card.desc}
-                </p>
-              </div>
-            ))}
+          {/* Right side: Why Choose Us Text */}
+          <div className="lg:col-span-7 space-y-6 order-1 lg:order-2">
+            <span className="font-sans text-[10px] sm:text-xs font-bold tracking-[0.2em] text-[#c5a880] uppercase block">
+              OUR CUSTOMER PROMISE
+            </span>
+            <h2 className="font-serif text-3xl sm:text-4xl text-[#8C3316] font-semibold leading-tight tracking-wide">
+              Why Families Choose Dahi Cheeni
+            </h2>
+            <div className="h-[1px] w-12 bg-[#c5a880]/40" />
+
+            <div className="space-y-3 font-sans text-base text-[#292927]/90 font-light leading-relaxed">
+              <p className="font-serif text-lg text-[#8C3316] font-medium leading-snug">
+                Food is more than what&apos;s served on a plate.
+              </p>
+              <ul className="space-y-1.5 pl-4 border-l-2 border-[#c5a880]/30 italic text-[#292927]/80">
+                <li>It&apos;s how guests feel when they arrive.</li>
+                <li>It&apos;s the aroma that fills the home.</li>
+                <li>It&apos;s the comfort of familiar flavours.</li>
+                <li>It&apos;s the joy of everyone gathering around the same table.</li>
+              </ul>
+              <p className="font-serif text-lg text-[#8C3316] font-medium leading-snug pt-1">
+                That&apos;s the experience we strive to create.
+              </p>
+            </div>
+
+            <div className="space-y-4 font-sans text-base text-[#292927]/85 font-light leading-relaxed pt-2">
+              <p>
+                Families choose <span className="font-semibold text-[#8C3316]">Dahi Cheeni</span> because we believe in thoughtful hospitality. We don&apos;t believe in one-size-fits-all menus. Every gathering is different, which is why every menu is curated according to your occasion, guest profile and personal preferences.
+              </p>
+              <p>
+                Whether you&apos;re serving a traditional North Indian meal, a satvik menu or a mix of regional favourites, we ensure every dish is freshly prepared, beautifully presented and served with care.
+              </p>
+            </div>
           </div>
 
         </div>
       </section>
 
-      {/* 4. CTA Banner Section */}
+      {/* 4. Our Offerings */}
+      <section className="w-full bg-[#FAF6F0] border-t border-[#c5a880]/20 py-16 md:py-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+          {/* Heading */}
+          <div className="text-center max-w-3xl mx-auto mb-12">
+            <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl text-[#8C3316] font-semibold tracking-wide">
+              Home-Style Food, Beautifully Presented
+            </h2>
+            <div className="flex items-center gap-3 mt-4 w-full justify-center mb-6">
+              <div className="h-[1px] w-10 bg-[#c5a880]/30" />
+              <span className="text-[#c5a880] text-xs">✿</span>
+              <div className="h-[1px] w-10 bg-[#c5a880]/30" />
+            </div>
+            <p className="font-sans text-base text-[#292927]/90 font-light leading-relaxed">
+              Our food is inspired by recipes that have been enjoyed in Indian homes for generations. Prepared using quality ingredients and balanced flavours, our menus are designed to feel comforting while maintaining the presentation expected from a premium catering experience.
+            </p>
+          </div>
+
+          {/* Offerings Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+            {[
+              "Traditional North Indian Cuisine",
+              "Satvik Catering",
+              "Regional Specialities",
+              "Breakfast & Brunch Menus",
+              "Lunch & Dinner Buffets",
+              "Live Food Stations",
+              "Desserts & Mithai",
+              "Tea, Coffee & Beverage Counters"
+            ].map((offering, idx) => (
+              <div
+                key={idx}
+                className="bg-white/45 border border-[#c5a880]/20 hover:border-[#8C3316]/30 rounded-xl p-5 flex items-center gap-4 shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-0.5"
+              >
+                <div className="w-9 h-9 rounded-full bg-[#8C3316]/5 flex items-center justify-center text-[#c5a880] text-lg font-bold border border-[#c5a880]/20 shrink-0">
+                  ✦
+                </div>
+                <h3 className="font-serif text-base text-[#8C3316] font-semibold tracking-wide">
+                  {offering}
+                </h3>
+              </div>
+            ))}
+          </div>
+
+          {/* Footer Text */}
+          <div className="text-center mt-12 max-w-xl mx-auto">
+            <p className="font-sans text-sm sm:text-base text-[#292927]/85 font-light leading-relaxed italic">
+              Every menu can be customised to suit your celebration, dietary preferences and guest profile.
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      {/* 5. The Dahi Cheeni Experience */}
+      <Experience />
+
+      {/* 6. CTA Banner Section */}
       <section className="w-full bg-[#8C3316] text-[#FAF6F0] py-16 md:py-20 relative overflow-hidden z-10">
         {/* Dynamic golden circular background effects */}
         <div className="absolute -top-24 -left-24 w-80 h-80 rounded-full bg-[#c5a880]/10 blur-3xl pointer-events-none" />
@@ -185,7 +244,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* 5. FAQs Section */}
+      {/* 7. FAQs Section */}
       <FAQs items={ABOUT_PAGE_FAQS} />
     </main>
   );
