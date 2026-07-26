@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import WhyChooseUs from "@/components/WhyChooseUs";
+import ServingLocations from "@/components/ServingLocations";
 import Occasions from "@/components/Occasions";
 import Experience from "@/components/Experience";
 import PlanCelebration from "@/components/PlanCelebration";
@@ -101,14 +102,17 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Why Choose Us Section */}
-      <WhyChooseUs />
-
       {/* Occasions Section */}
       <Occasions />
 
       {/* Experience Section */}
       <Experience />
+
+      {/* Why Choose Us Section */}
+      <WhyChooseUs />
+
+      {/* Serving Locations Section */}
+      <ServingLocations />
 
       {/* Plan Celebration Section */}
       <PlanCelebration />
