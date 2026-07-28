@@ -64,7 +64,7 @@ export default function AboutPage() {
               They deserve food that brings people together, conversations that last a little longer, and hospitality that makes every guest feel welcome.
             </p>
             <p className="font-sans text-base text-[#292927]/85 font-light leading-relaxed">
-              At <span className="font-semibold text-[#8C3316]">Dahi Cheeni</span>, we specialise in home-style catering for intimate celebrations across Delhi NCR. From Griha Pravesh ceremonies and Pooja & Havan gatherings to baby celebrations, prayer meetings and family get-togethers, we create wholesome, freshly prepared meals that feel comforting, familiar and memorable.
+              At <span className="font-semibold text-[#8C3316]">Dahi Cheeni</span>, we specialise in home-style catering for intimate celebrations across Delhi NCR. From Griha Pravesh ceremonies and Pooja & Havan gatherings to baby showers, prayer meetings and family get-togethers, we create wholesome, freshly prepared meals that feel comforting, familiar and memorable.
             </p>
             <p className="font-sans text-base text-[#292927]/85 font-light leading-relaxed">
               Inspired by the warmth of Indian homes, our menus are thoughtfully curated using quality ingredients, traditional recipes and modern presentation. Whether you&apos;re hosting 20 guests or 200, we help you celebrate with food that&apos;s prepared with care and served with genuine hospitality.

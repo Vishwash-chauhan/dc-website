@@ -47,7 +47,7 @@ export default function Occasions() {
     {
       image: "/baby-celebrations.png",
       icon: <Footprints className="w-6 h-6 text-[#8C3316]" strokeWidth={1.5} />,
-      title: "Baby Celebrations",
+      title: "Baby Shower",
       desc: "Whether it's a Naamkaran, Annaprashan, Mundan or a baby's first birthday at home, we'll help you celebrate with fresh food that guests of every generation will enjoy.",
     },
     {
