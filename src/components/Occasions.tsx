@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { Home, Footprints, Users } from "lucide-react";
 
 // Custom SVG Diya Icon
@@ -28,6 +29,7 @@ interface OccasionItem {
   icon: React.ReactNode;
   title: string;
   desc: string;
+  href: string;
 }
 
 export default function Occasions() {
@@ -37,30 +39,35 @@ export default function Occasions() {
       icon: <Home className="w-6 h-6 text-[#8C3316]" strokeWidth={1.5} />,
       title: "Griha Pravesh Catering",
       desc: "A new home marks the beginning of a new chapter. Welcome family and friends with comforting meals that create a warm and memorable first gathering.",
+      href: "/occasions_we_serve/griha_pravesh",
     },
     {
       image: "/pooja-havan.png",
       icon: <DiyaIcon />,
       title: "Pooja & Havan Catering",
       desc: "From intimate home poojas to larger religious ceremonies, we offer thoughtfully prepared menus, including satvik options, allowing you to focus on your prayers while we take care of the hospitality.",
+      href: "/occasions_we_serve/pooja_havan",
     },
     {
       image: "/baby-celebrations.png",
       icon: <Footprints className="w-6 h-6 text-[#8C3316]" strokeWidth={1.5} />,
       title: "Baby Shower",
       desc: "Whether it's a Naamkaran, Annaprashan, Mundan or a baby's first birthday at home, we'll help you celebrate with fresh food that guests of every generation will enjoy.",
+      href: "/occasions_we_serve/baby_shower",
     },
     {
       image: "/prayer-meetings.png",
       icon: <PrayingHandsIcon />,
       title: "Prayer Meetings",
       desc: "Respectful, simple and comforting meals prepared with sensitivity for families and guests coming together during difficult times.",
+      href: "/occasions_we_serve/prayer_meetings",
     },
     {
       image: "/family-get-together.png",
       icon: <Users className="w-6 h-6 text-[#8C3316]" strokeWidth={1.5} />,
       title: "Small Family Gatherings",
       desc: "Not every celebration needs a special occasion. Sometimes, the best memories are created simply by sharing a meal with loved ones.",
+      href: "/occasions_we_serve/family_gatherings",
     },
   ];
 
@@ -84,8 +91,9 @@ export default function Occasions() {
         {/* Responsive Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-4 lg:gap-3 overflow-visible">
           {list.map((item, index) => (
-            <div
+            <Link
               key={index}
+              href={item.href}
               className="bg-white/40 border border-[#c5a880]/15 rounded-xl md:rounded-2xl flex flex-col overflow-visible shadow-sm hover:shadow-md transition-all duration-300 relative group"
             >
               {/* Aspect Ratio Wrapper with overflow-visible to prevent icon clipping */}
@@ -117,7 +125,7 @@ export default function Occasions() {
                   {item.desc}
                 </p>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

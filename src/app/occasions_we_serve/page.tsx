@@ -102,31 +102,17 @@ export default function OccasionsPage() {
                 <p>
                   Whether you&apos;re hosting a traditional Griha Pravesh Pooja, a housewarming lunch or an intimate gathering after the ceremony, every guest should feel welcomed with warm hospitality and wholesome food.
                 </p>
-                <p>
-                  At Dahi Cheeni, we specialise in Griha Pravesh catering across Delhi NCR, serving freshly prepared home-style meals that bring families together and make your celebration truly memorable.
-                </p>
-                <p>
-                  Our thoughtfully curated menus, professional service and attention to detail allow you to focus on your guests while we take care of the food.
-                </p>
               </div>
 
-              {/* Highlight Box */}
-              <div className="bg-[#c5a880]/10 border border-[#c5a880]/30 rounded-2xl p-5 md:p-6 space-y-3 mt-6">
-                <div className="flex items-center gap-2 text-[#8C3316] font-serif font-bold text-lg">
-                  <span>✦</span>
-                  <h4>Thoughtfully Curated Menus for Every Family</h4>
-                </div>
-                <div className="font-sans text-xs sm:text-sm text-[#292927]/80 leading-relaxed space-y-2">
-                  <p>
-                    Every family celebrates differently.
-                  </p>
-                  <p>
-                    Some prefer a traditional satvik meal after the pooja, while others choose a larger buffet for relatives and friends. That&apos;s why every Dahi Cheeni menu is customised according to your gathering.
-                  </p>
-                  <p>
-                    Whether you&apos;re welcoming 20 guests or 200, we&apos;ll recommend the right menu, portion sizes and style of service based on your celebration.
-                  </p>
-                </div>
+              {/* Read More Button */}
+              <div className="pt-2">
+                <Link
+                  href="/occasions_we_serve/griha_pravesh"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-[#8C3316] hover:bg-[#74290F] text-white font-sans text-sm font-semibold tracking-wide rounded-md shadow-sm transition-all duration-300 transform active:scale-98"
+                >
+                  <span>Explore Griha Pravesh Catering</span>
+                  <ChevronRight className="w-4 h-4" />
+                </Link>
               </div>
             </div>
 
@@ -166,20 +152,15 @@ export default function OccasionsPage() {
                   </p>
                 </div>
 
-                {/* Satvik Box */}
-                <div className="bg-white/60 border border-[#c5a880]/15 rounded-2xl p-5 md:p-6 space-y-3 mt-6">
-                  <div className="flex items-center gap-2 text-[#8C3316] font-serif font-bold text-lg">
-                    <span>✦</span>
-                    <h4>Satvik Food Prepared with Care</h4>
-                  </div>
-                  <div className="font-sans text-xs sm:text-sm text-[#292927]/80 leading-relaxed space-y-2">
-                    <p>
-                      Many religious ceremonies call for food that is simple, pure and satvik.
-                    </p>
-                    <p>
-                      Our menus are thoughtfully planned using fresh ingredients and recipes that honour the spirit of the occasion. Whether you&apos;re serving breakfast after a morning pooja or lunch following a havan, we create meals that are comforting, wholesome and enjoyed by guests of every generation. Every menu can be customised according to your family&apos;s traditions and preferences.
-                    </p>
-                  </div>
+                {/* Read More Button */}
+                <div className="pt-2">
+                  <Link
+                    href="/occasions_we_serve/pooja_havan"
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-[#8C3316] hover:bg-[#74290F] text-white font-sans text-sm font-semibold tracking-wide rounded-md shadow-sm transition-all duration-300 transform active:scale-98"
+                  >
+                    <span>Explore Pooja & Havan Catering</span>
+                    <ChevronRight className="w-4 h-4" />
+                  </Link>
                 </div>
               </div>
 
@@ -248,58 +229,17 @@ export default function OccasionsPage() {
                 <p>
                   At Dahi Cheeni, we provide home-style catering for baby showers across Delhi NCR, helping families host warm, memorable gatherings with thoughtfully prepared food and heartfelt hospitality.
                 </p>
-                <p>
-                  Whether you&apos;re planning a Naamkaran ceremony, Annaprashan, Mundan, Baby Shower or a First Birthday celebration at home, we&apos;ll take care of the food so you can focus on creating memories with your loved ones.
-                </p>
               </div>
 
-              {/* Milestones Grid */}
-              <div className="space-y-4 pt-4">
-                <div className="flex items-center gap-2 text-[#8C3316] font-serif font-bold text-lg">
-                  <span>✦</span>
-                  <h4>Catering for Every Baby Milestone</h4>
-                </div>
-                <p className="font-sans text-xs sm:text-sm text-[#292927]/80 italic">
-                  Every family celebrates differently, and every occasion deserves food that&apos;s prepared with care.
-                </p>
-
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-2">
-                  {[
-                    {
-                      title: "Naamkaran Ceremony",
-                      desc: "Celebrate your baby's naming ceremony with comforting home-style meals that bring family and friends together.",
-                    },
-                    {
-                      title: "Annaprashan",
-                      desc: "Mark your baby's first meal with a beautifully planned gathering and wholesome food for your guests.",
-                    },
-                    {
-                      title: "Mundan Ceremony",
-                      desc: "Whether the ceremony is held at home, a temple or another venue, we create menus that suit both traditional customs and modern celebrations.",
-                    },
-                    {
-                      title: "Baby Shower",
-                      desc: "Welcome your newest family member with fresh, delicious food that's perfect for intimate celebrations with family and close friends.",
-                    },
-                  ].map((milestone, idx) => (
-                    <div key={idx} className="bg-white/60 border border-[#c5a880]/15 rounded-xl p-4 space-y-1 shadow-sm hover:shadow-md transition-shadow">
-                      <h5 className="font-serif text-sm md:text-base text-[#8C3316] font-bold">
-                        {milestone.title}
-                      </h5>
-                      <p className="font-sans text-[11px] sm:text-xs text-[#292927]/85 font-light leading-relaxed">
-                        {milestone.desc}
-                      </p>
-                    </div>
-                  ))}
-                  <div className="col-span-1 sm:col-span-2 bg-white/60 border border-[#c5a880]/15 rounded-xl p-4 space-y-1 shadow-sm hover:shadow-md transition-shadow">
-                    <h5 className="font-serif text-sm md:text-base text-[#8C3316] font-bold">
-                      First Birthday Celebrations
-                    </h5>
-                    <p className="font-sans text-[11px] sm:text-xs text-[#292927]/85 font-light leading-relaxed">
-                      Your baby&apos;s first birthday is a milestone you&apos;ll remember forever. Whether you&apos;re hosting a celebration at home or another venue, we&apos;ll create a menu that&apos;s loved by children and adults alike.
-                    </p>
-                  </div>
-                </div>
+              {/* Read More Button */}
+              <div className="pt-2">
+                <Link
+                  href="/occasions_we_serve/baby_shower"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-[#8C3316] hover:bg-[#74290F] text-white font-sans text-sm font-semibold tracking-wide rounded-md shadow-sm transition-all duration-300 transform active:scale-98"
+                >
+                  <span>Explore Baby Celebration Catering</span>
+                  <ChevronRight className="w-4 h-4" />
+                </Link>
               </div>
             </div>
 
@@ -337,47 +277,17 @@ export default function OccasionsPage() {
                   <p>
                     At Dahi Cheeni, we provide respectful, home-style catering for prayer meetings across Delhi NCR, allowing families to focus on being with their loved ones while we quietly take care of the hospitality.
                   </p>
-                  <div className="pl-4 border-l-2 border-[#c5a880] italic space-y-1 py-1 font-medium text-[#8C3316]/90">
-                    <p>Our approach is simple.</p>
-                    <p>Freshly prepared food. Warm, professional service. Thoughtful attention to every detail.</p>
-                    <p>Because during difficult times, that&apos;s what truly matters.</p>
-                  </div>
                 </div>
 
-                {/* Menu Offerings */}
-                <div className="bg-white/60 border border-[#c5a880]/15 rounded-2xl p-5 md:p-6 space-y-4 mt-6">
-                  <div className="flex items-center gap-2 text-[#8C3316] font-serif font-bold text-lg">
-                    <span>✦</span>
-                    <h4>Simple, Comforting Meals</h4>
-                  </div>
-                  <div className="font-sans text-xs sm:text-sm text-[#292927]/80 leading-relaxed space-y-3">
-                    <p>
-                      Prayer meetings often call for food that feels familiar, comforting and appropriate for the occasion.
-                    </p>
-                    <p>
-                      Our menus are thoughtfully curated to reflect the simplicity and warmth of traditional home-style meals. Depending on your family&apos;s preferences, we offer:
-                    </p>
-
-                    <div className="flex flex-wrap gap-2 pt-1">
-                      {[
-                        "Satvik Meals",
-                        "Traditional North Indian Menus",
-                        "Breakfast & Brunch Options",
-                        "Lunch Buffets",
-                        "Tea & Coffee Service",
-                        "Mithai & Desserts",
-                        "Seasonal Specialities",
-                      ].map((item, idx) => (
-                        <span key={idx} className="px-3 py-1.5 bg-[#8C3316]/5 border border-[#c5a880]/20 text-[#8C3316] font-serif text-xs md:text-sm font-semibold rounded-full shadow-sm hover:bg-[#8C3316]/10 transition-colors">
-                          {item}
-                        </span>
-                      ))}
-                    </div>
-
-                    <p className="italic text-[11px] sm:text-xs pt-2">
-                      Every menu can be customised according to your family&apos;s traditions and religious practices.
-                    </p>
-                  </div>
+                {/* Read More Button */}
+                <div className="pt-2">
+                  <Link
+                    href="/occasions_we_serve/prayer_meetings"
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-[#8C3316] hover:bg-[#74290F] text-white font-sans text-sm font-semibold tracking-wide rounded-md shadow-sm transition-all duration-300 transform active:scale-98"
+                  >
+                    <span>Explore Prayer Meeting Catering</span>
+                    <ChevronRight className="w-4 h-4" />
+                  </Link>
                 </div>
               </div>
 
@@ -444,27 +354,19 @@ export default function OccasionsPage() {
                   Not every gathering needs a special occasion. Sometimes, the best moments are simply about bringing family together.
                 </p>
                 <p>
-                  A Sunday lunch with grandparents. An anniversary dinner at home. Relatives visiting from another city. A festive meal shared around the dining table. These are the moments where conversations linger, laughter fills the room and memories are made over good food.
-                </p>
-                <p>
                   At Dahi Cheeni, we specialise in home-style catering for intimate family gatherings across Delhi NCR, helping you host with ease while enjoying every moment with your loved ones. Whether you&apos;re inviting 20 guests or hosting a gathering of 100, we prepare fresh, comforting meals that make everyone feel at home.
                 </p>
               </div>
 
-              {/* Familiar Food Box */}
-              <div className="bg-[#c5a880]/10 border border-[#c5a880]/30 rounded-2xl p-5 md:p-6 space-y-3 mt-6">
-                <div className="flex items-center gap-2 text-[#8C3316] font-serif font-bold text-lg">
-                  <span>✦</span>
-                  <h4>Food That Feels Familiar</h4>
-                </div>
-                <div className="font-sans text-xs sm:text-sm text-[#292927]/80 leading-relaxed space-y-2">
-                  <p>
-                    Great hospitality doesn&apos;t have to be extravagant. It simply has to make people feel welcome.
-                  </p>
-                  <p>
-                    Our menus are inspired by the flavours of Indian homes—food that&apos;s wholesome, satisfying and prepared with care. Every meal is freshly cooked using quality ingredients and thoughtfully presented, combining the comfort of home-style recipes with the standards of professional hospitality.
-                  </p>
-                </div>
+              {/* Read More Button */}
+              <div className="pt-2">
+                <Link
+                  href="/occasions_we_serve/family_gatherings"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-[#8C3316] hover:bg-[#74290F] text-white font-sans text-sm font-semibold tracking-wide rounded-md shadow-sm transition-all duration-300 transform active:scale-98"
+                >
+                  <span>Explore Family Gathering Catering</span>
+                  <ChevronRight className="w-4 h-4" />
+                </Link>
               </div>
             </div>
 
