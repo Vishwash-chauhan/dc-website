@@ -1,8 +1,9 @@
-import { Metadata } from "next";
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Our Catering Menu | Dahi Cheeni | Authentic Indian Flavors",
-  description: "Browse Dahi Cheeni's premium home-style catering menu. From street-style chaats to rich main course curries, explore our custom offerings.",
+  title: "Catering Menu & Pricing | Pure Veg & Satvik Dishes | Dahi Cheeni",
+  description:
+    "Explore Dahi Cheeni's exquisite catering menu. Featuring traditional Indian soups, starters, main course, live chaat counters, and onion- and garlic-free Satvik options across Delhi NCR.",
 };
 
 export default function MenuLayout({

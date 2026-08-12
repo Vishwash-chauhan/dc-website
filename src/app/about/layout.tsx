@@ -1,8 +1,8 @@
-import { Metadata } from "next";
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About Us | Dahi Cheeni | Our Legacy & Culinary Philosophy",
-  description: "Learn about Dahi Cheeni's rich culinary legacy, purity values, and commitment to premium home-style catering in Delhi NCR.",
+  title: "About Dahi Cheeni | Legacy of Trust & Pure Taste in Catering",
+  description: "Learn about Dahi Cheeni's heritage, commitment to pure home-style cooking, satvik preparation guidelines, and flawless catering services across Delhi NCR.",
 };
 
 export default function AboutLayout({

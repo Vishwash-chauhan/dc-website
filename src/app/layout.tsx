@@ -93,12 +93,42 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FoodEstablishment",
+    "name": "Dahi Cheeni Catering",
+    "image": `${baseUrl}/hero-buffet-new.png`,
+    "@id": baseUrl,
+    "url": baseUrl,
+    "telephone": "+91-98100-00000",
+    "priceRange": "₹₹",
+    "servesCuisine": ["Indian", "Pure Vegetarian", "Satvik", "North Indian"],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Delhi NCR",
+      "addressRegion": "Delhi",
+      "addressCountry": "IN"
+    },
+    "areaServed": [
+      { "@type": "City", "name": "Delhi" },
+      { "@type": "City", "name": "Gurugram" },
+      { "@type": "City", "name": "Noida" },
+      { "@type": "City", "name": "Faridabad" },
+      { "@type": "City", "name": "Ghaziabad" }
+    ],
+    "description": "Exquisite Indian Catering for Life's Auspicious Moments across Delhi NCR. Pure vegetarian and satvik (no onion, no garlic) menus."
+  };
+
   return (
     <html
       lang="en"
       className={`${cormorant.variable} ${outfit.variable} h-full antialiased scroll-smooth`}
     >
       <body className="min-h-full flex flex-col bg-[#FAF6F0] text-[#8C3316] font-sans">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         <Navbar />
         {children}
         <InstagramCTA />
