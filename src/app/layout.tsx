@@ -18,7 +18,7 @@ const outfit = Outfit({
   weight: ["300", "400", "500", "600", "700"],
 });
 
-const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://dahicheeni.com";
+const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://dahicheenicatering.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
