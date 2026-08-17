@@ -81,9 +81,6 @@ export default function InstagramCTA() {
       <div className="max-w-7xl mx-auto flex flex-col items-center">
         {/* Header Block */}
         <div className="text-center max-w-2xl mb-12">
-          <span className="font-sans text-[10px] sm:text-xs font-bold tracking-[0.2em] text-[#c5a880] uppercase mb-3 block">
-            Behind The Scenes
-          </span>
           <h2 className="font-serif text-3xl sm:text-4xl md:text-[42px] text-[#8C3316] font-semibold leading-tight mb-4 tracking-wide">
             Follow Our Culinary Journey
           </h2>
