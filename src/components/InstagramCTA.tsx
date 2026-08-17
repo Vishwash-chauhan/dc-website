@@ -58,7 +58,7 @@ export default function InstagramCTA() {
       imageSrc: "/5.jpeg",
       likes: "167",
       comments: "15",
-      alt: "Freshly Prepared Satvik Food for Pooja",
+      alt: "Freshly Prepared Food for Pooja",
     },
     {
       id: 6,

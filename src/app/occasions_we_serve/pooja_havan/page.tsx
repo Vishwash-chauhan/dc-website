@@ -7,14 +7,10 @@ import { Flame, Sparkles, Check, ChevronRight, MapPin, Heart, UtensilsCrossed, C
 
 export const metadata: Metadata = {
   title: "Pooja & Havan Catering in Delhi NCR | Dahi Cheeni",
-  description: "Thoughtfully prepared Satvik & home-style catering for Poojas, Havans, and religious gatherings across Delhi NCR. Pure ingredients and warm hospitality.",
+  description: "Thoughtfully prepared home-style catering for Poojas, Havans, and religious gatherings across Delhi NCR. Pure ingredients and warm hospitality.",
 };
 
 const POOJA_HAVAN_FAQS = [
-  {
-    question: "Do you offer satvik catering?",
-    answer: "Yes. We prepare customised satvik menus suitable for poojas, havans and religious ceremonies.",
-  },
   {
     question: "Can menus be customised?",
     answer: "Absolutely. Every family's traditions are different, and we'll tailor the menu accordingly.",
@@ -49,7 +45,6 @@ const RELIGIOUS_OCCASIONS = [
 
 const POPULAR_MENU_OPTIONS = [
   "Traditional North Indian Meals",
-  "Satvik Thalis",
   "Poori & Sabzi",
   "Kadhi Chawal",
   "Dal Preparations",
@@ -124,7 +119,7 @@ export default function PoojaHavanPage() {
             </h1>
 
             <h2 className="font-sans text-lg sm:text-xl text-[#8C3316] font-medium leading-relaxed italic">
-              Thoughtfully Prepared Satvik & Home-Style Catering for Religious Gatherings
+              Thoughtfully Prepared Home-Style Catering for Religious Gatherings
             </h2>
 
             <div className="space-y-4 font-sans text-sm sm:text-base text-[#292927]/85 font-light leading-relaxed">
@@ -180,7 +175,7 @@ export default function PoojaHavanPage() {
         </div>
       </section>
 
-      {/* Section 1: Satvik Food Prepared with Care */}
+      {/* Section 1: Food Prepared with Care */}
       <section className="w-full bg-[#8C3316]/5 border-t border-b border-[#c5a880]/15 py-14 md:py-16">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-white/80 border border-[#c5a880]/25 rounded-2xl p-6 sm:p-8 shadow-sm space-y-4">
@@ -189,12 +184,12 @@ export default function PoojaHavanPage() {
                 <Sparkles className="w-5 h-5" />
               </span>
               <h2 className="font-serif text-2xl sm:text-3xl text-[#8C3316] font-semibold">
-                Satvik Food Prepared with Care
+                Prepared with Care
               </h2>
             </div>
             <div className="space-y-3 font-sans text-sm sm:text-base text-[#292927]/85 font-light leading-relaxed">
               <p>
-                Many religious ceremonies call for food that is simple, pure and satvik.
+                Many religious ceremonies call for food that is simple and pure.
               </p>
               <p>
                 Our menus are thoughtfully planned using fresh ingredients and recipes that honour the spirit of the occasion.

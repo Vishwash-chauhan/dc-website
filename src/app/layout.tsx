@@ -36,7 +36,6 @@ export const metadata: Metadata = {
     "Noida Catering Services",
     "Faridabad Catering",
     "Ghaziabad Catering",
-    "Satvik Catering",
     "No Onion No Garlic Catering",
     "Griha Pravesh Catering",
     "Baby Shower Catering",
@@ -102,7 +101,7 @@ export default function RootLayout({
     "url": baseUrl,
     "telephone": "+91-98100-00000",
     "priceRange": "₹₹",
-    "servesCuisine": ["Indian", "Pure Vegetarian", "Satvik", "North Indian"],
+    "servesCuisine": ["Indian", "Pure Vegetarian", "North Indian"],
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Delhi NCR",
@@ -116,7 +115,7 @@ export default function RootLayout({
       { "@type": "City", "name": "Faridabad" },
       { "@type": "City", "name": "Ghaziabad" }
     ],
-    "description": "Exquisite Indian Catering for Life's Auspicious Moments across Delhi NCR. Pure vegetarian and satvik (no onion, no garlic) menus."
+    "description": "Exquisite Indian Catering for Life's Auspicious Moments across Delhi NCR"
   };
 
   return (

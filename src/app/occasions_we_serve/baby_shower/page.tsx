@@ -16,10 +16,6 @@ const BABY_CELEBRATION_FAQS = [
     answer: "Yes. Every menu is tailored according to your celebration and guest preferences.",
   },
   {
-    question: "Do you offer satvik food?",
-    answer: "Absolutely. Satvik menus can be arranged for religious ceremonies and traditional gatherings.",
-  },
-  {
     question: "Can you cater at home?",
     answer: "Yes. Most of our baby celebration events are hosted in clients' homes.",
   },
@@ -60,7 +56,6 @@ const FOOD_OPTIONS = [
   "Traditional North Indian Meals",
   "Breakfast & Brunch Menus",
   "Lunch & Dinner Buffets",
-  "Satvik Options",
   "Regional Specialities",
   "Live Food Stations",
   "Fresh Desserts",

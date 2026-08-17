@@ -19,10 +19,6 @@ const ABOUT_PAGE_FAQS = [
     answer: "Yes. Every menu is created around your occasion, family traditions, dietary preferences and guest profile.",
   },
   {
-    question: "Do you offer satvik catering?",
-    answer: "Yes. We regularly prepare satvik menus for poojas, havans and other religious ceremonies.",
-  },
-  {
     question: "Do you provide serving staff?",
     answer: "Yes. Professional service staff can be arranged to ensure your guests are looked after throughout the event.",
   },
@@ -71,7 +67,7 @@ export default function AboutPage() {
               In many Indian homes, every new beginning starts with a simple ritual.
             </h2>
             <div className="h-[1px] w-16 bg-[#c5a880]/40" />
-            
+
             <div className="space-y-4 font-sans text-base text-[#292927]/90 font-light leading-relaxed">
               <p>
                 A spoonful of dahi and cheeni before an exam. Before a wedding. Before moving into a new home. Before embarking on a new journey.
@@ -174,7 +170,6 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
             {[
               "Traditional North Indian Cuisine",
-              "Satvik Catering",
               "Regional Specialities",
               "Breakfast & Brunch Menus",
               "Lunch & Dinner Buffets",
@@ -203,7 +198,7 @@ export default function AboutPage() {
       <section className="w-full bg-[#8C3316]/5 border-t border-[#c5a880]/20 py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-            
+
             {/* Story Image Section (Left) */}
             <div className="lg:col-span-5 flex justify-center items-center relative py-4 order-last lg:order-first">
               <div className="absolute w-64 h-64 rounded-full bg-[#c5a880]/15 blur-3xl -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />

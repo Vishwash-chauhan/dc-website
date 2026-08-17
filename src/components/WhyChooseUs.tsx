@@ -6,7 +6,7 @@ export default function WhyChooseUs() {
   const points = [
     "Freshly prepared meals made with quality ingredients",
     "Home-style recipes and comforting flavours",
-    "Satvik and customised menu options",
+    "Customised menu options",
     "Professional service and warm hospitality",
     "Beautiful presentation",
     "Flexible menus for gatherings of every size",

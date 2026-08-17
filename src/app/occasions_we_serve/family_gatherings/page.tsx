@@ -45,7 +45,6 @@ const FAMILY_OCCASIONS = [
 const MENU_OPTIONS = [
   "Traditional North Indian Cuisine",
   "Regional Indian Specialities",
-  "Satvik Menus",
   "Breakfast & Brunch Spreads",
   "Lunch & Dinner Buffets",
   "Live Chaat Counters",

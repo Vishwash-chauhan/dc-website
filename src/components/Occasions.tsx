@@ -45,7 +45,7 @@ export default function Occasions() {
       image: "/pooja-havan.png",
       icon: <DiyaIcon />,
       title: "Pooja & Havan Catering",
-      desc: "From intimate home poojas to larger religious ceremonies, we offer thoughtfully prepared menus, including satvik options, allowing you to focus on your prayers while we take care of the hospitality.",
+      desc: "From intimate home poojas to larger religious ceremonies, we offer thoughtfully prepared menus, allowing you to focus on your prayers while we take care of the hospitality.",
       href: "/occasions_we_serve/pooja_havan",
     },
     {

@@ -138,7 +138,7 @@ export default function OccasionsPage() {
                   Pooja & Havan
                 </h2>
                 <h3 className="font-sans text-base sm:text-lg text-[#8C3316] font-medium leading-relaxed italic">
-                  Thoughtfully Prepared Satvik & Home-Style Catering for Religious Gatherings
+                  Thoughtfully Prepared Home-Style Catering for Religious Gatherings
                 </h3>
                 <div className="space-y-4 font-sans text-sm sm:text-base text-[#292927]/85 font-light leading-relaxed">
                   <p>

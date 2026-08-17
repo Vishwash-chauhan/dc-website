@@ -12,10 +12,6 @@ export const metadata: Metadata = {
 
 const PRAYER_MEETING_FAQS = [
   {
-    question: "Do you provide satvik menus?",
-    answer: "Yes. Satvik catering is one of our most requested services for prayer meetings and religious gatherings.",
-  },
-  {
     question: "Can the menu be customised?",
     answer: "Absolutely. We work closely with families to create menus that respect their traditions and preferences.",
   },
@@ -34,7 +30,6 @@ const PRAYER_MEETING_FAQS = [
 ];
 
 const MENU_OPTIONS = [
-  "Satvik Meals",
   "Traditional North Indian Menus",
   "Breakfast & Brunch Options",
   "Lunch Buffets",
@@ -55,7 +50,6 @@ const SUITABLE_OCCASIONS = [
 
 const TRUST_REASONS = [
   "Freshly prepared home-style food",
-  "Satvik menu options",
   "Professional and discreet service",
   "Customised menus",
   "Flexible guest counts",

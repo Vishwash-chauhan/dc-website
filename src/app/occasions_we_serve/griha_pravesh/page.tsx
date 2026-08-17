@@ -7,14 +7,10 @@ import { Home, Sparkles, Check, ChevronRight, MapPin, Heart, ShieldCheck, Utensi
 
 export const metadata: Metadata = {
   title: "Griha Pravesh Catering in Delhi NCR | Dahi Cheeni",
-  description: "Celebrate new beginnings with Dahi Cheeni's home-style Griha Pravesh catering across Delhi NCR. Freshly prepared food, Satvik menus, and warm hospitality.",
+  description: "Celebrate new beginnings with Dahi Cheeni's home-style Griha Pravesh catering across Delhi NCR. Freshly prepared food, and warm hospitality.",
 };
 
 const GRIHA_PRAVESH_FAQS = [
-  {
-    question: "Can you provide satvik catering?",
-    answer: "Yes. We offer customised satvik menus prepared according to your preferences.",
-  },
   {
     question: "Do you cater at home?",
     answer: "Absolutely. Most of our Griha Pravesh celebrations take place in clients' homes.",
@@ -35,7 +31,6 @@ const GRIHA_PRAVESH_FAQS = [
 
 const POPULAR_MENU_OPTIONS = [
   "Traditional North Indian Meals",
-  "Satvik Catering",
   "Regional Specialities",
   "Breakfast & Brunch Menus",
   "Lunch Buffets",
@@ -50,7 +45,6 @@ const POPULAR_MENU_OPTIONS = [
 const WHY_CHOOSE_REASONS = [
   "Freshly prepared home-style food",
   "Customised menus for every family",
-  "Satvik catering available",
   "Professional hospitality and service",
   "Beautiful presentation",
   "Suitable for intimate and large gatherings",
@@ -175,9 +169,6 @@ export default function GrihaPraveshPage() {
                 Every family celebrates differently.
               </p>
               <p>
-                Some prefer a traditional satvik meal after the pooja, while others choose a larger buffet for relatives and friends.
-              </p>
-              <p>
                 That&apos;s why every Dahi Cheeni menu is customised according to your gathering.
               </p>
               <p className="font-medium text-[#8C3316]">
@@ -231,11 +222,11 @@ export default function GrihaPraveshPage() {
         </div>
       </section>
 
-      {/* Section 3 & 4: Satvik Catering & Hospitality Side-by-Side */}
+      {/* Section 3 & 4: Catering & Hospitality Side-by-Side */}
       <section className="w-full bg-[#8C3316]/5 border-t border-b border-[#c5a880]/15 py-16 md:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* Satvik Catering Card */}
+            {/* Catering Card */}
             <div className="bg-white/80 border border-[#c5a880]/20 rounded-2xl p-6 sm:p-8 space-y-4 flex flex-col justify-between shadow-sm">
               <div className="space-y-4">
                 <div className="flex items-center gap-3">
@@ -243,15 +234,12 @@ export default function GrihaPraveshPage() {
                     <Sparkles className="w-5 h-5" />
                   </span>
                   <h3 className="font-serif text-2xl text-[#8C3316] font-semibold">
-                    Satvik Catering Available
+                    Catering Available
                   </h3>
                 </div>
                 <div className="space-y-3 font-sans text-sm sm:text-base text-[#292927]/85 font-light leading-relaxed">
                   <p>
                     Many Griha Pravesh ceremonies are accompanied by religious rituals where satvik food is preferred.
-                  </p>
-                  <p>
-                    Our chefs prepare satvik meals with the same care and authenticity, ensuring the menu remains simple, wholesome and appropriate for the occasion.
                   </p>
                   <p>
                     If you have specific family traditions or dietary requirements, our team will be happy to customise the menu accordingly.
