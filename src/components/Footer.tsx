@@ -3,7 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Phone, MessageSquare, MapPin, Calendar, Heart } from "lucide-react";
+import { Phone, MessageSquare, MapPin, Calendar, Heart, Mail } from "lucide-react";
 
 const Instagram = ({ className }: { className?: string }) => (
   <svg
@@ -188,6 +188,14 @@ export default function Footer() {
                 <div>
                   <span className="font-medium text-[#FAF6F0] block">Call / Inquiry</span>
                   <a href="tel:+919971118559" className="hover:text-[#c5a880] transition-colors font-sans">+91 99711 18559</a>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-2.5">
+                <Mail className="w-4.5 h-4.5 text-[#c5a880] mt-0.5 flex-shrink-0" />
+                <div>
+                  <span className="font-medium text-[#FAF6F0] block">Email Us</span>
+                  <a href="mailto:dahicheenicatering@gmail.com" className="hover:text-[#c5a880] transition-colors font-sans">dahicheenicatering@gmail.com</a>
                 </div>
               </div>
 
