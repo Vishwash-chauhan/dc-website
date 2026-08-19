@@ -115,8 +115,47 @@ export default function Navbar() {
 
       {/* Mobile Drawer Overlay */}
       {isMobileMenuOpen && (
-        <div className="md:hidden fixed inset-0 z-40 bg-[#FAF6F0] flex flex-col pt-24 px-6">
-          <nav className="flex flex-col space-y-6 text-center">
+        <div className="md:hidden fixed inset-0 z-45 bg-[#FAF6F0] flex flex-col pt-24 px-6">
+          {/* Mobile Overlay Header */}
+          <div className="absolute top-0 left-0 right-0 h-24 px-4 sm:px-6 flex items-center justify-between">
+            <Link
+              href={isHome ? "#home" : "/#home"}
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="flex items-center gap-3.5 group"
+            >
+              <div className="relative w-16 h-16 flex items-center justify-center">
+                <Image
+                  src="/dc-logo.svg"
+                  alt="Dahi Cheeni Logo Icon"
+                  width={64}
+                  height={64}
+                  className="object-contain"
+                  priority
+                />
+              </div>
+              <div className="flex flex-col">
+                <span className="font-serif text-[28px] text-[#8C3316] font-semibold leading-none tracking-normal">
+                  Dahi Cheeni
+                </span>
+                <span className="font-sans text-[8px] text-[#c5a880] tracking-[0.16em] uppercase font-bold mt-1">
+                  — HOME-STYLE CATERING —
+                </span>
+              </div>
+            </Link>
+
+            <button
+              onClick={() => setIsMobileMenuOpen(false)}
+              type="button"
+              className="inline-flex items-center justify-center p-2 rounded-md text-[#8C3316] hover:bg-[#8C3316]/5 focus:outline-none transition-colors duration-200"
+              aria-label="Close menu"
+            >
+              <svg className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+
+          <nav className="flex flex-col space-y-6 text-center mt-6">
             {navLinks.map((link) => (
               <Link
                 key={link.name}
