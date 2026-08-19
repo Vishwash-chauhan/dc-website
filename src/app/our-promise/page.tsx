@@ -6,7 +6,7 @@ import Image from "next/image";
 import { ArrowLeft, ShieldCheck, Sparkles, Heart, Utensils, CheckCircle, MessageSquare } from "lucide-react";
 import WhyChooseUs from "@/components/WhyChooseUs";
 
-export default function PurityGuaranteedPage() {
+export default function OurPromisePage() {
   const purityPillars = [
     {
       title: "Carefully Selected Ingredients",

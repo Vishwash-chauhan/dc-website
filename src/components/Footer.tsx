@@ -90,7 +90,6 @@ export default function Footer() {
               {[
                 { name: "Home", href: "/#home" },
                 { name: "About Us", href: "/about" },
-                { name: "Purity Guaranteed", href: "/purity-guaranteed" },
                 { name: "Occasions", href: "/occasions_we_serve" },
                 { name: "Menus", href: "/menu" },
                 { name: "Gallery", href: "/#gallery" },
@@ -215,7 +214,6 @@ export default function Footer() {
             <span>&copy; {currentYear} Dahi Cheeni. All rights reserved.</span>
             <span className="hidden sm:inline text-[#c5a880]/30">|</span>
             <div className="flex flex-wrap justify-center gap-4">
-              <Link href="/purity-guaranteed" className="hover:text-[#c5a880] transition-colors">Purity Guaranteed</Link>
               <Link href="/privacy" className="hover:text-[#c5a880] transition-colors">Privacy Policy</Link>
               <Link href="/terms" className="hover:text-[#c5a880] transition-colors">Terms & Conditions</Link>
             </div>
