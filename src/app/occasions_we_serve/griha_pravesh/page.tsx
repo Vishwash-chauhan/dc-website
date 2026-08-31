@@ -239,7 +239,7 @@ export default function GrihaPraveshPage() {
                 </div>
                 <div className="space-y-3 font-sans text-sm sm:text-base text-[#292927]/85 font-light leading-relaxed">
                   <p>
-                    Many Griha Pravesh ceremonies are accompanied by religious rituals where satvik food is preferred.
+                    Many Griha Pravesh ceremonies are accompanied by religious rituals where vegeterian food is preferred.
                   </p>
                   <p>
                     If you have specific family traditions or dietary requirements, our team will be happy to customise the menu accordingly.

@@ -22,7 +22,7 @@ const Instagram = ({ className }: { className?: string }) => (
 );
 
 export default function InstagramCTA() {
-  const instagramUrl = "https://www.instagram.com/dahicheeni.catering?igsh=ZmJibmYxc3hxM2Fw&utm_source=qr";
+  const instagramUrl = "https://www.instagram.com/dahicheenicatering?igsi=MWk5MW04MmV5NjF5OQ%3D%3D&utm_source=qr";
 
   const feedItems = [
     {
@@ -74,7 +74,7 @@ export default function InstagramCTA() {
       {/* Decorative floral/accent details */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center gap-3 bg-[#FAF6F0] px-6 text-[#c5a880]">
         <span className="text-xs">✿</span>
-        <span className="font-serif italic text-sm tracking-widest uppercase">@dahicheeni.catering</span>
+        <span className="font-serif italic text-sm tracking-widest uppercase">@dahicheenicatering</span>
         <span className="text-xs">✿</span>
       </div>
 
@@ -95,7 +95,7 @@ export default function InstagramCTA() {
             className="inline-flex items-center gap-2.5 px-6 py-3 bg-[#8C3316] hover:bg-[#74290F] text-white font-sans text-sm font-semibold rounded-lg shadow-sm transition-all duration-300 hover:scale-[1.03] active:scale-[0.98] group cursor-pointer"
           >
             <Instagram className="w-4 h-4 transition-transform duration-300 group-hover:rotate-6" />
-            <span>Follow @dahicheeni.catering</span>
+            <span>Follow @dahicheenicatering</span>
             <ExternalLink className="w-3.5 h-3.5 opacity-60" />
           </a>
         </div>

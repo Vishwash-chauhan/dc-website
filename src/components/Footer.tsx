@@ -22,6 +22,21 @@ const Instagram = ({ className }: { className?: string }) => (
   </svg>
 );
 
+const Facebook = ({ className }: { className?: string }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className={className}
+  >
+    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+  </svg>
+);
+
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
@@ -70,13 +85,22 @@ export default function Footer() {
             {/* Social Links */}
             <div className="flex items-center gap-3 pt-2">
               <a
-                href="https://www.instagram.com/dahicheeni.catering?igsh=ZmJibmYxc3hxM2Fw&utm_source=qr"
+                href="https://www.instagram.com/dahicheenicatering?igsi=MWk5MW04MmV5NjF5OQ%3D%3D&utm_source=qr"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 flex items-center justify-center rounded-full bg-[#FAF6F0]/5 border border-[#c5a880]/20 text-[#FAF6F0] hover:text-[#c5a880] hover:border-[#c5a880] transition-all duration-300 hover:scale-105 animate-pulse-slow"
                 aria-label="Instagram"
               >
                 <Instagram className="w-4.5 h-4.5" />
+              </a>
+              <a
+                href="https://www.facebook.com/share/19ZxQzGBrw/?mibextid=wwXIfr"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-9 h-9 flex items-center justify-center rounded-full bg-[#FAF6F0]/5 border border-[#c5a880]/20 text-[#FAF6F0] hover:text-[#c5a880] hover:border-[#c5a880] transition-all duration-300 hover:scale-105 animate-pulse-slow"
+                aria-label="Facebook"
+              >
+                <Facebook className="w-4.5 h-4.5" />
               </a>
             </div>
           </div>
