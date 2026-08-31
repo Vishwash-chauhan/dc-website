@@ -61,7 +61,7 @@ export const metadata: Metadata = {
       "Exquisite Indian Catering for Life's Auspicious Moments in Delhi NCR. Curated pure vegetarian menus & flawless service.",
     images: [
       {
-        url: "/dc_logo_full_v2.png",
+        url: "/dc_logo_full.svg",
         width: 1200,
         height: 1200,
         alt: "Dahi Cheeni Catering Logo",
@@ -73,7 +73,7 @@ export const metadata: Metadata = {
     title: "Dahi Cheeni | Exquisite Indian Catering",
     description:
       "Legacy of Trust, Taste of Tradition. Premium Indian Catering across Delhi, Gurugram, Noida, Faridabad, Ghaziabad.",
-    images: ["/dc_logo_full_v2.png"],
+    images: ["/dc_logo_full.svg"],
   },
   robots: {
     index: true,
