@@ -287,45 +287,45 @@ export default function MenuPage() {
   };
 
   return (
-    <main className="relative min-h-screen bg-[#FAF6F0] pt-24 md:pt-28 flex flex-col justify-between overflow-x-hidden">
+    <main className="relative min-h-screen bg-[#FAF6F0] pt-18 md:pt-22 flex flex-col justify-between overflow-x-hidden">
       {/* Background decoration elements */}
-      <div className="absolute top-24 right-0 w-96 h-96 rounded-full bg-[#c5a880]/10 blur-3xl -z-10 pointer-events-none" />
-      <div className="absolute top-[80vh] left-0 w-96 h-96 rounded-full bg-[#8C3316]/5 blur-3xl -z-10 pointer-events-none" />
+      <div className="absolute top-20 right-0 w-80 h-80 rounded-full bg-[#c5a880]/10 blur-3xl -z-10 pointer-events-none" />
+      <div className="absolute top-[80vh] left-0 w-80 h-80 rounded-full bg-[#8C3316]/5 blur-3xl -z-10 pointer-events-none" />
 
       {/* 1. Page Header */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pt-8 pb-8 text-center space-y-4">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pt-4 pb-4 text-center space-y-2 sm:space-y-3">
         <span className="font-sans text-[10px] sm:text-xs font-bold tracking-[0.2em] text-[#c5a880] uppercase block">
           OUR CULINARY REPERTOIRE
         </span>
-        <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl text-[#8C3316] font-semibold tracking-wide max-w-4xl mx-auto leading-tight">
+        <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl text-[#8C3316] font-semibold tracking-wide max-w-4xl mx-auto leading-tight">
           A Symphony of Home-Style Flavors
         </h1>
-        <div className="flex items-center gap-3 mt-4 w-full justify-center">
-          <div className="h-[1px] w-12 bg-[#c5a880]/40" />
-          <span className="text-[#c5a880] text-sm">✿</span>
-          <div className="h-[1px] w-12 bg-[#c5a880]/40" />
+        <div className="flex items-center gap-3 mt-2 w-full justify-center">
+          <div className="h-[1px] w-10 bg-[#c5a880]/40" />
+          <span className="text-[#c5a880] text-xs">✿</span>
+          <div className="h-[1px] w-10 bg-[#c5a880]/40" />
         </div>
-        <p className="font-sans text-sm sm:text-base md:text-lg text-[#292927]/80 font-light max-w-2xl mx-auto leading-relaxed">
+        <p className="font-sans text-xs sm:text-sm md:text-base text-[#292927]/80 font-light max-w-xl mx-auto leading-relaxed">
           Generous portions, pure cold-pressed oils, and zero commercial shortcuts. Explore our menu selections crafted with purity and culinary heritage.
         </p>
 
         {/* Live Search Bar */}
-        <div className="max-w-md mx-auto pt-6 relative">
+        <div className="max-w-md mx-auto pt-3 relative">
           <div className="relative flex items-center bg-white border border-[#c5a880]/40 rounded-full overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
-            <span className="pl-4 text-[#8C3316]/50">
-              <Search className="w-5 h-5" />
+            <span className="pl-3.5 text-[#8C3316]/50">
+              <Search className="w-4 h-4" />
             </span>
             <input
               type="text"
               placeholder="Search dishes (e.g. Paneer, Shorba, Chaat)..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full px-3 py-3.5 text-sm text-[#8C3316] placeholder-[#8C3316]/40 focus:outline-none bg-transparent font-sans"
+              className="w-full px-3 py-2.5 text-xs sm:text-sm text-[#8C3316] placeholder-[#8C3316]/40 focus:outline-none bg-transparent font-sans"
             />
             {searchQuery && (
               <button
                 onClick={() => setSearchQuery("")}
-                className="pr-4 text-[#8C3316]/50 hover:text-[#8C3316] transition-colors"
+                className="pr-3.5 text-[#8C3316]/50 hover:text-[#8C3316] transition-colors"
                 aria-label="Clear search"
               >
                 <X className="w-4 h-4" />
@@ -333,7 +333,7 @@ export default function MenuPage() {
             )}
           </div>
           {searchQuery && (
-            <div className="text-xs text-[#8C3316]/70 mt-2.5 font-sans">
+            <div className="text-[11px] text-[#8C3316]/70 mt-1.5 font-sans">
               Found {filteredItems.length} items matching your search
             </div>
           )}
@@ -341,27 +341,27 @@ export default function MenuPage() {
       </section>
 
       {/* 2. Menu Navigation and Grid */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pb-20 flex-grow">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pb-12 flex-grow">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
 
           {/* Left Column: Sticky Sidebar Navigation (Hidden when searching) */}
           {searchQuery.trim() === "" && (
-            <div className="lg:col-span-3 sticky top-28 hidden lg:block bg-white/90 backdrop-blur-md border border-[#c5a880]/30 rounded-2xl p-5 shadow-md transition-all duration-300 hover:shadow-lg">
-              <span className="block text-[11px] font-bold text-[#c5a880] tracking-widest uppercase mb-4 px-3">
+            <div className="lg:col-span-3 sticky top-20 hidden lg:block bg-white/90 backdrop-blur-md border border-[#c5a880]/30 rounded-xl p-3.5 shadow-md transition-all duration-300 hover:shadow-lg">
+              <span className="block text-[10px] font-bold text-[#c5a880] tracking-widest uppercase mb-2.5 px-2">
                 Categories
               </span>
-              <nav className="space-y-1">
+              <nav className="space-y-0.5">
                 {categories.map((category) => (
                   <button
                     key={category.id}
                     onClick={() => scrollToCategory(category.id)}
-                    className={`w-full text-left px-3.5 py-2.5 rounded-lg text-sm font-sans font-medium transition-all duration-300 flex items-center justify-between group ${activeCategory === category.id
+                    className={`w-full text-left px-3 py-1.5 rounded-md text-xs sm:text-sm font-sans font-medium transition-all duration-200 flex items-center justify-between group ${activeCategory === category.id
                       ? "bg-[#8C3316] text-[#FAF6F0] shadow-sm"
                       : "text-[#8C3316]/80 hover:bg-[#8C3316]/5 hover:text-[#8C3316]"
                       }`}
                   >
-                    <span>{category.name}</span>
-                    <span className={`text-[10px] px-2 py-0.5 rounded-full font-semibold ${activeCategory === category.id
+                    <span className="truncate pr-2">{category.name}</span>
+                    <span className={`text-[10px] px-1.5 py-0.2 rounded-full font-semibold flex-shrink-0 ${activeCategory === category.id
                       ? "bg-white/20 text-white"
                       : "bg-[#8C3316]/5 text-[#8C3316]/70 group-hover:bg-[#8C3316]/10"
                       }`}>
@@ -374,26 +374,26 @@ export default function MenuPage() {
           )}
 
           {/* Right Column: Dynamic Lists */}
-          <div className={`${searchQuery.trim() === "" ? "lg:col-span-9" : "lg:col-span-12"} w-full space-y-12`}>
+          <div className={`${searchQuery.trim() === "" ? "lg:col-span-9" : "lg:col-span-12"} w-full space-y-8`}>
 
-            {/* Mobile Category Navigation (Horizontal Swipe, Sticky top, Hidden when searching) (Commented out for now) */}
-            {/* {searchQuery.trim() === "" && (
-              <div className="lg:hidden sticky top-20 z-30 bg-[#FAF6F0]/95 backdrop-blur-sm -mx-4 px-4 py-3 border-b border-[#c5a880]/20 overflow-x-auto no-scrollbar flex gap-2">
+            {/* Mobile Category Navigation (Horizontal Sticky Swipe Pills) */}
+            {searchQuery.trim() === "" && (
+              <div className="lg:hidden sticky top-16 z-30 bg-[#FAF6F0]/95 backdrop-blur-sm -mx-4 px-4 py-2 border-b border-[#c5a880]/20 overflow-x-auto flex gap-1.5 no-scrollbar">
                 {categories.map((category) => (
                   <button
                     key={category.id}
                     onClick={() => scrollToCategory(category.id)}
-                    className={`flex-shrink-0 px-4 py-2 rounded-full text-xs font-sans font-medium transition-all duration-200 ${
+                    className={`flex-shrink-0 px-3 py-1.5 rounded-full text-xs font-sans font-medium transition-all duration-200 ${
                       activeCategory === category.id
-                        ? "bg-[#8C3316] text-[#FAF6F0]"
-                        : "bg-white/80 border border-[#c5a880]/30 text-[#8C3316]"
+                        ? "bg-[#8C3316] text-[#FAF6F0] shadow-sm"
+                        : "bg-white/80 border border-[#c5a880]/30 text-[#8C3316]/80"
                     }`}
                   >
                     {category.name} ({getCategoryCount(category.id)})
                   </button>
                 ))}
               </div>
-            )} */}
+            )}
 
             {/* Displaying Categories */}
             {categories.map((category) => {
@@ -408,67 +408,67 @@ export default function MenuPage() {
                   key={category.id}
                   id={category.id}
                   ref={(el) => { categoryRefs.current[category.id] = el; }}
-                  className="space-y-6 pt-4 scroll-mt-28"
+                  className="space-y-4 pt-2 scroll-mt-24"
                 >
                   {/* Category Header */}
-                  <div className="flex items-center justify-between border-b border-[#c5a880]/30 pb-3">
-                    <div className="space-y-1">
-                      <h2 className="font-serif text-2xl sm:text-3xl font-semibold text-[#8C3316] tracking-wide">
+                  <div className="flex items-center justify-between border-b border-[#c5a880]/30 pb-2">
+                    <div className="space-y-0.5">
+                      <h2 className="font-serif text-xl sm:text-2xl font-semibold text-[#8C3316] tracking-wide">
                         {category.name}
                       </h2>
                       {category.id === "Add-Ons" && (
-                        <p className="font-sans text-xs text-[#c5a880] flex items-center gap-1">
-                          <Info className="w-3.5 h-3.5" /> Station live-counters and customizable side bites.
+                        <p className="font-sans text-[11px] text-[#c5a880] flex items-center gap-1">
+                          <Info className="w-3 h-3" /> Station live-counters and customizable side bites.
                         </p>
                       )}
                     </div>
-                    <span className="font-sans text-xs font-semibold tracking-wider text-[#c5a880] uppercase">
+                    <span className="font-sans text-[11px] font-semibold tracking-wider text-[#c5a880] uppercase">
                       {items.length} {items.length === 1 ? "Dish" : "Dishes"}
                     </span>
                   </div>
 
                   {/* Cards Grid */}
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 sm:gap-4">
                     {items.map((item, idx) => {
                       const isAddon = item.Category === "Add-Ons" || item.Rate === 0;
 
                       return (
                         <div
                           key={idx}
-                          className="bg-white border border-[#c5a880]/20 rounded-2xl p-5 hover:border-[#c5a880]/60 hover:shadow-md transition-all duration-300 flex flex-col justify-between group relative"
+                          className="bg-white border border-[#c5a880]/20 rounded-xl p-3.5 sm:p-4 hover:border-[#c5a880]/60 hover:shadow-sm transition-all duration-200 flex flex-col justify-between group relative"
                         >
-                          <div className="space-y-2">
+                          <div className="space-y-1 sm:space-y-1.5">
                             {/* Veg Icon and Name */}
-                            <div className="flex items-start justify-between gap-3">
-                              <h3 className="font-serif text-lg sm:text-xl font-semibold text-[#8C3316] tracking-wide group-hover:text-[#74290F] transition-colors leading-tight">
+                            <div className="flex items-start justify-between gap-2">
+                              <h3 className="font-serif text-base sm:text-lg font-semibold text-[#8C3316] tracking-wide group-hover:text-[#74290F] transition-colors leading-snug">
                                 {item.Name}
                               </h3>
                               {/* Veg Sign */}
-                              <div className="w-4.5 h-4.5 border border-green-600 flex items-center justify-center p-0.5 rounded-sm flex-shrink-0 mt-1">
-                                <div className="w-2 h-2 rounded-full bg-green-600" />
+                              <div className="w-4 h-4 border border-green-600 flex items-center justify-center p-0.5 rounded-sm flex-shrink-0 mt-0.5">
+                                <div className="w-1.5 h-1.5 rounded-full bg-green-600" />
                               </div>
                             </div>
 
                             {/* Description */}
-                            <p className="font-sans text-xs sm:text-sm text-[#292927]/80 font-light leading-relaxed">
+                            <p className="font-sans text-xs text-[#292927]/75 font-light leading-snug">
                               {item.Description}
                             </p>
                           </div>
 
                           {/* Price and Details */}
-                          <div className="flex items-center justify-between border-t border-[#c5a880]/10 pt-4 mt-4">
+                          <div className="flex items-center justify-between border-t border-[#c5a880]/10 pt-2.5 mt-2.5">
                             <div className="flex flex-col">
                               {isAddon ? (
-                                <span className="font-sans text-xs font-semibold text-[#c5a880] uppercase tracking-wider">
+                                <span className="font-sans text-[10px] font-semibold text-[#c5a880] uppercase tracking-wider">
                                   Custom Add-On
                                 </span>
                               ) : (
                                 <div className="flex items-baseline gap-1">
-                                  <span className="font-sans text-lg font-bold text-[#8C3316]">
+                                  <span className="font-sans text-base font-bold text-[#8C3316]">
                                     ₹{item.Rate}
                                   </span>
                                   {item.Unit && item.Unit.toLowerCase() !== "na" && (
-                                    <span className="font-sans text-[11px] text-[#8C3316]/60">
+                                    <span className="font-sans text-[10px] text-[#8C3316]/60">
                                       / {item.Unit.toLowerCase() === "pc" ? "pcs" : item.Unit.toLowerCase()}
                                     </span>
                                   )}
@@ -491,15 +491,15 @@ export default function MenuPage() {
 
             {/* Empty Search State */}
             {filteredItems.length === 0 && (
-              <div className="text-center py-16 bg-white/40 border border-[#c5a880]/20 rounded-2xl space-y-4">
-                <Sparkles className="w-10 h-10 text-[#c5a880]/60 mx-auto" />
-                <h3 className="font-serif text-xl font-semibold text-[#8C3316]">No Dishes Found</h3>
-                <p className="font-sans text-sm text-[#292927]/70 max-w-sm mx-auto">
+              <div className="text-center py-12 bg-white/40 border border-[#c5a880]/20 rounded-xl space-y-3">
+                <Sparkles className="w-8 h-8 text-[#c5a880]/60 mx-auto" />
+                <h3 className="font-serif text-lg font-semibold text-[#8C3316]">No Dishes Found</h3>
+                <p className="font-sans text-xs sm:text-sm text-[#292927]/70 max-w-sm mx-auto">
                   We couldn&apos;t find any items matching &quot;{searchQuery}&quot;. Try checking for spelling errors or searching a different category.
                 </p>
                 <button
                   onClick={() => setSearchQuery("")}
-                  className="px-5 py-2.5 bg-[#8C3316] hover:bg-[#74290F] text-white font-sans text-xs font-semibold tracking-wider rounded-md transition-colors"
+                  className="px-4 py-2 bg-[#8C3316] hover:bg-[#74290F] text-white font-sans text-xs font-semibold tracking-wider rounded-md transition-colors"
                 >
                   Clear Search Filter
                 </button>
@@ -511,7 +511,7 @@ export default function MenuPage() {
       </section>
 
       {/* 3. Pure Philosophy & CTA Banner */}
-      <section className="w-full bg-[#8C3316] text-[#FAF6F0] py-16 md:py-20 relative overflow-hidden z-10">
+      <section className="w-full bg-[#8C3316] text-[#FAF6F0] py-12 md:py-16 relative overflow-hidden z-10">
         <div className="absolute -top-24 -right-24 w-80 h-80 bg-[#c5a880]/10 rounded-full blur-3xl pointer-events-none" />
         <div className="absolute -bottom-24 -left-24 w-80 h-80 bg-[#c5a880]/15 rounded-full blur-3xl pointer-events-none" />
 
