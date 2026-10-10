@@ -392,17 +392,19 @@ export default function OccasionsPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
             <Link
-              href="/checkout"
-              className="px-8 py-3.5 bg-[#FAF6F0] hover:bg-[#FAF6F0]/90 text-[#8C3316] font-sans text-sm font-bold tracking-wider rounded-md shadow-md transition-all duration-300 w-full sm:w-auto text-center uppercase"
-            >
-              Place Order
-            </Link>
-            <Link
               href="/qet_a_quote"
-              className="px-8 py-3.5 bg-transparent hover:bg-white/5 text-[#FAF6F0] border border-[#FAF6F0]/40 hover:border-[#FAF6F0] font-sans text-sm font-semibold tracking-wider rounded-md transition-all duration-300 w-full sm:w-auto text-center"
+              className="px-8 py-3.5 bg-[#FAF6F0] hover:bg-[#FAF6F0]/90 text-[#8C3316] font-sans text-sm font-semibold tracking-wider rounded-md shadow-md transition-all duration-300 w-full sm:w-auto text-center"
             >
               Get A Quote
             </Link>
+            <a
+              href="https://wa.me/919971118559"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-8 py-3.5 bg-transparent hover:bg-white/5 text-[#FAF6F0] border border-[#FAF6F0]/40 hover:border-[#FAF6F0] font-sans text-sm font-semibold tracking-wider rounded-md transition-all duration-300 w-full sm:w-auto text-center flex items-center justify-center gap-2"
+            >
+              Chat on WhatsApp
+            </a>
           </div>
         </div>
       </section>

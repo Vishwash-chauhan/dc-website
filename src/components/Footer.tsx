@@ -3,7 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Phone, MessageSquare, MapPin, Calendar, Heart, Mail, ShoppingBag } from "lucide-react";
+import { Phone, MessageSquare, MapPin, Calendar, Heart, Mail } from "lucide-react";
 
 const Instagram = ({ className }: { className?: string }) => (
   <svg
@@ -114,7 +114,6 @@ export default function Footer() {
               {[
                 { name: "Home", href: "/#home" },
                 { name: "About Us", href: "/about" },
-                { name: "Place Order", href: "/checkout" },
                 { name: "Occasions", href: "/occasions_we_serve" },
                 { name: "Menus", href: "/menu" },
                 { name: "Gallery", href: "/#gallery" },
@@ -224,15 +223,17 @@ export default function Footer() {
                 </div>
               </div>
 
-              {/* Order Online CTA */}
+              {/* WhatsApp CTA */}
               <div className="pt-2">
-                <Link
-                  href="/checkout"
-                  className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#FAF6F0] hover:bg-white text-[#8C3316] font-sans text-xs font-bold tracking-wider uppercase rounded-lg shadow-sm transition-all duration-300 transform hover:scale-103 cursor-pointer"
+                <a
+                  href="https://wa.me/919971118559"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-4 py-2 bg-[#25D366] hover:bg-[#20ba59] text-white font-sans text-xs font-semibold rounded-lg shadow-sm transition-all duration-300 transform hover:scale-103 active:scale-97 cursor-pointer"
                 >
-                  <ShoppingBag className="w-4 h-4" />
-                  Place Order
-                </Link>
+                  <MessageSquare className="w-4 h-4 fill-current" />
+                  Chat on WhatsApp
+                </a>
               </div>
             </div>
           </div>
